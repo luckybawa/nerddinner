@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "\"any specs for implementing my dinner section? or can i start writing that section :)\"\n\nWell, let's brainstorm...\n\nI figure when someone is logged in, you'd show a link on the home page for \"My Dinners\" or \"Dinners I'm Hosting or Attending.\"\n\nThen they'd visit \"http://www.nerddinner.com/dinners/my\" and see two sections:\n\n\"Hosting\"\nand \n\"Attending\"\n\nHow's that?\n\nAlso look at timezone issues on the server",
+    "LastUpdatedDate": "2011-10-02T05:34:29.377-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-22T22:03:16.773-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "My Dinners",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2344
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "how about old dinners? still will be displaying them or have an archive link?",
+      "PostedDate": "2009-03-22T23:28:15.693-07:00",
+      "Id": 76047
+    },
+    {
+      "Message": "what about a notion of public vs. closed dinners?  \r\nI would expect my dinners to contain all dinners that I either host or hosted and all that I am attending/attended.",
+      "PostedDate": "2009-03-23T20:28:49.177-07:00",
+      "Id": 76048
+    }
+  ]
+}

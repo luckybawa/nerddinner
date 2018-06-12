@@ -1,0 +1,22 @@
+Index: AccountController.cs
+===================================================================
+--- AccountController.cs	(revision 70714)
++++ AccountController.cs	(working copy)
+@@ -317,10 +317,16 @@
+ 
+         public string GetCanonicalUsername(string userName)
+         {
++            
+             var user = _provider.GetUser(userName, true);
++            
+             if (user != null)
+             {
+-               return user.UserName;
++                // Unfortunately the SqlMembershipProvider returns user.UserName in a case
++                // that matches the supplied userName argument.  So without creating a new provider,
++                // we're lucky enough to get the correct canonical name with GetUserNameByEmail()
++               string canonicalName = _provider.GetUserNameByEmail(user.Email);
++               return canonicalName;
+             }
+ 
+             return null;

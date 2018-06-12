@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "589035",
+    "ThreadId": "251862",
+    "Html": "\r\n<p>Hey folks,</p>\r\n<p>We've got two new community project coordinators, Peter and John, and between them and Jon Galloway and I, we'll be starting to tidy up and get things done around here. They're going to clean up the branches of the source control, fix some bugs and get the\r\n issue tracker under control.</p>\r\n<p>We'll move the trunk to MVC3 (while keeping the MVC1 and MVC2 branches) and start adding new stuff like jQuery mobile, better OpenID support, IE9, HTML5 and more.&nbsp;</p>\r\n<p>Thanks!</p>\r\n<p>Scott Hanselman</p>\r\n",
+    "PostedDate": "2011-03-30T12:42:23.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

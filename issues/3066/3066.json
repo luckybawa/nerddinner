@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Remove Phone Validation, instead make it a Twitter/Phone/Email/Web/Whatever field. Need to add auto-linking to make it friendly.",
+    "LastUpdatedDate": "2011-10-02T05:34:35.763-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-05-18T13:56:22.05-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Make contact field easier",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3066
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Ran into this rough user experience situation tonight in trying to set up a Dinner.  I had an email address in there and with a full form, this validation either wasn't getting triggered or just wasn't displaying the phone validation error properly.\r\n\r\nMaybe custom validation - if pattern matches an email validate with an email regex, or if the field starts with an @ let it be a Twitter ID, or if it starts with a number validate under a phone rule of some sort? ",
+      "PostedDate": "2010-04-22T19:38:42.61-07:00",
+      "Id": 76066
+    },
+    {
+      "Message": "made property just a text field, still need to figure out validation",
+      "PostedDate": "2011-08-16T09:54:01.03-07:00",
+      "Id": 76067
+    }
+  ]
+}

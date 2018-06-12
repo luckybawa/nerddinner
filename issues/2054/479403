@@ -1,0 +1,38 @@
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NerdDinner.Helpers;
+
+namespace NerdDinner.Tests.Helpers
+{
+	[TestClass]
+	public class UK_PhoneValidatorTest
+	{
+		[TestMethod]
+		public void UK_Microsoft_IsValid()
+		{
+			bool isValid = PhoneValidator.IsValidNumber("08706010100", "UK");
+			Assert.IsTrue(isValid);
+		}
+
+		[TestMethod]
+		public void UK_AA_IsValid()
+		{
+			bool isValid = PhoneValidator.IsValidNumber("01613321789", "UK");
+			Assert.IsTrue(isValid);
+		}
+
+		[TestMethod]
+		public void UK_BBC_IsValid()
+		{
+			bool isValid = PhoneValidator.IsValidNumber("03700100222", "UK");
+			Assert.IsTrue(isValid);
+		}
+
+		[TestMethod]
+		public void UK_With_Spaces_IsValid()
+		{
+			bool isValid = PhoneValidator.IsValidNumber("020 7123 1234", "UK");
+			Assert.IsTrue(isValid);
+		}
+	}
+}

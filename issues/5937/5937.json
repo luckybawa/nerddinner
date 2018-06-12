@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Can't reproduce!",
+    "ClosedDate": "2011-06-01T12:46:29.603-07:00",
+    "CommentCount": 6,
+    "Custom": "",
+    "Description": "For some reason my map is always floating off on the top left of the screen (in IE 8 and Firefox). I'm using the downloaded source code. Any reason why it's not displaying in the correct spot on the page?",
+    "LastUpdatedDate": "2011-06-01T12:46:29.603-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-04-17T11:51:40.48-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Map displaying in incorrect location",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 5937
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Behaved that way for me too using VS2008. I just switched to VS2010 and now it works as it should. Other than migrating the solution from VS2008 to VS2010 I've done no changes to the project.",
+      "PostedDate": "2010-04-19T01:00:19.187-07:00",
+      "Id": 76082
+    },
+    {
+      "Message": "Just chiming in to say that I had the same problem with that. Using VS2008 Express. The downloaded source worked fine, however even after importing all the source files over to my project one at a time and retesting I was never able to isolate the problem. All I know is that no matter what I tried/replaced the map was always in the upper left of my screen.",
+      "PostedDate": "2010-04-21T18:39:04.79-07:00",
+      "Id": 76083
+    },
+    {
+      "Message": "I had the same issues.  Code checked my book project against the downloaded code and couldn't find any differences.  The for sag I copied the downloaded css file into the one generated and everything began working. so if you are having issues with the map posting in the upper left corner over your form, download the source code and make sure you have the latest css file.  Worked for me.",
+      "PostedDate": "2010-05-05T10:33:11.68-07:00",
+      "Id": 76084
+    },
+    {
+      "Message": "I had this issue as well. I'm using VS 2010 Ultimate and the map kept originating at the top left corner. I tried replacing the css from the downloaded file to no avail. Then I did I side-by-side comparison viewing page source between my version and the downloaded solution, and realized that VS 2010 uses  tags around input sections when auto-generating views, versus the samples which use \r\n tags. I also noticed that styles weren't being applied to the RSVP partial view control. I changed the  tags to match \r\n. I changed the div's to paragraphs, refreshed, and the map was in the correct place.\r\n\r\nNow for the funky part....I wanted to pinpoint exactly what was the cause, and so starting undoing my changes, putting back in the divs. Strangely, now the divs worked just fine. Either I missed something or there is a bizarre bug in VS. ",
+      "PostedDate": "2010-05-15T02:37:26.65-07:00",
+      "Id": 76085
+    },
+    {
+      "Message": "Hello all,\r\nOpen the file Content/site.css in your project and compare with the source code's Content/site.css. There are css elements matching to  elements in your project. Hope, this will solve your problem.",
+      "PostedDate": "2010-07-31T03:23:25.507-07:00",
+      "Id": 76086
+    },
+    {
+      "Message": "I am having this same problem using VS2010 and Visual Web Dev 2010.  I have tried all of the changes mentioned, but nothing has resolved the issue. I have checked my code against the code in the book and downloaded, but have no found nay differences.",
+      "PostedDate": "2010-11-28T21:53:24.267-08:00",
+      "Id": 76087
+    }
+  ]
+}

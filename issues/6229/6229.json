@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-06-12T07:24:19.857-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "there is an open redirect vulnerability in the application on logon eg http://www.nerddinner.com/Account/LogOn?returnUrl=http://google.com. While not severe on its own, this serves as a template for many applications that reuse this code, which can be affected.",
+    "LastUpdatedDate": "2010-06-12T07:24:19.857-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-06-01T09:10:31.793-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "open redirect vuln",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6229
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Just curious: do you see this as a vulnerability that will actually pass the attacking application useful information?  Or is it just a way to get someone to visit their site under the guise of visiting another site?",
+      "PostedDate": "2010-06-12T07:09:15.703-07:00",
+      "Id": 76093
+    },
+    {
+      "Message": "Resolved with changeset 49320.",
+      "PostedDate": "2010-06-12T07:24:19.857-07:00",
+      "Id": 76094
+    }
+  ]
+}

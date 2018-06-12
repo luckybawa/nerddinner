@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed, cool!",
+    "ClosedDate": "2011-06-01T12:49:03.1-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "We have an action \"Confused\" for 404 pages. I think \"Lost\" is more apt and less insulting. ;)",
+    "LastUpdatedDate": "2011-06-01T12:49:03.1-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-05-07T10:27:59.683-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Rename \"Confused\" to \"Lost\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2977
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Done. Changeset 65101",
+      "PostedDate": "2011-05-10T08:33:26.15-07:00",
+      "Id": 76065
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-06-01T12:49:43.2-07:00",
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "Self explanitory really...",
+    "LastUpdatedDate": "2011-06-01T12:49:43.2-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-13T23:48:30.737-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "New Zealand Phone Validation",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2119
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I'm sure an example Valid phone number would be useful. Or even the Regex used to validate phone numbers in NZ.",
+      "PostedDate": "2009-03-14T00:17:04.98-07:00",
+      "Id": 76036
+    },
+    {
+      "Message": "Haha yeah, self explanitory to anyone in NZ. Doh ;-)\r\n04 555 5555 - always a 0 followed by one number then three numbers then four\r\n027 555 555 - always 02 then one number then three numbers then three four or five numbers\r\n\r\nBut it kinda got me thinking... do you really want phone number validation? Because surely they would vary from the standard anyway, e.g. phone extensions. I'm guessing it was added into nerddinners for educational purposes but not sure how it stands up in the real world.",
+      "PostedDate": "2009-03-14T04:24:49.653-07:00",
+      "Id": 76037
+    },
+    {
+      "Message": "Phone validation was removed in r23403",
+      "PostedDate": "2009-05-06T22:14:19.013-07:00",
+      "Id": 76038
+    }
+  ]
+}

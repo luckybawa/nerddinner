@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Fix for some script includes that are using full url path instead of site relative syntax.  This patch was tested using IIS7 where I deployed it to /NerdDinner virtual directory.",
+    "LastUpdatedDate": "2011-08-16T09:15:13.823-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-04-08T22:15:54.487-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support for hosting under a virtual directory",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2684
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479408,
+      "FileName": "SiteRelativeURLEncoding.patch",
+      "DownloadUrl": ".\\479408"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Associated with changeset 49324.",
+      "PostedDate": "2010-06-12T08:37:40.22-07:00",
+      "Id": 76061
+    },
+    {
+      "Message": "Some additional work needs to be done at least in OpenSearch.ashx.cs to properly prefix paths. I'm not as confident about what the right fix is here though.",
+      "PostedDate": "2010-06-12T08:39:16.373-07:00",
+      "Id": 76062
+    }
+  ]
+}

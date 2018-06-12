@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "168365",
+    "ThreadId": "50276",
+    "Html": "Newbie to database / ASP.NET MVC, so go easy on me.<br>\r\n<br>\r\nWhat is the best way to trim the white space in the Country and PhoneNumber textbox input?&nbsp; In working through the tutorial, I got stuck implemented/testing the delete feature.&nbsp; This might have more to do with using country as a Regex key.&nbsp; Added the code below to fix the problem, however I think it would be better to fix the data going into the database.<br>\r\n<br>\r\nif (country != null &amp;&amp; countryRegex.ContainsKey(country.Trim()) )<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return countryRegex[country.Trim()].IsMatch(phoneNumber.Trim());<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>\r\n<br>\r\nThanks<br>\r\n",
+    "PostedDate": "2009-03-15T15:46:25.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "178614",
+    "ThreadId": "50276",
+    "Html": "I would use the trim() as you do above, I might change the if to look for:<br>\r\n<br>\r\nstring sHolder = country.trim();<br>\r\n<br>\r\n<span style=\"font-size:13px;color:#0000ff\">if</span><span style=\"font-size:13px\"> (!</span><span style=\"font-size:13px;color:#2b91af\">String</span><span style=\"font-size:13px\">.IsNullOrEmpty(sHolder) &amp;&amp; countryRegex.ContainsKey(sHolder)  )<br>\r\n{<br>\r\n         return countryRegex[<span style=\"font-size:13px\">sHolder].</span>IsMatch(phoneNumber.Trim());<br>\r\n<br>\r\n}<br>\r\n<br>\r\nYou might want to create a method to clean the input this can be called anytime:<br>\r\n<br>\r\n<span style=\"font-size:13px\">\r\n<p> </p>\r\n<p> </p>\r\n</span>\r\n<p><span style=\"font-size:13px;color:#0000ff\">public</span><span style=\"font-size:13px\"> </span><span style=\"font-size:13px;color:#0000ff\">string</span><span style=\"font-size:13px\"> CleanText(</span><span style=\"font-size:13px;color:#0000ff\">string</span><span style=\"font-size:13px\"> inText)\r\n<p> </p>\r\n<p>{</p>\r\n<p> </p>\r\n</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-size:13px;color:#0000ff\">return</span><span style=\"font-size:13px\"> inText.Trim();\r\n<p> </p>\r\n<p>}</p>\r\n<p>or if you want to clean all whitespaces<br>\r\n<br>\r\n</p>\r\n<p><span style=\"font-size:13px;color:#0000ff\">public</span><span style=\"font-size:13px\"> </span><span style=\"font-size:13px;color:#0000ff\">string</span><span style=\"font-size:13px\"> CleanText(</span><span style=\"font-size:13px;color:#0000ff\">string</span><span style=\"font-size:13px\"> inText)\r\n<p> {</p>\r\n<p> </p>\r\n</span></p>\r\n<p><span style=\"font-size:13px\"><span style=\"font-size:13px;color:#0000ff\">return</span><span style=\"font-size:13px\"> inText.Replace(</span><span style=\"font-size:13px;color:#a31515\">&quot; &quot;</span><span style=\"font-size:13px\">, </span><span style=\"font-size:13px;color:#a31515\">&quot;&quot;</span><span style=\"font-size:13px\">);\r\n<p>&nbsp;</p>\r\n</span>\r\n<p> }</p>\r\n<p>&nbsp;</p>\r\n</span></p>\r\n<p><br>\r\n<br>\r\nHope this helps</p>\r\n<p>&nbsp;</p>\r\n<p>David........</p>\r\n</span></p>\r\n<p>&nbsp;</p>\r\n</span>\r\n",
+    "PostedDate": "2009-04-13T11:04:43.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

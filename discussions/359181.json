@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "847515",
+    "ThreadId": "359181",
+    "Html": "\r\n<p>Hey guys,</p>\r\n<p>I'm trying pinpoint as to what may cause the problem in my local copy of the codes.&nbsp;</p>\r\n<p>I have followed the instructions from the pdf documentation, and so far so good. I have observed some problems and able to fix some bugs after google it. However, I got stuck with one problem where the created dinner not pinned on the map when the&nbsp;authorized&nbsp;user\r\n to edit it. Everything works as what expected when creating the dinner event such as blur, but for some reason the same dinner event not being able to be pinned when edit it.&nbsp;</p>\r\n<p>I'm a newbie, and trying to debug this problem. Can someone please shed some lights on it. Is it presentation problem, i have tried many ways by looking for something in the Javascript, but still no luck... Hope someone can help me out!!!</p>\r\n<p>&nbsp;</p>\r\n<p>Much appreciated.&nbsp;</p>\r\n<p>Victor</p>\r\n",
+    "PostedDate": "2012-06-11T08:17:22.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

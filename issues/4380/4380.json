@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Neither view (urls below) of a specific dinner displays the iCal link when in my iPhone's Safari browser, as FF3 does on my PC (with the top link - can't get to the bottom link on my PC).\n\nhttp://nerddinner.com/1181\nhttp://nerddinner.com/#_Details\n\nSince my iPhone is the only place I keep my calendar (I don't sync calendar w/Outlook/iTunes), this is quite annoying as I will have to manually enter the event.",
+    "LastUpdatedDate": "2009-10-14T12:32:45.063-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-10-14T12:32:45.063-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "iCal link does not appear on dinner page on iPhone/Safari",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4380
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "424835",
+    "ThreadId": "207604",
+    "Html": "<p>I recently followed this excellent Tutorial. I converted the code to  vb.net as I went, so thought I would upload it to my site converted  source code for any other  vb.net programmers out there.</p>\r\n<p>http://philhey.co.uk/Article/Details/VB_Net_MVC_NerdDinner_Source_Code</p>\r\n<p>Hope this is OK</p>\r\n<p>Its built with Visual Studio 2010, but will work fine with dotnet 3.5 if you import the files into a new project.</p>",
+    "PostedDate": "2010-03-29T01:46:03.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "427581",
+    "ThreadId": "207604",
+    "Html": "Great!<br><br><div>On Mon, Mar 29, 2010 at 1:46 AM, NoseBagUK <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br><blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">\r\n   <div> <p>From: NoseBagUK</p> <div><p>I recently followed this excellent Tutorial. I converted the code to  <a href=\"http://vb.net\">vb.net</a> as I went, so thought I would upload it to my site converted  source code for any other  <a href=\"http://vb.net\">vb.net</a> programmers out there.</p>\r\n\r\n<p><a href=\"http://philhey.co.uk/Article/Details/VB_Net_MVC_NerdDinner_Source_Code\">http://philhey.co.uk/Article/Details/VB_Net_MVC_NerdDinner_Source_Code</a></p>\r\n<p>Hope this is OK</p></div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=207604&ANCHOR#Post424835\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:207604]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2010-04-05T12:49:56.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

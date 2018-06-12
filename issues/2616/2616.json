@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-09-26T10:11:47.503-07:00",
+    "CommentCount": 8,
+    "Custom": "",
+    "Description": "When I create new dinner i always have ModelState.IsValid false. After put correct values on create page i have only red text \"Please correct the errors and try again.\" and no errors belowe it. I chcecked deeper and the error is because in my culture double values are written with coma not dot and cast from string to double value cannot be done.",
+    "LastUpdatedDate": "2013-09-26T10:11:47.503-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-04-04T14:10:49.387-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Culture bug? Cannot create new dinner",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2616
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I experience the same problem",
+      "PostedDate": "2009-04-21T07:13:52.663-07:00",
+      "Id": 76054
+    },
+    {
+      "Message": "I am from Brazil and I got the same problem.",
+      "PostedDate": "2009-04-29T07:58:22.963-07:00",
+      "Id": 76055
+    },
+    {
+      "Message": "Fixed on changeset 23425",
+      "PostedDate": "2009-05-06T23:39:06.66-07:00",
+      "Id": 76056
+    },
+    {
+      "Message": "Fixed in r23425",
+      "PostedDate": "2009-05-06T23:39:38.48-07:00",
+      "Id": 76057
+    },
+    {
+      "Message": "Hello, I may be wrong but this is still not working. the problem lies in the validation of the model when you try to edit or create a dinner. updatemodel does not pickup on longitude and latitude as they are using a coma...\r\n\r\nI don't know how to solve this but here is how I made it work:\r\nremove lat on lon from the bind list\r\n\r\n   [Bind(Include=\"Title,CreationDate,Address,Country\")]\r\n    public partial class Dinner\r\n    {\r\n\r\nin  // POST: /Dinners/Edit/2\r\nupdate the model then insert the lat and lon values by hand\r\n\r\nUpdateModel(cinema);\r\n                cinema.Latitude = Double.Parse(Request.Form[\"Latitude\"].Replace('.', ','));\r\n                cinema.Longitude = Double.Parse(Request.Form[\"Longitude\"].Replace('.', ','));\r\n\r\nI don't understand why it's working like that but it is...\r\n\r\nnote that i'm using MVC2 RC\r\n                ",
+      "PostedDate": "2010-02-10T09:44:28.89-08:00",
+      "Id": 76058
+    },
+    {
+      "Message": "I am still seeing this issue in the revision 47178. Lat and lon are getting a dot instead of a comma.",
+      "PostedDate": "2010-04-23T18:44:00.69-07:00",
+      "Id": 76059
+    },
+    {
+      "Message": "It looks like the same bug still occurs with Dutch coordinates.",
+      "PostedDate": "2010-05-31T22:53:54.51-07:00",
+      "Id": 76060
+    },
+    {
+      "Message": "Fixed in changeset 247e8445d80e5273ac9ef80dcbe96ac4ef3aa6ec",
+      "PostedDate": "2013-09-06T05:38:03.137-07:00",
+      "Id": 112668
+    }
+  ]
+}

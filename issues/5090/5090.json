@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "See last comment.. In order to use the newest features, VS2010 is required. If you have VS2008, then you will need to use an older NerdDinner version.",
+    "ClosedDate": "2011-04-17T17:38:56.797-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "Dear everyone..\n\ni coudnt open the nerdDinner Solution,\n\ni have found same message from here, but i coudn't solve the problem.\n\ni have installed the ASP.NET MVC...\n\nHow can i use this project to test",
+    "LastUpdatedDate": "2011-04-17T17:38:56.797-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-01-12T10:36:18.953-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "NerdDinner CSPROJ won't open with Viz Studio 2008",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5090
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479412,
+      "FileName": "AspNetMVC1.msi",
+      "DownloadUrl": ".\\479412"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I got the same problem, but I fixed it unstalling the MVC 2 RC and then I installed the MVC 1.0,  now it works well, I now that its better to use the final release of MVC but this sample application was compiled using MVC1. \r\n\r\n",
+      "PostedDate": "2010-01-18T07:32:50.31-08:00",
+      "Id": 76078
+    },
+    {
+      "Message": "The project in the /trunk folder has been upgraded to VS2010 RC / MVC2 RC2. You can find VS2008 projects in the /branches folder.",
+      "PostedDate": "2010-02-22T13:12:50.823-08:00",
+      "Id": 76079
+    },
+    {
+      "Message": "try AspNetMVC2_VSNET2008.msi btw am also unable to open",
+      "PostedDate": "2010-05-21T13:03:45.693-07:00",
+      "Id": 76080
+    },
+    {
+      "Message": "fyi, as we complete the work of migrating NerdDinner to MVC 3 and Razor, you will need to use VS2010. If you are still using VS2008, you will need to drop back to an older version of NerdDinner.",
+      "PostedDate": "2011-04-17T17:36:03.243-07:00",
+      "Id": 76081
+    }
+  ]
+}

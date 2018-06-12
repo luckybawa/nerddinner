@@ -1,0 +1,53 @@
+[
+  {
+    "Id": "0",
+    "Name": "NerdDinner - Four Database Access Samples",
+    "DevelopmentStatus": "Stable",
+    "Description": "[url:Chris Sells|http://www.sellsbrothers.com] worked with [url:Nick Muhonen|http://www.useableconcepts.com] from Useable Concepts and Nick created four samples exploring how an ASP.NET MVC application can access databases in the various ways you'll find in the wild:\n\n* ADO.NET Connected (DataReaders)\n* ADO.NET Disconnected (DataSets)\n* LINQ to SQL\n* LINQ to Entities (Entity Framework)\nThese samples were referenced in [url:Scott Hanselman's blog post|http://www.hanselman.com/blog/ExtendingNerdDinnerExploringDifferentDatabaseOptions.aspx] and Nick's in-depth article exploring the subject on [url:http://www.msdn.com/data].",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-20T08:19:30.653-07:00",
+    "Files": [
+      {
+        "Id": "7bc56f05-ca21-4fa1-aa4d-bb746263df71",
+        "FileName": "NerdDinner-DataSamples.zip",
+        "Url": "./0/7bc56f05-ca21-4fa1-aa4d-bb746263df71",
+        "Type": "Application",
+        "UploadDate": "2010-05-20T08:18:12.657-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "NerdDinner 1.0 Complete ASP.NET MVC Sample App",
+    "DevelopmentStatus": "Beta",
+    "Description": "This is the first release of NerdDinner.com. This is a zip up of the Source for 1.0.\n\nThere's a complete walk through of the site available as a *FREE PDF* download at [url:http://tinyurl.com/aspnetmvc].",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-03-10T13:59:13.8-07:00",
+    "Files": [
+      {
+        "Id": "42ce1f3a-0c1c-468d-829f-636c67b9821a",
+        "FileName": "NerdDinner 1.0.zip",
+        "Url": "./1/42ce1f3a-0c1c-468d-829f-636c67b9821a",
+        "Type": "Application",
+        "UploadDate": "2009-03-10T12:36:33.02-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "NerdDinner 2.0 Complete ASP.NET MVC Sample App",
+    "DevelopmentStatus": "Stable",
+    "Description": "This is a zip containing the source for the NerdDinner application, updated to ASP.NET MVC 2 and Visual Studio 2010. In addition to updating the application to leverage ASP.NET MVC 2 (e.g. Model validation), this includes the social sharing features and use of OpenAuth for login.\n\nYou can see this in action [url:http://nerddinner.com/]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-25T14:40:47.417-07:00",
+    "Files": [
+      {
+        "Id": "6fd110b7-a8da-4cea-ab67-77c037ef9027",
+        "FileName": "NerdDinner_2.0.zip",
+        "Url": "./2/6fd110b7-a8da-4cea-ab67-77c037ef9027",
+        "Type": "Application",
+        "UploadDate": "2010-05-25T14:39:11.437-07:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "953425",
+    "ThreadId": "406103",
+    "Html": "\r\n<p>Thanks to all the people who contributed to this project, it really helped bootstrap my own project.</p>\r\n<p>I ended up branching from the MVC 4 code and … errrr… probably ended up deleting most of it during my month of development; but it helped me have a working site to develop my own stuff in.</p>\r\n<p>&nbsp;</p>\r\n<p>The major changes made;</p>\r\n<ol>\r\n<li>1.<span style=\"font-size:7pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Storage of non-user objects in MongoDB\r\n</li><li>2.<span style=\"font-size:7pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Changed the API for Bing Maps to 7.0\r\n</li><li>3.<span style=\"font-size:7pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Changed the styling\r\n</li><li>4.<span style=\"font-size:7pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Changed the data types\r\n</li></ol>\r\n<p>But yeah, it is pretty much the same site with more event types and other things bolted on.</p>\r\n<p>So thank you all for your contributions, w/o you I would not have been able to stand this up in a month of spare time.</p>\r\n<p>&nbsp;</p>\r\n<p>Anyway it is up and running on http://Tourny.Org</p>\r\n",
+    "PostedDate": "2012-12-08T18:06:30.263-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

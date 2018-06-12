@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "The hCalendar icon shown on the details page below the map does not do anything.  I thought it would be a link to prompt me to add an event to a calendar.  \nhttp://www.nerddinner.com/4990",
+    "LastUpdatedDate": "2011-08-30T07:55:38.02-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-08-30T04:10:38.32-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "hCalendar Link Doesn't Do Anything",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9451
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Did you try the link in the upper right-hand corner \"\"Add event to your calendar\".  In any case, it does appear that the markup required to power hCalendar is not in place. I'll get that squared away asap. Thanks for reporting.\r\n\r\nJohn",
+      "PostedDate": "2011-08-30T07:04:06.34-07:00",
+      "Id": 76126
+    },
+    {
+      "Message": "Yes, I did and the link in the upper right-hand corner DID work.  \r\nIt gave me a prompt and tried to add it to Outlook.\r\nThanks!",
+      "PostedDate": "2011-08-30T07:55:38.02-07:00",
+      "Id": 76127
+    }
+  ]
+}

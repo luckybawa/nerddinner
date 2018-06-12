@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "413664",
+    "ThreadId": "203668",
+    "Html": "<p>Hello all,</p>\r\n<p>I've been looking for a solution or even a reason for this issue for a while now, so am hoping you will be able to help me.</p>\r\n<p>The site I am working on is based on NerdDinner although it has grown a bit since then.</p>\r\n<p>I think it is easiest if I explains this in steps:</p>\r\n<ul>\r\n<li>Consider an Index list of Applications containing Apps 'Access' and 'Outlook'</li>\r\n<li>Select an Application to Edit, e.g. 'Access'</li>\r\n<li>Rename 'Access' to 'Outlook'</li>\r\n<li>Hit 'Save' (i.e. UpdateModel(application) is called, but not Repository.Save())</li>\r\n<li>Error message occurs: 'Application already exists'</li>\r\n<li>Hit 'Cancel'</li>\r\n<li>You are returned to the Index list where you see 'Access' and 'Outlook'</li>\r\n<li>Select 'Access' Details</li>\r\n<li>'Access' name is 'Outlook', all other details are those for 'Access'</li>\r\n</ul>\r\n<p>If I then look in the database, both 'Access' and 'Outlook' are still correct.</p>\r\n<p>Why and where is UpdateModel saving this data and how can I solve this?</p>\r\n<p>Many thanks,</p>\r\n<p>Jennifer</p>",
+    "PostedDate": "2010-03-03T06:24:15.91-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

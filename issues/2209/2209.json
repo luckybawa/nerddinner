@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "There is no site.css file any more.",
+    "ClosedDate": "2009-05-06T22:10:30.237-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "In site.css:117 is an ugly CSS Hack for IE6. A best practice would be to design a page that it fully standard compliant and then make separate css files for IE7 and IE6 where you fix their CSS bugs. In the header of the master page you put them in conditional comments:\n\n\t<link href=\"../../Content/Site.css\" rel=\"stylesheet\" type=\"text/css\" title=\"Standard\" />\n\t<link href=\"../../Content/print.css\" rel=\"Stylesheet\" type=\"text/css\" media=\"print\" />\n\t<!--[if IE 7]><link href=\"../../Content/ie7.css\" rel=\"stylesheet\" type=\"text/css\" /><![endif]-->\n\t<!--[if IE 6]><link href=\"../../Content/ie6.css\" rel=\"stylesheet\" type=\"text/css\" /><![endif]-->\n\nHTH, Rainer",
+    "LastUpdatedDate": "2009-05-06T22:10:30.237-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-17T12:13:10.297-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Remove IE6 CSS hack",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2209
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479405,
+      "FileName": "css.patch",
+      "DownloadUrl": ".\\479405"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Patch included",
+      "PostedDate": "2009-03-18T13:34:34.55-07:00",
+      "Id": 76041
+    },
+    {
+      "Message": "There is no site.css file any more.",
+      "PostedDate": "2009-05-06T22:01:54.05-07:00",
+      "Id": 76042
+    },
+    {
+      "Message": "\r\n\r\n** Closed by Haacked 5/6/2009 10:02 PM",
+      "PostedDate": "2009-05-06T22:04:32.633-07:00",
+      "Id": 76043
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-05-06T22:04:33.04-07:00",
+      "Id": 76044
+    }
+  ]
+}

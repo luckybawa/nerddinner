@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "249232",
+    "ThreadId": "72958",
+    "Html": "<p>Hi All,</p>\r\n<p>I donwloaded the NerDinner zip file.</p>\r\n<p>Unzipped and opened up the project solution in Studio.</p>\r\n<p>F5.&nbsp; It works fine ! just great.</p>\r\n<p>I then published it to my IIS box.</p>\r\n<p>I run it http://myiisbox/nerddinner</p>\r\n<p>and the page renders but NO map.</p>\r\n<p>The map doesnt show</p>\r\n<p>Any ideas ?</p>\r\n<p>&nbsp;</p>\r\n<p>s</p>",
+    "PostedDate": "2009-10-24T01:34:53.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

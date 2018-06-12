@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in another issue. Closed! Thanks!",
+    "ClosedDate": "2011-06-01T12:47:17.157-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "I tried to create a dinner for a perfectly valid address that was 51 characters in length, but was unable to do so because the \"string or binary data would be truncated.\"\n\nInteresting note: since this is not a Dinner rule violation, no error message is shown to the user.  The Create form is just redisplayed as if nothing has happened.\n\nThe Address column is currently 50 characters.  Perhaps make it 128 characters?  255?  I don't know, I'm just throwing out random numbers here.",
+    "LastUpdatedDate": "2011-06-01T12:47:17.157-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-08-25T09:44:48.223-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "dbo.Dinners.Address field is not large enough",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3827
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Ran into this issue tonight - went to create a Dinner and got the frustrating UX of \"I clicked Save but it didn't save but it also didn't tell me something was wrong.\"  It took me a little guesswork to figure out that my address was too long.\r\n\r\nAs for a column size, 50 characters does seem small.  Based on the many addresses I've worked with, maybe 300 characters at a minimum?  Just an idea...",
+      "PostedDate": "2010-04-22T19:31:07.507-07:00",
+      "Id": 76077
+    }
+  ]
+}

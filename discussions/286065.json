@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "724802",
+    "ThreadId": "286065",
+    "Html": "\r\n<p>Hi&nbsp;</p>\r\n<p>I have gotten NerdDinner up and running. I'm trying to change the default location (us) of the Bing map, on the index.cshmtl.&nbsp;</p>\r\n<p>It's not that&nbsp;straightforward&nbsp;as I had imagined. I can see there is a&nbsp;getCurrentLocation() javascript method on index.cshtml, however it seem like this method has not been implemented.&nbsp;</p>\r\n<p>I would prefer if someone could point me in the right direction.&nbsp;</p>\r\n<p>In short: I would like to locate the location of the current user, if he is from Sweden then I would like to show a Swedish map, and if from Germany then a map of Germany and so forth.</p>\r\n<p>Thanks for reading.&nbsp;</p>\r\n<p>Sincerely</p>\r\n<p>Samar</p>\r\n",
+    "PostedDate": "2012-01-13T08:02:12.483-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

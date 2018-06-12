@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "168865",
+    "ThreadId": "50392",
+    "Html": "<div>I am not sure if this is the correct place to put this but in the aspnetmvc-nerddinner_v1.pdf on page 103 of 195 there is an error in the example code. </div><div><br></div><div><div>//</div><div>// GET: /Dinners/Edit/5</div><div>[Authorize]</div><div>public ActionResult Edit(int id) {</div><div>Dinner dinner = dinnerRepository.GetDinner(id);</div><div>ViewData[&quot;Countries&quot;] = new SelectList(<span style=\"font-weight:bold\">PhoneValidator.AllCountries</span>,dinner.Country);</div><div>return View(dinner);</div><div>}</div><div><br></div><div>The PhoneValidator class does not have an enumeration called AllCountries. It should say <span style=\"font-weight:bold\">PhoneValidator.Countries</span>.   This is repeated in the code blocks for the Using the ViewData Dictionary section, in reference to changing the Country textinput field into a dropdownlist. </div><div><br></div><div>Aside from this minor issue, this is a spectacular walkthrough and introduction to MVC!  I cannot wait to finish going through the walkthrough, and for the UPS man to bring my copy of the book when its released!</div><div><br></div><div><br></div></div>",
+    "PostedDate": "2009-03-16T20:07:01.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "173993",
+    "ThreadId": "50392",
+    "Html": "Thanks, this should be fixed now.<br>\r\n",
+    "PostedDate": "2009-03-31T11:24:16.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174218",
+    "ThreadId": "50392",
+    "Html": "<p>Pages 84, 89, 90, 99</p>\r\n<p>You have  Modelstate.AddRuleViolations(..) and it should be Modelstate.AddModelErrors(...)</p>\r\n<p>&nbsp;</p>\r\n<p>Page 109</p>\r\n<p>You have ModelState.AddModelErrors(dinnerToCreate.GetRuleViolations());</p>\r\n<p>It should be ModelState.AddModelErrors(dinner.GetRuleViolations());</p>\r\n<p>You have return View(new DinnerFormViewModel(dinnertoCreate));<br>\r\nIt should be return View(new DinnerFormViewModel(dinner));</p>\r\n",
+    "PostedDate": "2009-04-01T02:06:01.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "464572",
+    "ThreadId": "50392",
+    "Html": "<blockquote style=\"border:solid .1em #ccc;font-style:italic;margin:.25em 1em 0 1em;padding:0 .25em 0 .25em\"><strong>shanselman wrote:</strong><br>Thanks, this should be fixed now.<br></blockquote>\r\n<p>&nbsp;</p>\r\n<p>It's not fixed in the online tutorial  <a href=\"http://nerddinnerbook.s3.amazonaws.com/Part6.htm\">http://nerddinnerbook.s3.amazonaws.com/Part6.htm</a></p>",
+    "PostedDate": "2010-07-07T17:49:40.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

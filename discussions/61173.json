@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "207444",
+    "ThreadId": "61173",
+    "Html": "<p>&nbsp;I get the follwing error when building the App (VS2008)</p>\r\n<p><span style=\"font-family:Arial\">Could not load type 'NerdDinner.MvcApplication'.</span></p>",
+    "PostedDate": "2009-07-01T02:20:38.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "220328",
+    "ThreadId": "61173",
+    "Html": "<p>Me too ... also using VS2008 (Pro) / NET 3.5</p>\r\n<p>This applies to the current (and unmodified) demo source code.</p>\r\n<p>_______________________________________________________________________________________________________</p>\r\n<p><strong style=\"font-family:Verdana;font-weight:bold;color:black;margin-top:-5px\">Parser Error Message:&nbsp;</strong>Could not load type 'NerdDinner.MvcApplication'.<br><br><strong style=\"font-family:Verdana;font-weight:bold;color:black;margin-top:-5px\">Source Error:</strong>&nbsp;<br></p>\r\n<table border=0 width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre style=\"font-family:'Lucida Console';font-size:0.9em\"><span style=\"color:red\">Line 1:  &lt;%@ Application Codebehind=&quot;Global.asax.cs&quot; Inherits=&quot;NerdDinner.MvcApplication&quot; Language=&quot;C#&quot; %&gt;\r\n</span></pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><br><strong style=\"font-family:Verdana;font-weight:bold;color:black;margin-top:-5px\">Source File:&nbsp;</strong>/global.asax<strong style=\"font-family:Verdana;font-weight:bold;color:black;margin-top:-5px\">&nbsp;&nbsp;&nbsp; Line:&nbsp;</strong>1</p>\r\n<p>________________________________________________________________________________________________________</p>\r\n<p>Any thoughts?</p>",
+    "PostedDate": "2009-08-06T06:20:29.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "228196",
+    "ThreadId": "61173",
+    "Html": "<p>For me it started happening with a modified project all of a sudden. It was just after a windows update on August 25th - don't know if that's a coincidence.</p>\r\n<p>Also happens with the original source code sometimes now as well.</p>",
+    "PostedDate": "2009-08-26T18:36:37.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230230",
+    "ThreadId": "61173",
+    "Html": "<p>I have the same problem! This error is really annoying, plz help!!</p>",
+    "PostedDate": "2009-09-02T07:57:52.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

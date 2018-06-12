@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:44:30.457-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The StringLength for Description is set to 265 instead of 256.\nThe StringLength for HostedBy is set to 256 instead of 20.",
+    "LastUpdatedDate": "2011-06-01T12:44:30.457-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-07-20T16:21:33.09-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "/Models/Dinner.cs StringLength typos",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6669
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Fixed in changeset 64947 and 64949. Thanks!",
+      "PostedDate": "2011-05-06T13:01:29.723-07:00",
+      "Id": 76100
+    }
+  ]
+}

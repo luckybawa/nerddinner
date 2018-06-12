@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-03-13T02:00:48.057-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The first big reason I moved to MVC, loved it, and would never go back to webforms, is that MVC doesn't get in my way. I think that if you don't care about the quality of your output, you are throwing away at least 60% of the power of MVC.\n\nCheck out your pages with the w3c markup validator: you declare them as xhtml 1.0 strict but they don't validate. This is the validation for the homepage:\nhttp://validator.w3.org/check?verbose=1&uri=http%3A%2F%2Fnerddinner.com%2F\n\n14 errors. Getting the site to validate is but the first step to its quality. You should also consider:\n\n- Using unobtrousive javascript, having nothing on the site depending on it (everything must be usable even without js)\n- Using proper media attributes in your css to avoid screen stylesheet from being used on handheld devices or printers\n- Checking your site for at least basic accessibility rules",
+    "LastUpdatedDate": "2009-03-13T02:00:48.057-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-12T01:15:38.813-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Site validation",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2078
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Cool. I fixed the validation, so we're XHTML Strict now. Any other suggestions?",
+      "PostedDate": "2009-03-12T10:45:28.807-07:00",
+      "Id": 76035
+    }
+  ]
+}

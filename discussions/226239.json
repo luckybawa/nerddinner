@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "489796",
+    "ThreadId": "226239",
+    "Html": "<p>Is there a WIX MSI file for Nerd Dinner?</p>",
+    "PostedDate": "2010-09-06T10:36:57.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495901",
+    "ThreadId": "226239",
+    "Html": "<p>(bump)</p>",
+    "PostedDate": "2010-09-20T03:52:30.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495905",
+    "ThreadId": "226239",
+    "Html": "\r\n<div>\r\n<p><span style=\"font-size:11.0pt;font-family:'Calibri','sans-serif';color:#1F497D\">There is not. I just deploy it by right clicking on the project from within Visual Studio and clicking Publish.</span><span style=\"font-size:9.0pt;font-family:'Verdana','sans-serif';color:gray\"></span></p>\r\n</div>\r\n",
+    "PostedDate": "2010-09-20T03:54:59.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495910",
+    "ThreadId": "226239",
+    "Html": "<p>Can creating a MSI be added to the backlog for Nerd Dinner. Trying to figure out how to do packaging of web applications and I keep hearing &quot;WiX is the way to go&quot;.</p>",
+    "PostedDate": "2010-09-20T03:59:20.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495912",
+    "ThreadId": "226239",
+    "Html": "\r\n<div>\r\n<p><span style=\"font-size:9.0pt;font-family:'Verdana','sans-serif';color:#1F497D\">I’d respectfully disagree and say “MSDeploy” is the way to go. Wix is nice for Windows apps, but I see no reason to use it for Web Apps when MSDeploy is one line from the command\r\n line and already built in. I did a talk on it at Mix: <a href=\"http://www.hanselman.com/blog/WebDeploymentMadeAwesomeIfYoureUsingXCopyYoureDoingItWrong.aspx\">\r\nhttp://www.hanselman.com/blog/WebDeploymentMadeAwesomeIfYoureUsingXCopyYoureDoingItWrong.aspx</a>  </span><span style=\"font-size:9.0pt;font-family:'Verdana','sans-serif';color:gray\"></span></p>\r\n</div>\r\n",
+    "PostedDate": "2010-09-20T04:01:10.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "552643",
+    "ThreadId": "226239",
+    "Html": "\r\n<p>I was disappointed that WiX or Windows Installer technology was not mentioned in the talk. Bottom line - WiX helps software vendors package websites for sale, whereas MSDeploy is for IT professionals and developers. From a Vendors perspective that wants\r\n to earn money by selling websites to customers that have the correct hardware and operation system, but without a technical clue - then WiX is a better way to earn money than MSDeploy. If this is not the case and I've misunderstood the whole point of Windows\r\n Installer, then it would be good to hear about this in a talk sometime.</p>\r\n",
+    "PostedDate": "2011-01-20T08:11:56.84-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

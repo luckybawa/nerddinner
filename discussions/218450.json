@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "463719",
+    "ThreadId": "218450",
+    "Html": "<p>Hi</p>\r\n<p>I'm new to jQuery and MVC 2 and so far very impressed with both. I want to build an application with jQuery UI controls that can work in an ASP.NET MVC 2 application. I want to use the ViewModel technique used in NerdDinner demo application whereby I just hook up the view model with my Views and the Views contain jQuery UI controls. Is that possible? If yes then how?</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers</p>\r\n<p>Zohaib</p>",
+    "PostedDate": "2010-07-06T05:43:33.74-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

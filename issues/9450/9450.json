@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This is fixed. Thanks for your help!",
+    "ClosedDate": "2011-09-07T15:58:21.44-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I am using Firefox 6.0. I allowed my location to be shared. Location was found then I clicked Search button. In result of this page is reloading constantly :)\n\nThe URL is http://www.nerddinner.com/#where=W%20Mains%20Road%2C%20East%20Kilbride%20G74%201\n\nSame URL works fine in IE9 and Chrome. It might be a Firefox issue but it is interesting to know why it is happening on first place.",
+    "LastUpdatedDate": "2011-09-07T15:58:21.44-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-08-30T02:27:18.41-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "A wee bug",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9450
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Well colleague of mine pointed this post http://stackoverflow.com/questions/7110023/firefox-6-infinite-page-refresh-with-page-with-hash-tags\r\nSo seem you have to update the scripts guys :)",
+      "PostedDate": "2011-08-30T02:35:56.497-07:00",
+      "Id": 76124
+    },
+    {
+      "Message": "updated to use latest MicrosoftAjax.js from CDN which fixes the issue",
+      "PostedDate": "2011-08-30T17:04:40.98-07:00",
+      "Id": 76125
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "454059",
+    "ThreadId": "215621",
+    "Html": "<p>I just downloaded the NerdDinner 2.0 project after completing the tutorial that covered how to create NerdDinner 1.0. While working through the 1.0 tutorial I used Visual Studio 2008 Professional. Now, I'd like to use Visual Studio 2010 (Professional, too) but I cannot open the solution correctly - the project &quot;NerdDinner&quot; is unavailable (&quot;The project file cannot be loaded.&quot;).</p>\r\n<p>How can I fix that issue? I've heard of some difficulties with ASP.NET MVC 2 in combination with Visual Studio 2010 ...</p>",
+    "PostedDate": "2010-06-10T09:03:57.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "454795",
+    "ThreadId": "215621",
+    "Html": "<p>Hmm, I did a Visual Studio repair and the error is gone ... Weird.</p>",
+    "PostedDate": "2010-06-12T11:05:52.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

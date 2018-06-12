@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-04-26T06:26:04.73-07:00",
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "Hi Guys, Are you guys planning on porting this template over to MVC 3.0 by any chance?",
+    "LastUpdatedDate": "2011-04-26T06:26:04.73-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-01-31T05:13:55.5-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Port to MVC 3.0",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 7,
+    "Id": 8274
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I see you have an initial port to MVC 3. Thought I'd report an error with the login screen.\r\n\r\nThe current IHttpHandler is not one of types: System.Web.UI.Page, DotNetOpenAuth.IEmbeddedResourceRetrieval.  An embedded resource URL provider must be set in your .config file.\r\nLine 11 : @MvcHtmlString.Create(Html.OpenIdSelector(new SelectorButton[] {\r\n\r\nI would love to see this fixed as I'm having difficulty finding a working example of MVC 3 razor and DotNetOpenAuth.",
+      "PostedDate": "2011-02-09T05:24:41.68-08:00",
+      "Id": 76118
+    },
+    {
+      "Message": "denizm10, I submitted a change last night that should fix the issue you're having. See http://nerddinner.codeplex.com/SourceControl/changeset/changes/63323",
+      "PostedDate": "2011-04-01T07:56:05.063-07:00",
+      "Id": 76119
+    },
+    {
+      "Message": "The Port to MVC 3 is about complete. As a result, I'm closing this work item.",
+      "PostedDate": "2011-04-26T06:25:54.927-07:00",
+      "Id": 76120
+    }
+  ]
+}

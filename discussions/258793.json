@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "617306",
+    "ThreadId": "258793",
+    "Html": "\r\n<p>I have MCV 3.0 installed and I can open and build the solution. However when I try to run the solution I get the following error:</p>\r\n<p>Microsoft JScript runtime error: '_gat' is undefined</p>\r\n<p>I believe this is probably due to missing some packages form nuget, but which one?</p>\r\n",
+    "PostedDate": "2011-05-24T05:20:53.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "617309",
+    "ThreadId": "258793",
+    "Html": "<p>Hey Allen,</p>\r\n<p>'_gat' is a part of the Google Analytics code that is included in the project. Since you're having troubles with that, you may also have troubles with the UserVoice js too. Here's how to remove those external dependencies from the project.</p>\r\n<p>In the 'Branches\\VS2010-MVC3-Razor\\NerdDinner\\Views\\Shared' directory open the _Layout.cshtml file.</p>\r\n<p>Remove (or comment out) the following lines:</p>\r\n<p>&lt;script src=\"http://www.google-analytics.com/ga.js\" type=\"text/javascript\"&gt;&lt;/script&gt;</p>\r\n<p>&lt;script src=\"http://cdn.uservoice.com/javascripts/widgets/tab.js\" type=\"text/javascript\"&gt;&lt;/script&gt;</p>\r\n<p>AND</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script type=\"text/javascript\"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var pageTracker = _gat._getTracker(\"UA-6399325-1\");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pageTracker._initData();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pageTracker._trackPageview();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/script&gt;<br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script type=\"text/javascript\"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UserVoice.Tab.show({<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; key: 'nerddinner',<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; host: 'feedback.nerddinner.com',<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forum: 'general',<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alignment: 'right', /* 'left', 'right' */<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background_color: '#A2CC3B',<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text_color: 'white', /* 'white', 'black' */<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hover_color: '#7A0100',<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lang: 'en' /* 'en', 'de', 'nl', 'es', 'fr' */<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/script&gt;</p>\r\n<p>&nbsp;</p>\r\n<p>Hopefully that will get you going!</p>\r\n<p>Thanks!</p>",
+    "PostedDate": "2011-05-24T05:29:06.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "668927",
+    "ThreadId": "258793",
+    "Html": "<p>I got a copy from https://nerddinner.svn.codeplex.com/svn/Trunk&nbsp;but all referenced libraries were missing. I could not build. Where are libraries? I also looked around but didn't see them anywhere in ND's SVN repository.</p>",
+    "PostedDate": "2011-09-07T21:50:33.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669084",
+    "ThreadId": "258793",
+    "Html": "<p>Tiendq,</p>\r\n<p>We use a technique that <a href=\"David Ebbo blogged about it here\" target=\"_blank\">David Ebbo blogged about</a> that allows us to NuGet to get the references without having to put all the package sources in the SVN repo.&nbsp;</p>\r\n<p>Is NuGet installed on the machine you're pulling source to?</p>\r\n<p>IS there a .nuget directory in the root of your Nerd Dinner directory?</p>",
+    "PostedDate": "2011-09-08T06:28:29.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

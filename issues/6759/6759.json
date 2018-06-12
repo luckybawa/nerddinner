@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "applied patch submitted by jonsagara to both the Trunk and VS2010-MVC3-Razor branches to resolve this issue.",
+    "ClosedDate": "2011-05-06T12:01:35.917-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "In the Index UnitTest, Assert is missing ?\nSo the Index UnitTest Failed.",
+    "LastUpdatedDate": "2011-05-06T12:01:35.917-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-07-29T13:44:28.37-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Index UnitTest Assert Missing",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6759
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I submitted a patch to fix this.",
+      "PostedDate": "2010-10-15T23:00:26.96-07:00",
+      "Id": 76106
+    }
+  ]
+}

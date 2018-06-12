@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "524581",
+    "ThreadId": "235392",
+    "Html": "\r\n<p>Hi!</p>\r\n<p>I've noticed that nerddinner is using a bit different version of DotNetOpenAuth in the MVC3 Razor version. To be more precise all of the HtmlHelper extension methods in DotNetOpenAuth.Mvc don't need the Page parameter which actually makes it possible to\r\n use them with Razor view engine.</p>\r\n<p>Where could one get a hold of that version?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>\r\n<p>Goran</p>\r\n",
+    "PostedDate": "2010-11-19T15:25:13.247-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "589028",
+    "ThreadId": "235392",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://nerddinner.codeplex.com/workitem/8582\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-03-30T12:35:44.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

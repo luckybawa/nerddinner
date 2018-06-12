@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:42:50.69-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "It appears that the search location watermark is not working in ie 9.  i can change the browser mode to ie 8 and it works, but it requires me to F12 and use the dev tools.",
+    "LastUpdatedDate": "2011-06-01T12:42:50.69-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-09-17T11:43:50.457-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "search location not working in IE 9",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7197
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "it appears that the popular dinners feature doesn't like ie 9 either.",
+      "PostedDate": "2010-09-17T11:45:13.9-07:00",
+      "Id": 76109
+    },
+    {
+      "Message": "I believe that both of these issues are fixed in changeset 65098",
+      "PostedDate": "2011-05-10T07:47:26.69-07:00",
+      "Id": 76110
+    }
+  ]
+}

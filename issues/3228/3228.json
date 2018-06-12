@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not sure why this was happening, but should be handled in latest version of the code",
+    "ClosedDate": "2011-08-16T09:00:10.68-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "I was reading through the MVC 1.0 book, and I confirmed this happens on NerdDinner.com also.  Basically if you try to create a new dinner and input an invalid date, you don't get a descriptive message explaining that the format is wrong.  The summary is simply empty.  It seems to me that there should be an overload for the Html.ValidationMessage() method that allows you to supply a message that you want to see in the summary as well as a message to show at the source of the error.  For example:\n\n<p>\n    <label for=\"EventDate\">Event Date:</label>\n    <%= Html.TextBox(\"EventDate\", String.Format(\"{0:g}\", Model.EventDate)) %>\n    <!--<%= Html.ValidationMessage(\"EventDate\", \"*\", \"Summary message goes here\") %>-->\n</p>",
+    "LastUpdatedDate": "2011-08-16T09:00:10.68-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-06-09T16:39:47.393-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ValidationSummary does not show clear messages",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3228
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479410,
+      "FileName": "nderror.png",
+      "DownloadUrl": ".\\479410"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Obviously those  tags shouldn't be around the ValidationMessage, but you get the picture :)",
+      "PostedDate": "2009-06-09T16:40:30.243-07:00",
+      "Id": 76070
+    }
+  ]
+}

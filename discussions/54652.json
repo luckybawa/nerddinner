@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "184296",
+    "ThreadId": "54652",
+    "Html": "I get the follwing error when building the App (VS2008)<br>\r\n<br>\r\nError 1 Could not load type 'NerdDinner.MvcApplication'. D:\\NerdDinner\\NerdDinner\\Global.asax 1 <br>\r\n<br>\r\nAny idea??<br>\r\n<br>\r\nBest regards<br>\r\nSooriya <br>\r\n<br>\r\nSOLVED:    It was me... You need to open the site as a &quot;NEW Project&quot;  not as &quot;NEW WEB Site&quot;..\r\n",
+    "PostedDate": "2009-04-27T17:58:08.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "185266",
+    "ThreadId": "54652",
+    "Html": "Thanks for coming back and giving us the solution!",
+    "PostedDate": "2009-04-29T17:28:16.363-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

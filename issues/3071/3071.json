@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This feature has been added to the razor branch. In the event the CDN is not available, code has been added to accomodate a local fallback.",
+    "ClosedDate": "2011-04-27T10:40:12.687-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "CDN - use Google's cached jQuery",
+    "LastUpdatedDate": "2011-04-27T10:40:12.687-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-05-18T13:57:37.94-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Pull jQuery from CDN",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3071
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

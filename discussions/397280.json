@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "918936",
+    "ThreadId": "397280",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I've been looking at this solution for a couple of days, thanks for the project! &nbsp;I'm running it from Visual Studio 2012 ...</p>\r\n<p>However, when I run this and try to log in with any OAuth method (ie: non-local) &nbsp;I get the above exception on this line in the Manage action on the AccountsController object:</p>\r\n<pre>ViewBag.HasLocalPassword = OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));</pre>\r\n<pre><br></pre>\r\n<pre>Any Ideas why this is broken in the source?  Is it my environment possibly?</pre>\r\n<pre><br></pre>\r\n<pre>Cheers,</pre>\r\n<pre><br></pre>\r\n<pre>james</pre>\r\n",
+    "PostedDate": "2012-09-28T04:32:37.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

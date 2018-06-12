@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "173905",
+    "ThreadId": "51839",
+    "Html": "Hi,<br>\r\n<br>\r\nGreat project.&nbsp; I noticed that nerddinner.com had an iPhone and Blackberry mobile version.&nbsp; Will those updates be released?&nbsp; <br>\r\n<br>\r\nThank in advance,<br>\r\n- Ben \r\n",
+    "PostedDate": "2009-03-31T07:37:53.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "173920",
+    "ThreadId": "51839",
+    "Html": "Probably later this week. I need to tidy up the code.<br><br><div>On Tue, Mar 31, 2009 at 7:37 AM, quest4denali <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0pt 0pt 0pt 0.8ex;padding-left:1ex\">   <div> <p>From: quest4denali</p> <div>Hi,<br>\r\n<br>\r\nGreat project.  I noticed that <a href=\"http://nerddinner.com\">nerddinner.com</a> had an iPhone and Blackberry mobile version.  Will those updates be released?  <br>\r\n<br>\r\nThank in advance,<br>\r\n- Ben \r\n</div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=51839&ANCHOR#Post173905\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:51839]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/project/unsubscribe/nerddinner\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2009-03-31T08:48:04.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174141",
+    "ThreadId": "51839",
+    "Html": "Great, I look forward to how the mobile sections were implemented.&nbsp; Excellent book, project, and podcast btw.<br>\r\n<br>\r\nBest Regards,<br>\r\n- Ben<br>\r\n",
+    "PostedDate": "2009-03-31T18:23:00.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "197820",
+    "ThreadId": "51839",
+    "Html": "<p>sorry to bother you about it, but any new info about the mobile version ?&nbsp;I am curious to check it out.&nbsp; thanks !&nbsp;</p>",
+    "PostedDate": "2009-06-04T09:32:39.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "198176",
+    "ThreadId": "51839",
+    "Html": "<p>I checked awhile ago and Scott Hanselman, had checked in the mobile updates.&nbsp; This is available under the &quot;Source Code&quot; tab.&nbsp; Just go to the latest entry and download.</p>\r\n<p>You'll also notice browser file has been updated to include the latest drop.</p>\r\n<p>Hope this helps.</p>\r\n<p>- Ben</p>",
+    "PostedDate": "2009-06-05T05:16:11.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "198267",
+    "ThreadId": "51839",
+    "Html": "<p>Thanks! &nbsp;I will take a look.</p>\r\n<p>Josh</p>",
+    "PostedDate": "2009-06-05T08:17:04.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

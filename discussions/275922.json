@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "684318",
+    "ThreadId": "275922",
+    "Html": "\r\n<p><span id=\"ReviewListText0\">&quot;The project type is not supported by this installation&quot; I download release 092011 and I have this error message, for against the version Tue May 25 2010 at 3:00 AM works fine! What can I do to rectify the situation.</span><br>\r\nThanks !</p>\r\n",
+    "PostedDate": "2011-10-14T08:29:41.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "684342",
+    "ThreadId": "275922",
+    "Html": "<p>The project is \"NerdDinner\", but NerdDinner.Test load correctly !</p>",
+    "PostedDate": "2011-10-14T09:33:03.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:44:45.54-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "me.yahoo.com/a/jhb9FR4kqILFIU2..... bla bla is displayed when you sign on using yahoo id",
+    "LastUpdatedDate": "2011-06-01T12:44:45.54-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-05-21T12:58:56.87-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Log On using Yahoo is weird",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6149
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Duplicate of 6285 (oddly enough) since broken RP discovery keeps Yahoo from sending an email address.",
+      "PostedDate": "2010-06-12T09:19:41.58-07:00",
+      "Id": 76091
+    },
+    {
+      "Message": "#6285 is duplicate not this :-/",
+      "PostedDate": "2010-06-23T13:19:26.587-07:00",
+      "Id": 76092
+    }
+  ]
+}

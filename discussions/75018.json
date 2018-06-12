@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "256706",
+    "ThreadId": "75018",
+    "Html": "<p>hello,</p>\r\n<p>i'm a newbie and want to learn asp.net mvc through the .pdf that i get in asp.net tutorial (nerddinner.com)</p>\r\n<p>the problem is when in chapter &quot;creating data model classes with linq to sql&quot; it seems i need to add some code</p>\r\n<p>but where i should add it? i have made NerdDinner.dbhml as described in tutorial.</p>\r\n<p>do i need to make some class?</p>\r\n<p>when i try to skip that part, in the &quot;NerdDinnerDataContext Class&quot; seems to add some code too. so i got stuck....</p>\r\n<p>can anybody give me some guidance how to add the code? i try to add it in NerdDInner.designer.cs which causing a lot of error</p>\r\n<p>&nbsp;</p>\r\n<p>thanks</p>\r\n<p>whale steward</p>\r\n<p>&nbsp;</p>\r\n<p>edit: i figure it out... move along now... sorry for stupid question and to ADMIN please delete this massage... thanx</p>",
+    "PostedDate": "2009-11-13T04:58:33.083-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

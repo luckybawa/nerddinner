@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "443566",
+    "ThreadId": "212821",
+    "Html": "<p>While investigating the code base for MVC2 during runs of NerdDinner, I noticed that a number of exceptions seem to be raised and swallowed by the mvc 2 framework.&nbsp; When breaking on ALL unhandled exceptions, I find that this happens when searching for a Partial View (such as NerdDinner's LoginStatus.ascx) in the /Shared folder of the site.</p>\r\n<p>System.Web.Mvc.VirtualPathProviderViewEngine(...) seems to try looking in the primary folder first (in this case /Home), and then trying the /Shared folder after ignoring the HttpException &quot;The file /Views/Home/LoginStatus.ascx does not exist&quot;. It then of course succeeds and all proceeds as expected.</p>\r\n<p>I'm wondering if anyone knows why System.Web.Mvc was coded this way. I've been taught (wrongly?) that its not correct to write code to &lt;expect&gt; and ignore exceptions like this. Exceptions should be used for truly &quot;exceptional&quot; conditions that do not happen when things are running normally.&nbsp; It bothers me a bit that the mvc framework itself does this. It seems it could have been coded to more properly check for existence  of the file before attempting to load it, instead of blindly loading it  and then ignoring the error that results. Is it some sort of performance consideration, where its faster to just trash the exception than to check file existence?</p>\r\n<p>This is obviously not a big problem, I just don't like seeing a bunch of exceptions ignored.&nbsp; Its hard enough making sure my own code is running properly without being distracted by the framework burping out messages like this. There are a number of these (13!) just to get the home page loaded for NerdDinner.&nbsp; Over half of these are for HttpException as described above, but others also show up.</p>\r\n<p>Again, not a big problem, but I'd appreciate it if anyone knows why MVC 2 was coded this way.</p>\r\n<p>Thanks !</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-16T17:54:18.367-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

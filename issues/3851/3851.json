@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This was fixed a while ago",
+    "ClosedDate": "2010-02-22T13:22:17.5-08:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "There is a bug in Site.css that causes an issue with the css around displaying the map in the appropriate location.\n\nOn line 339, remove the commas between the 4 padding values:\n    padding:0px, 10px, 0px, 10px;     -->    padding:0px 10px 0px 10px;\n\nto get things working right.\nTested with IE 8.",
+    "LastUpdatedDate": "2010-02-22T13:22:17.5-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-08-26T14:15:17.557-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bug in Site.css causes problem with the map display",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3851
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

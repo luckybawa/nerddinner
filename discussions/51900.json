@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "174127",
+    "ThreadId": "51900",
+    "Html": "I'm walking through the tutorial, step-by-step.<div><br></div><div>When it tells me to create the &quot;Details.aspx&quot; view, I do so, and receive 25 errors, that the names 'Html' and 'Model' don't exist in the current context.</div><div><br></div><div>The first line of the created view looks like this:</div><div>&lt;%@ Page Title=&quot;&quot; Language=&quot;C#&quot; MasterPageFile=&quot;~/Views/Shared/Site.Master&quot; Inherits=&quot;System.Web.Mvc.ViewPage&lt;NerdDinner.Models.Dinner&gt;&quot; %&gt;<br></div><div><br></div><div>If I take out the generic, and reference just System.Web.Mvc.ViewPage -- the errors go away.</div><div><br></div><div>Now... here's the lovely part -- If I load the source code from the codeplex site -- it functions without error.</div><div><br></div><div>I really want to walk through this -- I don't want to start with the finished project.  </div><div><br></div><div>Any ideas as to what could be causing this?</div><div><br></div><div>Thanks,</div><div>Simon</div><div><br></div><div><br></div><div><br></div>",
+    "PostedDate": "2009-03-31T17:22:40.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174168",
+    "ThreadId": "51900",
+    "Html": "This would make me wonder if the Project's namespace is NerdDinner or not. It would also make me wonder if ALL the classes have namespace NerdDinner around them.<br><div><br></div><div>\r\n2009/3/31 SimonPage <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span><br><blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">\r\n   <div> <p>From: SimonPage</p> <div>I'm walking through the tutorial, step-by-step.<div><br></div><div>When it tells me to create the &quot;Details.aspx&quot; view, I do so, and receive 25 errors, that the names 'Html' and 'Model' don't exist in the current context.</div>\r\n<div><br></div><div>The first line of the created view looks like this:</div><div>&lt;%@ Page Title=&quot;&quot; Language=&quot;C#&quot; MasterPageFile=&quot;~/Views/Shared/Site.Master&quot; Inherits=&quot;System.Web.Mvc.ViewPage&lt;NerdDinner.Models.Dinner&gt;&quot; %&gt;<br>\r\n</div><div><br></div><div>If I take out the generic, and reference just System.Web.Mvc.ViewPage -- the errors go away.</div><div><br></div><div>Now... here's the lovely part -- If I load the source code from the codeplex site -- it functions without error.</div>\r\n<div><br></div><div>I really want to walk through this -- I don't want to start with the finished project.  </div><div><br></div><div>Any ideas as to what could be causing this?</div><div><br></div><div>Thanks,</div><div>\r\nSimon</div><div><br></div><div><br></div><div><br></div></div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=51900&ANCHOR#Post174127\">full discussion online</a>.</p>\r\n <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:51900]\">nerddinner@discussions.codeplex.com</a>)</p> <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p>\r\n <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/project/unsubscribe/nerddinner\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2009-03-31T21:23:54.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174391",
+    "ThreadId": "51900",
+    "Html": "I checked the project properties: AssemblyName and Default Namespace are both &quot;NerdDinner&quot;<div><br></div><div>I've also gone through every cs file in my project, and they all begin (after the 'using' statements) with &quot;namespace NerdDinner.XXX&quot; (where XXX might be 'models, helpers, etc')</div><div><br></div><div>Any other thoughts?</div><div><br></div><div>Thanks,</div><div>Simon</div><div><br></div>",
+    "PostedDate": "2009-04-01T09:20:52.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174394",
+    "ThreadId": "51900",
+    "Html": "Also, too, remember that if I remove the &quot;&lt;NerdDinner.Models.Dinner&gt;&quot; generic from the page directive, the compiler is then able to find the Html and Model helpers (although the Model does not have the methods, obviously, of the type in the generic.&quot;<div><br></div><div>This has me stumped.  I tried it on a different machine and it worked fine.... but I -just- installed VS2008 and MVC 1.0 on this machine just before starting this project.</div><div><br></div><div>Thanks again,</div><div>Simon</div><div><br></div>",
+    "PostedDate": "2009-04-01T09:28:36.697-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174915",
+    "ThreadId": "51900",
+    "Html": "Can you diff the web.config from CodePlex with your own? I'm wondering if you're missing a compiler directive.<span style=\"white-space:pre\">\t</span> ",
+    "PostedDate": "2009-04-02T10:39:26.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174916",
+    "ThreadId": "51900",
+    "Html": "Do you still have a web.config in your View directory? There's the main web.config and then a tiny one in ~\\Views.<div>Does NerdDinner.Models.Dinner realy exist? Open the DLL in Reflector and make sure the type is there.<span style=\"white-space:pre\">\t</span></div>",
+    "PostedDate": "2009-04-02T10:42:57.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174918",
+    "ThreadId": "51900",
+    "Html": "Are you running 2008 SP1?<span style=\"white-space:pre\">\t</span>",
+    "PostedDate": "2009-04-02T10:44:27.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "189653",
+    "ThreadId": "51900",
+    "Html": "<p>hello,me too,i have the same problem</p>\r\n<p>no intellisense while writing &quot;Model.&quot;</p>",
+    "PostedDate": "2009-05-13T02:38:58.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "190854",
+    "ThreadId": "51900",
+    "Html": "<p>I had a similar problem in a different MVC app that was started well before MVC 1.0 came out. &nbsp;After much digging, I found the soultion here:&nbsp;<a href=\"http://stackoverflow.com/questions/615044/mvc-no-codebehind-strongly-typed-viewdata-headers-not-working\">http://stackoverflow.com/questions/615044/mvc-no-codebehind-strongly-typed-viewdata-headers-not-working</a></p>\r\n<p>Essentially you are most likely missing a web.config in the root of your Views folder with this key bit of XML content:</p>\r\n<p>\r\n<p>&nbsp;&nbsp; &nbsp;&lt;pages</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;validateRequest=&quot;false&quot;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pageParserFilterType=&quot;System.Web.Mvc.ViewTypeParserFilter, System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35&quot;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pageBaseType=&quot;System.Web.Mvc.ViewPage, System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35&quot;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;userControlBaseType=&quot;System.Web.Mvc.ViewUserControl, System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35&quot;&gt;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp;&lt;controls&gt;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;add assembly=&quot;System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35&quot; namespace=&quot;System.Web.Mvc&quot; tagPrefix=&quot;mvc&quot; /&gt;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp;&lt;/controls&gt;</p>\r\n<p>&nbsp;&nbsp; &nbsp;&lt;/pages&gt;</p>\r\n</p>",
+    "PostedDate": "2009-05-15T13:16:52.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

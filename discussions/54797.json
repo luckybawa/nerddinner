@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "184832",
+    "ThreadId": "54797",
+    "Html": "<p>Hello,<br>\r\n<br>\r\nI am from Brazil and I am getting an error with the latitude and longitude number of the dinner model.<br>\r\n<br>\r\nWhen creating a new dinner, the ModelState.IsValid is always false because of 2 errors that happens when trying to convert a string into a double.<br>\r\n<br>\r\nThe problem is that the my culture is set to pt-BR., so, the decimal separator is (,) and group separator is (.).<br>\r\nI couldn´t find where there is the conversion of the latitude and longitude into double values, so I could fix the number format.</p>\r\n<p>When the culture is set to en-us then the page works fine.<br>\r\n<br>\r\nHere are more details about the error: <br>\r\nExcetion = &quot;The parameter conversion from type 'System.String' to type 'System.Double' failed. See the inner exception for more information.&quot;<br>\r\n<br>\r\nInner Exception= &quot;-15.769999623298645 is not a valid Double&quot;<br>\r\n<br>\r\nStackTrace:<br>\r\n<br>\r\ninSystem.Web.Mvc.ValueProviderResult.ConvertSimpleType(CultureInfo culture, Object value, Type destinationType)<br>\r\nin System.Web.Mvc.ValueProviderResult.UnwrapPossibleArrayType(CultureInfo culture, Object value, Type destinationType)<br>\r\nin System.Web.Mvc.ValueProviderResult.ConvertTo(Type type, CultureInfo culture)<br>\r\nin System.Web.Mvc.DefaultModelBinder.ConvertProviderResult(ModelStateDictionary modelState, String modelStateKey, ValueProviderResult valueProviderResult, Type destinationType)<br>\r\n<br>\r\n&quot;Does any one knows how to fix it?<br>\r\n<br>\r\n<br>\r\nSorry, I didn´t see the other post about it (<a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=54102\">http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=54102</a>)</p>\r\n",
+    "PostedDate": "2009-04-28T23:22:01.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

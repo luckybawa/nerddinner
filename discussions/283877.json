@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "715966",
+    "ThreadId": "283877",
+    "Html": "<p>Hi everyone!<br /> I have just downloaded the latest nerddinner 2.0 (Change Set: 48637) (22. december 2011) and opened it in visual studio, I have tried to run it in localhost, and everything is working fine, all subpages, creating a dinner etc.&nbsp;</p>\n<p>I have then tried to publish the project using the visual studio built in pusblishing wizard. I'm publishing to a local folder on C drive (<span>just files needed by the site</span>). Hereafter I upload everything inside this folder on to a webhotel that is the root of a webhotel.</p>\n<p>When I go to my domain name www.mydomain.be (hosted on a IIS 7 (asp.net 4)) and have a look at it, then everything looks fine, however all subpages does not work. When I click on \"log on\", \"host a dinner\" or \"about\" links or any other link, I receive a 404 error page:</p>\n<p>HTTP Error 404.0 - Not FoundThe resource you are looking for has been removed, had its name changed, or is temporarily unavailable.</p>\n<p>I have not changed anything within the config files,&nbsp;ConnectionStrings.config and web.config.&nbsp;</p>\n<p><br /> Am I missing somehing?</p>",
+    "PostedDate": "2011-12-22T02:39:32.647-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716811",
+    "ThreadId": "283877",
+    "Html": "<p>The solution</p>\n<p>My webhotel was running&nbsp;<span>IIS 7.0 in classic mode, so I changed it to integrated mode. Now it's working :)</span></p>\n<p>P.S. I got the solution from:&nbsp;<a href=\"http://forums.asp.net/p/1502332/4747821.aspx/1?p=True&amp;t=634602706661366171\">http://forums.asp.net/p/1502332/4747821.aspx/1?p=True&amp;t=634602706661366171</a></p>\n<p><span>Sincerely</span></p>\n<p><span>Mohammad</span></p>",
+    "PostedDate": "2011-12-23T17:55:46.13-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

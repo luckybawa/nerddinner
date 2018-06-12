@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "649439",
+    "ThreadId": "267035",
+    "Html": "\r\n<p><span style=\"font-size:11pt\">I am using MVC 3 asp.net web application with entity framework , and i have also created a repository class to encapsulate all my business logic in the same way the repository class was implemented in the nerd dinner example\r\n MVC 2.</span></p>\r\n<p><span style=\"font-size:11pt\">But lately i read a the &ldquo;The Contoso University sample web application.&rdquo; Example Which is available on the following link:-</span></p>\r\n<p><a href=\"http://www.asp.net/entity-framework/tutorials/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application\">http://www.asp.net/entity-framework/tutorials/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application</a></p>\r\n<p>they used i think different way and syntax to implement the repository pattern.</p>\r\n<p>So what are the major differences between these , and which apprahc is better to follow .</p>\r\n<p>Thanks in advance for any help.</p>\r\n<p>Best Regard</p>\r\n",
+    "PostedDate": "2011-07-29T02:19:55.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

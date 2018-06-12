@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "591408",
+    "ThreadId": "252457",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I am trying to learn MVC by going thru NerdDinner</p>\r\n<p>I have this code in my DinnersController</p>\r\n<p>&nbsp;Function Index() As ActionResult &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Dim dinners = dinnerRepository.FindUpcomingDinners().ToList() 'As DinnerRepository&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\r\n<p><span style=\"white-space:pre\"></span>Return View(&quot;Index&quot;, dinners)&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</p>\r\n<p>End Function</p>\r\n<p>and i get this error:</p>\r\n<h2><strong>The model item passed into the dictionary is of type 'System.Data.Linq.DataQuery`1[NerdDinner.Dinner]', but this dictionary requires a model item of type 'NerdDinner.Dinner'.</strong></h2>\r\n<p><strong>Thanks</strong></p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-04-04T09:44:36.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "592159",
+    "ThreadId": "252457",
+    "Html": "<p>In your \\Views\\Dinners\\Index.aspx View, what is the &lt;%@ Page  Inherits property value? Based on the error message I would suspect that  it's System.Web.Mvc.ViewPage&lt;NerdDinner.Models.Dinner&gt; . Since it  looks like you're using VB maybe it's System.Web.Mvc.ViewPage(Of  NerdDinner.Models.Dinner).</p>\r\n<p>You're passing it a List of Dinners,  so it should be something more like System.Web.Mvc.ViewPage(Of  NerdDinner.Helpers.PaginatedList(Of NerdDinner.Models.Dinner))</p>\r\n<p>Give that a try and see if it helps.</p>",
+    "PostedDate": "2011-04-05T09:21:34.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

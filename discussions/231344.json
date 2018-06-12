@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "508866",
+    "ThreadId": "231344",
+    "Html": "<h2><span style=\"font-weight:normal;font-size:13px\">This is basic implementation of the nerdinner model. I thought you might want to take a look at the Java and Android implementations if you want to check other platforms. Also there's a simple approach to persistence there with oodb db4o (<a rel=nofollow href=\"http://developer.db4o.com/\">http://developer.db4o.com</a>)</span></h2>\r\n<p><span style=\"font-weight:normal;font-size:13px\">Best!</span></p>\r\n<p>German</p>",
+    "PostedDate": "2010-10-18T09:16:22.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

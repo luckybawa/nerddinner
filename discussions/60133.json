@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "203572",
+    "ThreadId": "60133",
+    "Html": "<p>I was curious so I downloaded the source and modified it to work on Windows Azure.&nbsp; If there's enough interest, I can post a blog on the differences.</p>\r\n<p><a href=\"http://nerddinner.cloudapp.net/\">http://nerddinner.cloudapp.net/</a></p>\r\n<p>FYI - I think I already found a bug, but it's a small one :-)</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-19T18:29:46.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "204713",
+    "ThreadId": "60133",
+    "Html": "Fantastic! I'd love to see a blog post and source.<br><br><div>On Fri, Jun 19, 2009 at 6:29 PM, mpapas <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: mpapas</p> <div><p>I was curious so I downloaded the source and modified it to work on Windows Azure.  If there's enough interest, I can post a blog on the differences.</p>\r\n\r\n\r\n<p><a href=\"http://nerddinner.cloudapp.net/\">http://nerddinner.cloudapp.net/</a></p>\r\n<p>FYI - I think I already found a bug, but it's a small one :-)</p>\r\n<p> </p></div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=60133&ANCHOR#Post203572\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:60133]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/project/unsubscribe/nerddinner\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2009-06-23T16:56:24.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "205613",
+    "ThreadId": "60133",
+    "Html": "<p>Source and blog post @:</p>\r\n<p><a href=\"http://blogs.msdn.com/mpapas/archive/2009/06/25/nerddinner-on-azure.aspx\">http://blogs.msdn.com/mpapas/archive/2009/06/25/nerddinner-on-azure.aspx</a></p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-25T12:36:30.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

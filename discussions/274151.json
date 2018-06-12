@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "677842",
+    "ThreadId": "274151",
+    "Html": "\r\n<p>I am getting in error in my index.aspx because of these lines. Specifically &quot;Model.HasPreviousPage&quot; and &quot;Model.HasNextPage&quot;&nbsp;</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>\r\n    <span style=\"background-color:yellow\">&lt;%</span> if (Model.HasPreviousPage)\r\n       { <span style=\"background-color:yellow\">%&gt;</span>\r\n    <span style=\"background-color:yellow\">&lt;%=</span> Html.RouteLink(&quot;&lt;&lt;&lt;&quot;, &quot;UpcomingDinners&quot;, new { page = (Model.PageIndex-1) }) <span style=\"background-color:yellow\">%&gt;</span>\r\n    <span style=\"background-color:yellow\">&lt;%</span> } <span style=\"background-color:yellow\">%&gt;</span>\r\n    <span style=\"background-color:yellow\">&lt;%</span> if (Model.HasNextPage)\r\n       {  <span style=\"background-color:yellow\">%&gt;</span>\r\n    <span style=\"background-color:yellow\">&lt;%=</span> Html.RouteLink(&quot;&gt;&gt;&gt;&quot;, &quot;UpcomingDinners&quot;, new { page = (Model.PageIndex &#43; 1) }) <span style=\"background-color:yellow\">%&gt;</span>\r\n    <span style=\"background-color:yellow\">&lt;%</span> } <span style=\"background-color:yellow\">%&gt;</span>\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>I have added the paginatedlist.cs to my Helpers folder and placed using NerdDinner.Helpers at the top of the DinnersController.</p>\r\n<p>&nbsp;</p>\r\n<p>What else am I missing?</p>\r\n",
+    "PostedDate": "2011-09-28T11:37:57.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "677848",
+    "ThreadId": "274151",
+    "Html": "<p>Resolved.</p>\r\n<p>&nbsp;</p>\r\n<p>the index aspx needs</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>Inherits=\"System.Web.Mvc.ViewPage&lt;NerdDinner.Helpers.PaginatedList&lt;NerdDinner.Models.Dinner&gt;&gt;\"\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2011-09-28T11:47:53.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

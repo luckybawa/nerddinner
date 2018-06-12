@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "200421",
+    "ThreadId": "59199",
+    "Html": "<p>&nbsp;</p>\r\n<p>I noticed that you have a class-level Context.</p>\r\n<p>I thought that, in general, this was not recommended.</p>\r\n<p>Can you speak to the issue?</p>\r\n<p>&nbsp;</p>\r\n<p>Here is a sample of what I am talking about in this question..</p>\r\n<p>using System;<br>using System.Collections.Generic;<br>using System.Linq;<br>using System.Web;</p>\r\n<p>namespace NerdDinner.Models {</p>\r\n<p>&nbsp;&nbsp;&nbsp; public class DinnerRepository : NerdDinner.Models.IDinnerRepository {</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NerdDinnerDataContext db = new NerdDinnerDataContext();</p>\r\n<p>...</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you.</p>\r\n<p>-- Mark Kamoski</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-11T07:38:33.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

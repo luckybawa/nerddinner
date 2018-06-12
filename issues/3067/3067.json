@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Data Annotations is currently supported in the latest code",
+    "ClosedDate": "2011-08-16T09:02:09.513-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Dave?",
+    "LastUpdatedDate": "2011-08-16T09:02:09.513-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-05-18T13:56:37.023-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "xVal support and/or DataAnnotations support.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3067
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "682914",
+    "ThreadId": "275531",
+    "Html": "\r\n<p>From the website it says that i should just get the latest to see the vNext changes.&nbsp; When i fire up the solution, i see that a few references are unresolved.&nbsp; In addition,&nbsp; i see that packages.config and actual packages folder are out of\r\n sync (might be the reason why the references show up problematic).&nbsp; Am I missing something here?</p>\r\n",
+    "PostedDate": "2011-10-11T19:22:02.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

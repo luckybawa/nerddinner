@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "685920",
+    "ThreadId": "276341",
+    "Html": "<p>I downloaded the MVC3 version from the source repository.</p>\n<p>The solution in the 092011 folder gives me this error when I try to view upcoming dinners:</p>\n<h2><em><em>A provider factory for the specified store connection of type 'MvcMiniProfiler.Data.EFProfiledDbConnection' could not be discovered. The registered provider factories and all provider factories in the assembly where 'MvcMiniProfiler.Data.EFProfiledDbConnection'  is defined were searched for a factory that would produce a matching connection.</em></em></h2>\n<p><em><em>I have reference to&nbsp; </em></em>MvcMiniProfiler &amp; MvcMiniProfiler.EntityFramework</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><em><em><br /> </em></em></p>",
+    "PostedDate": "2011-10-18T11:23:00.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

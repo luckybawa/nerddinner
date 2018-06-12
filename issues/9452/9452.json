@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This issue has been addressed and fixed in the new version just released.",
+    "ClosedDate": "2011-09-06T07:05:57.25-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I was expecting all of the upcoming dinners to be pinned on the home page map.  When creating an event sometimes they show up and sometimes they don't.  I'm not sure what triggers the events to be pinned on the home page map.",
+    "LastUpdatedDate": "2011-09-06T07:05:57.25-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-08-30T04:15:49.017-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Dinners Aren't Pinned On Home Page Map",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9452
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Did you do this on nerddinner.com or on your local copy? The address textbox onBlur triggers placing a pin on the map (in the edit screen). When you search, there is an object called jsonDinners that the nerddinner.js file uses to spin through the collection - placing a pin on the map. The caveat is that the address must resolve to a lat/long. If it does not, no pin results. Can you post the address you are using? I'll try to duplicate what you are seeing.\r\n\r\nJohn",
+      "PostedDate": "2011-08-30T06:35:33.643-07:00",
+      "Id": 76128
+    },
+    {
+      "Message": "I was/am using nerddinner.com.\r\n\r\nI'm referring to map on the home page when it loads; not when searching.  When I go to nerddinner.com there is a map.  That map has some pins on it.  However, not all the dinners are pinned on that map.  \r\n\r\nWhen adding a dinner in the Edit screen, the pin DOES get placed on that map.  However, on the home page map I do not see the pin for the event.\r\nhttp://www.nerddinner.com/4991\r\n2500 N Central Expy, Plano, TX 75074 , USA\r\n",
+      "PostedDate": "2011-08-30T07:51:33.017-07:00",
+      "Id": 76129
+    }
+  ]
+}

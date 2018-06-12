@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "167202",
+    "ThreadId": "49950",
+    "Html": "Hi! If you want to contribute, please do!<div><br></div><div>I'm working on a more formal roadmap, but here are some short-term goals:</div><ul>    <li>OpenID</li>    <li>Support all Countries</li>    <li>Exploit Virtual Earth's APIs more</li>    <li>RSS Feeds for all pages</li>    <li>iCal downloads for all events</li>    <li>&quot;My&quot; Dinners</li>    <li>Mobile version of the site</li>    <li>Twitter integration? Facebook integration?</li>    <li>Blog Badges showing nearby dinners with automatic geo-location.</li>    <li>As many Tests and as much Coverage as we can stomach.</li>    <li>Continuous Integration Server somewhere?</li></ul><div>If you want to work on something, propose a general design here in the discussions, take feedback and go do it! Then, post the feature in the Patches section of the Releases tab.</div>",
+    "PostedDate": "2009-03-11T22:34:42.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "168841",
+    "ThreadId": "49950",
+    "Html": "<ol id=false>    <li>I want to contribute to the project, i wrote some code, but how will i post the patches?</li>    <li>when i checkout the code, some tests fails</li></ol>",
+    "PostedDate": "2009-03-16T18:48:23.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "169567",
+    "ThreadId": "49950",
+    "Html": "I'd second the motion.&nbsp; How do we apply patches?&nbsp; <br>\r\n<br>\r\nVolkanuzun: tests seems to fail b/c there is not enough data for certain tests.<br>\r\n",
+    "PostedDate": "2009-03-18T13:22:30.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "170719",
+    "ThreadId": "49950",
+    "Html": "Hm..I'll check the tests again. Which download has failing tests?<div><br></div><div>You can submit patches under the &quot;Source Code&quot; tab.</div>",
+    "PostedDate": "2009-03-22T21:44:20.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "170724",
+    "ThreadId": "49950",
+    "Html": "any specs for implementing my dinner section? or can i start writing that section :)\r\n",
+    "PostedDate": "2009-03-22T22:01:22.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "170725",
+    "ThreadId": "49950",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://nerddinner.codeplex.com/WorkItem/View.aspx?WorkItemId=2344\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2009-03-22T22:03:17.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174151",
+    "ThreadId": "49950",
+    "Html": "I had some problems submitting a TortoiseSVN generated .patch file.  I get a nice red error message saying the patch file could not be read whenever I try to submit the patch.  I don't know if this is because I already submitted a patch with just the class file (.cs file).<div><br></div><div>Has anyone else had any problems submitting a .patch file that was generated with the Tortoise client?  I'm on Vista 32bit with VS 2008 Professional.</div>",
+    "PostedDate": "2009-03-31T19:52:01.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "432326",
+    "ThreadId": "49950",
+    "Html": "<p>Guys,</p>\r\n<p>the source code is not the same version that is @ nerddinner.com. Is the latest one available somewhere? I want to specifically look at OpenID and some other implementations.</p>",
+    "PostedDate": "2010-04-17T14:56:09.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "432336",
+    "ThreadId": "49950",
+    "Html": "<div>It's in the source code tab.<br><br><div>--</div>Scott Hanselman - Tiny phone, tiny email</div><div><br>On Apr 17, 2010, at 2:56 PM, &quot;gopi316&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br><br></div><div></div><blockquote><div> <p>From: gopi316</p> <div id=ThreadNotificationPostBody><p>Guys,</p>\r\n<p>the source code is not the same version that is @ <a href=\"http://nerddinner.com\">nerddinner.com</a>. Is the latest one available somewhere? I want to specifically look at OpenID and some other implementations.</p></div>   </div></blockquote>",
+    "PostedDate": "2010-04-17T15:57:50.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "432847",
+    "ThreadId": "49950",
+    "Html": "<p>Thanks Scott!!</p>",
+    "PostedDate": "2010-04-19T12:49:48.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

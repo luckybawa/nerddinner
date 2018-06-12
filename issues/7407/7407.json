@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:42:24.55-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "To Reproduce:\n1. Start VS 2010 debugging (F5).\n2. Navigate to /Dinners/Create (login required)\n3. Click Save (without entering any data into the text boxes)\n\nVisual Studio breaks at NerdDinner.Designer.cs line 216 with \nConstraintException was unhandled by user code.\n\"This property cannot be set to a null value.\"\n\nNote this exception is not generated when the project is Started without Debugging (Ctrl+F5)\n\nIs this an issue with the Visual Studio Debugger?",
+    "LastUpdatedDate": "2011-06-01T12:42:24.55-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-10-13T15:27:08.947-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "/Dinners/Create unhandled ConstraintException during VS 2010 Debug",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 7407
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I'm unable to duplicate this issue. I wonder if it's been fixed in the meantime?",
+      "PostedDate": "2011-05-06T12:44:16.4-07:00",
+      "Id": 76114
+    },
+    {
+      "Message": "Can't duplicate this... Calling it fixed!",
+      "PostedDate": "2011-05-10T08:16:30.96-07:00",
+      "Id": 76115
+    }
+  ]
+}

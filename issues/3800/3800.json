@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Use the other branches for older IDEs.",
+    "ClosedDate": "2011-06-01T12:48:14.31-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I downloaded the NerdDinner sources to try and build it because the one I'm doing by hand won't compile. To my sorrow, the IDEs (both 2008 & 2005) won't open the project file. Apparantly it is a 2003 file and neither of the two IDE's I have know how to convert it for some reason ???",
+    "LastUpdatedDate": "2011-06-01T12:48:14.31-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-08-20T09:31:56.46-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "NerdDinner CSPROJ won't open with Viz Studio 2008, 2005",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3800
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479411,
+      "FileName": "NerdDinner.csproj",
+      "DownloadUrl": ".\\479411"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I think you should be opening the .sln file in the IDE.",
+      "PostedDate": "2009-10-12T05:15:41.597-07:00",
+      "Id": 76075
+    },
+    {
+      "Message": "Also make sure you have MVC installed. Visual Studio will complain about the project file otherwise.",
+      "PostedDate": "2009-10-12T09:10:24.63-07:00",
+      "Id": 76076
+    }
+  ]
+}

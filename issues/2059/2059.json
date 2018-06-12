@@ -1,0 +1,76 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-06-01T12:49:25.143-07:00",
+    "CommentCount": 6,
+    "Custom": "",
+    "Description": "http://en.wikipedia.org/wiki/North_American_Numbering_Plan\n\nlooks like the RegEx prevents area code starting w/ \"1\", \nbut validation is incomplete.\n\nwe use something like this: return (p => !(p.Prefix % 100 == 11) && !(p.Prefix / 100 == 1) && !(p.AreaCode / 100==1));\n\nAlan",
+    "LastUpdatedDate": "2011-06-01T12:49:25.143-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-11T09:04:51.893-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PhoneValidator - North America Numbering Plan",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2059
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479404,
+      "FileName": "usa-phone-tests.patch",
+      "DownloadUrl": ".\\479404"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I would also suggest that a tool-tip or text on the page to provide the user with an example format that the validator will be looking for. I had to try several times to get this to submit.  I used the format XXX-XXX-XXXX",
+      "PostedDate": "2009-03-11T12:47:18.65-07:00",
+      "Id": 76029
+    },
+    {
+      "Message": "Patch w/ (failing) tests for suggested legal USA phone formats.",
+      "PostedDate": "2009-03-11T18:24:59.187-07:00",
+      "Id": 76030
+    },
+    {
+      "Message": "The RegEx is a little dicey when it comes to some of the countries as there are so many formats that are allowed (like the UK) and so many variations. I'll take a look at the failing tests and see if we can get something better. It's hit and miss because of the variations, someone is bound to come up with something that doesn't work. I'm planning to look at providing better error messages (or better yet a pre-message when you select the country) to show the valid format(s).",
+      "PostedDate": "2009-03-12T20:59:33.88-07:00",
+      "Id": 76031
+    },
+    {
+      "Message": "I would love to help out and get this going.  what's process of patching the source code repos? I am new to contributing.",
+      "PostedDate": "2009-03-23T20:32:14.313-07:00",
+      "Id": 76032
+    },
+    {
+      "Message": "Phone validation was removed in r23403",
+      "PostedDate": "2009-05-06T22:13:50.667-07:00",
+      "Id": 76033
+    },
+    {
+      "Message": "Phone validation was removed in r23403",
+      "PostedDate": "2009-05-06T22:14:59.877-07:00",
+      "Id": 76034
+    }
+  ]
+}

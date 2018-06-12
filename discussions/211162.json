@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "437615",
+    "ThreadId": "211162",
+    "Html": "<p>I open the solution (with no modifications), add a dinner (with a valid address) and everything works fine.</p>\r\n<p>I re-edit the address field (with a second valid adress) and I get&nbsp;the following&nbsp;error message:</p>\r\n<p><span>Please correct the errors and try again.</span></p>\r\n<ul>\r\n<li>A value is required.</li>\r\n<li>A value is required.</li>\r\n</ul>\r\n<p>The address of a dinner cannot be changed.&nbsp; Has anyone else seen this error and can you perhaps suggest a fix?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-04-30T09:50:33.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

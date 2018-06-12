@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "468085",
+    "ThreadId": "219654",
+    "Html": "<p>I am not able to open the Nerddinner solution file in VS2008 sp1, when i create a new blank solution and try to add the NerDinner.csproj to it , it pops up a message &quot;unable to read the project file NerdDinner.Csproj&quot; follwed by &quot; the Imported Project <em>project path</em> was not found Confirm that the path in the &lt;import&gt; decleration is correct , and that the file exists on the disk&quot;&nbsp; Also i cannot see the path C:\\Program Files\\MSBuild\\Microsoft\\VisualStudio\\v10.0\\WebApplications\\Microsoft.WebApplication.targets is not available as i dont have VS2010 installed on my machine.</p>\r\n<p>&nbsp;</p>\r\n<p>Now Should i conclude that i need to install VS2010 to open the project or i can still do with VS2008. Please help</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>Zubair</p>",
+    "PostedDate": "2010-07-15T23:26:00.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468290",
+    "ThreadId": "219654",
+    "Html": "You should be to open up the original NDv1 download and use that CSProj.<br><br><div>On Thu, Jul 15, 2010 at 11:26 PM, zubairmasoodi <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: zubairmasoodi</p> <div><p>I am not able to open the Nerddinner solution file in VS2008 sp1, when i create a new blank solution and try to add the NerDinner.csproj to it , it pops up a message &quot;unable to read the project file NerdDinner.Csproj&quot; follwed by &quot; the Imported Project <em>project path</em> was not found Confirm that the path in the &lt;import&gt; decleration is correct , and that the file exists on the disk&quot;  Also i cannot see the path C:\\Program Files\\MSBuild\\Microsoft\\VisualStudio\\v10.0\\WebApplications\\Microsoft.WebApplication.targets is not available as i dont have VS2010 installed on my machine.</p>\r\n\r\n\r\n<p> </p>\r\n<p>Now Should i conclude that i need to install VS2010 to open the project or i can still do with VS2008. Please help</p>\r\n<p> </p>\r\n<p>Thanks</p>\r\n<p>Zubair</p></div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=219654&ANCHOR#Post468085\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:219654]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br>Help me? <a href=\"http://hnsl.mn/fightdiabetes\">http://hnsl.mn/fightdiabetes</a><br>",
+    "PostedDate": "2010-07-16T10:26:43.703-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468297",
+    "ThreadId": "219654",
+    "Html": "<p>Thank you so much Scott</p>\r\n<p>But i doubt NDV1 targets MVC 2 which is my concern , i actually want to build on with NerdDinner targetting MVC 2 .&nbsp;</p>\r\n<p>and yes i must say that this is matter of pride to have one's question being answerd by a man of your repute.</p>\r\n<p>your help is always appreciated&nbsp; . Hope you will give some solution to it</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers</p>\r\n<p>Zubair Masoodi</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-16T10:55:13.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468303",
+    "ThreadId": "219654",
+    "Html": "Ideally there should be a NerdDinner2008.csproj and NerdDinner2010.csproj. I'll talk to Jon and see if we have that.<br><br><div>On Fri, Jul 16, 2010 at 10:55 AM, zubairmasoodi <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: zubairmasoodi</p> <div><p>Thank you so much Scott</p>\r\n<p>But i doubt NDV1 targets MVC 2 which is my concern , i actually want to build on with NerdDinner targetting MVC 2 . </p>\r\n<p>and yes i must say that this is matter of pride to have one's question being answerd by a man of your repute.</p>\r\n<p>your help is always appreciated  . Hope you will give some solution to it</p>\r\n<p> </p>\r\n<p>Cheers</p>\r\n<p>Zubair Masoodi</p>\r\n<p> </p>\r\n<p> </p></div><div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=219654&ANCHOR#Post468297\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:219654]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div></div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br>Help me? <a href=\"http://hnsl.mn/fightdiabetes\">http://hnsl.mn/fightdiabetes</a><br>",
+    "PostedDate": "2010-07-16T11:08:33.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468306",
+    "ThreadId": "219654",
+    "Html": "<p>Scott, That will be great effort and undoubtedly would be acknowledged by one and all, there will be a sizable number of developers who have to rely on vS2008</p>\r\n<p>and would not be in&nbsp; a position to upgrade to VS2010 due to financial problems.</p>\r\n<p>And personally i am more inclined to work on MVC 2 and NerdDinner offers a good learning platform</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks Once again</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-16T11:16:18.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468308",
+    "ThreadId": "219654",
+    "Html": "Understood. Two options:<div><br></div><div>* You can run the sample on the Free VS2010 Express Web Version.</div><div>* If you look in the downloads (or in Browse Source Code) there should be a VS2008 MVC2 Branch that will have a project for you to learn from.</div>\r\n\r\n<div><br></div><div>Let me know if that works?<br><br><div>On Fri, Jul 16, 2010 at 11:16 AM, zubairmasoodi <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: zubairmasoodi</p> <div><p>Scott, That will be great effort and undoubtedly would be acknowledged by one and all, there will be a sizable number of developers who have to rely on vS2008</p>\r\n\r\n\r\n<p>and would not be in  a position to upgrade to VS2010 due to financial problems.</p>\r\n<p>And personally i am more inclined to work on MVC 2 and NerdDinner offers a good learning platform</p>\r\n<p> </p>\r\n<p>Thanks Once again</p>\r\n<p> </p></div><div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=219654&ANCHOR#Post468306\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:219654]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div></div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br>Help me? <a href=\"http://hnsl.mn/fightdiabetes\">http://hnsl.mn/fightdiabetes</a><br>\r\n</div>",
+    "PostedDate": "2010-07-16T11:20:33.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468318",
+    "ThreadId": "219654",
+    "Html": "<p>Thanks a ton Scott</p>\r\n<p>I got it</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-16T11:40:03.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468323",
+    "ThreadId": "219654",
+    "Html": "<p>As Scott said, there's a VS2008 / MVC 2 branch available in the source code tree: <a href=\"http://nerddinner.codeplex.com/SourceControl/changeset/view/51901#876105\">http://nerddinner.codeplex.com/SourceControl/changeset/view/51901#876105</a>&nbsp;(screenshot below)</p>\r\n<p>We can't just have a VS2008 solution in the trunk because the code is using .NET 4 features. The VS2008-MVC2 solution is updated for MVC 2. It doesn't have all the newest features (yet), but should be plenty if you're looking for a sample project to learn MVC 2.</p>\r\n<p><img src=\"http://content.screencast.com/users/jongalloway/folders/Jing/media/2bf46df6-3306-48b9-853e-644593a961e1/VS2008 _ MVC 2 Solution.png\" alt=\"\"></p>",
+    "PostedDate": "2010-07-16T11:59:47.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "515572",
+    "ThreadId": "219654",
+    "Html": "\r\n<p>I am working through the NerdDinner tutorial as a way of learning MVC, but, like Zubair, I am also using VS 2008.</p>\r\n<p>I made adjustments for some of the items which were part of VS 2010 that weren't available for VS 2008, but two things have me stumped.</p>\r\n<p>1) the links to the RSVP sets are not showing up in the Dinners object. I followed the instructions to use the ADO.Net Entity Data Model. But of course, in VS2008 the Entity Framework does not automatically implement the foreign key relationship. When I\r\n downloaded the VS 2008 solution I see that it does not use the Entity Framework, but uses Link to SQL instead.</p>\r\n<p>a. Is the reason that the VS 2008 solution uses Link to SQL Classes (.dbml) instead of Entities (.edmx), because it doesn't implement the foreign key relationships?</p>\r\n<p>b. Is it possible to get the RSVP sets to work using the Entity Framework, and if so, how would the code have to be written ?</p>\r\n<p>2) The map works based on the address lookup, but the Latitude and Longitude are not getting updated in the database. Any suggestions?</p>\r\n<p>Thanks,</p>\r\n<p>Robert Tanenbaum</p>\r\n",
+    "PostedDate": "2010-11-01T13:14:48.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

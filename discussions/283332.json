@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "713695",
+    "ThreadId": "283332",
+    "Html": "\r\n<p>Is there any version which uses pure ado.net with stored procedures and data readers/data sets ? Whatever sample i came across using entity framework or Linq to Sql.</p>\r\n",
+    "PostedDate": "2011-12-17T15:18:04.007-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "721805",
+    "ThreadId": "283332",
+    "Html": "\r\n<div>MSDN has a NerdDinner sample with four different Data Access examples like this.<br>\r\n<br>\r\n--\r\n<div>Scott Hanselman </div>\r\n</div>\r\n<div><br>\r\nOn Dec 17, 2011, at 3:18 PM, &quot;kshyju&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: kshyju</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Is there any version which uses pure <a href=\"http://ado.net\">ado.net</a> with stored procedures and data readers/data sets ? Whatever sample i came across using entity framework or Linq to Sql.</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-01-06T21:09:13.303-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

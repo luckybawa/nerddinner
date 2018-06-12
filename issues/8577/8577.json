@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:42:10.757-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "the code for Home/Xdrs sets the ContentType to \"application/xrds+xm\" - its missing the L",
+    "LastUpdatedDate": "2011-06-01T12:42:10.757-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-03-29T17:59:41.41-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "the code for Home/Xdrs sets the ContentType to \"application/xrds+xm\" - its missing the L",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8577
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "fixed per Scott Hanselman",
+      "PostedDate": "2011-05-10T14:39:52.62-07:00",
+      "Id": 76121
+    }
+  ]
+}

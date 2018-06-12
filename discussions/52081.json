@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "174818",
+    "ThreadId": "52081",
+    "Html": "Hi,<br>\r\n<br>\r\nI don't have any kind of experience with ASP.NET and Visual Studio 2008 and I'm trying to learn ASP.NET MVC using NerdDinner.com Application. <br>\r\nMy big problem now is SQL Express because i don't have it, I'm using Visual Studio 2008 SP1 + .NET 3.5 with Microsoft SQL Server 2008 on Windows 2008 Server Enterprise and I don't know from where to start to make NerdDinner.com Application to work with SQL Server 2008.<br>\r\n<br>\r\nSomebody can give me some hints or guide me to make this application working on my environment?<br>\r\n<br>\r\nThanks!<br>\r\n",
+    "PostedDate": "2009-04-02T07:27:12.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174891",
+    "ThreadId": "52081",
+    "Html": "Sure, the only difference will be that the connection string will not include \\SQLEXPRESS at the end. Rather than creating the MDF file in the App_Data folder, you'll use the Server Explorer (or your SQL Studio or whatever your favorite DB utility is) to create the database and tables. Everything else will work as before. When it comes time to do the authorization/authentication stuff, you'll run aspnet_regsql from the command line to make the authorization database. <br>\r\n",
+    "PostedDate": "2009-04-02T09:29:21.93-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "175195",
+    "ThreadId": "52081",
+    "Html": "Hi shanselman,<br>\r\n<br>\r\nI have the DB and Tabels but i don't get how to make the connection to the DB (db_owner is NT AUTHORITY\\NETWORK SERVICE).<br>\r\n<br>\r\nIn NerdDinner.dbml I made this changes on line 3<br>\r\n<br>\r\n  &lt;!--&lt;Connection Mode=&quot;WebSettings&quot; ConnectionString=&quot;Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\NerdDinner.mdf;Integrated Security=True;User Instance=True&quot; SettingsObjectName=&quot;System.Configuration.ConfigurationManager.ConnectionStrings&quot; SettingsPropertyName=&quot;NerdDinnerConnectionString&quot; Provider=&quot;System.Data.SqlClient&quot; /&gt;--&gt;<br>\r\n  &lt;Connection Mode=&quot;WebSettings&quot; ConnectionString=&quot;Data Source=localhost;Initial Catalog=NerdDinner;Integrated Security=True&quot; SettingsObjectName=&quot;System.Configuration.ConfigurationManager.ConnectionStrings&quot; SettingsPropertyName=&quot;NerdDinnerConnectionString&quot; Provider=&quot;System.Data.SqlClient&quot; /&gt;<br>\r\n<br>\r\n<br>\r\nBut I think is something wrong with my approach because I get this error::<br>\r\n<br>\r\nA network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) <br>\r\n",
+    "PostedDate": "2009-04-03T02:49:18.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "175338",
+    "ThreadId": "52081",
+    "Html": "<div>(I'm assuming your running Visual Studio on the same machine that the SQL Server is on...)</div><div><br></div>When you installed SQL Server 2008, it should have also installed a tool called SQL Server Management Studio.  Find that tool and open it up and try to connect to your server; you should be able to just open the Management Studio and click connect.  There should be no errors when you do that.<div><br></div><div>If there are errors, more than likely you're going to need to do some configuration / installation / re-installation.  Try and give us as much information as possible.</div><div><br></div><div>Hope that helps.</div>",
+    "PostedDate": "2009-04-03T09:47:27.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "175533",
+    "ThreadId": "52081",
+    "Html": "radu - You can also try making a Connection yourself from the Server Explorer, and once you get that to succeed, right click on it, hit &quot;Modify Connection&quot; and you'll see in the dialog. You can then copy that connectionstring to the web.config.",
+    "PostedDate": "2009-04-03T16:56:18.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "175552",
+    "ThreadId": "52081",
+    "Html": "I believe the settings in ConnectionStrings.config are what you'll need to modify to point it at a standalone database instead of the user instance. That's how I did it for my local setup (user instances weren't working for me) and it worked perfectly.<br>\r\n<br>\r\nYou will still need to run aspnet_regsql to set up the membership database too, as Scott mentioned. \r\n",
+    "PostedDate": "2009-04-03T18:22:01.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176029",
+    "ThreadId": "52081",
+    "Html": "Hi,<br>\r\n<br>\r\nthanks to all for help, I managed to make SQL 2008 connection.<br>\r\n<br>\r\nOn <strong>ConnectionStrings.config</strong> file you have to change Data Source<br>\r\n<br>\r\n&lt;connectionStrings&gt;<br>\r\n<em>  &lt;!-- Orriginal Connection for SQLEXPRESS<br>\r\n  &lt;add name=&quot;ApplicationServices&quot; connectionString=&quot;data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true&quot; providerName=&quot;System.Data.SqlClient&quot;/&gt;<br>\r\n  &lt;add name=&quot;NerdDinnerConnectionString&quot; connectionString=&quot;Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\NerdDinner.mdf;Integrated Security=True;User Instance=True&quot; providerName=&quot;System.Data.SqlClient&quot;/&gt;<br>\r\n  --&gt;<br>\r\n  &lt;!-- My Connection for SQL Server --&gt;</em><br>\r\n  &lt;add name=&quot;ApplicationServices&quot; connectionString=&quot;Data Source=localhost;Initial Catalog=NerdDinner;Integrated Security=True&quot; providerName=&quot;System.Data.SqlClient&quot;/&gt;<br>\r\n  &lt;add name=&quot;NerdDinnerConnectionString&quot; connectionString=&quot;Data Source=localhost;Initial Catalog=NerdDinner;Integrated Security=True&quot; providerName=&quot;System.Data.SqlClient&quot;/&gt;<br>\r\n&lt;/connectionStrings&gt;\r\n",
+    "PostedDate": "2009-04-06T01:58:25.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The following items might help others who go through the Nerd Dinners tutorial. I received errors without them.\r\n\r\n1. In Dinners table, enter dates greater than today; otherwise, no dinners will display on your \"Upcoming Dinners\" list.\r\n2. In Dinners table, enter times other than 12 AM.\r\n3. In Dinner.cs model class, add namespaces System.Data.Linq and System.Text.RegularExpressions.\r\n4. In Views/Dinners/Index.aspx, use \"<%=DateTime.Parse(dinner.EventDate.ToString()).ToShortDateString() %>\" instead of the format suggested in the code; same with \"<%=DateTime.Parse(dinner.EventDate.ToString()).ToShortTimeString() %>\". Do the same in Details.aspx.",
+    "LastUpdatedDate": "2014-05-28T12:39:41.897-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2014-05-28T12:39:41.897-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "my Nerd Dinners revision notes",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 10868
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

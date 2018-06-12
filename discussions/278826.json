@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "695745",
+    "ThreadId": "278826",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>First of all thanks for such a wonderful post.</p>\r\n<p>I happen to do&nbsp;a poc using with the help of your files..&nbsp; using 51* mobi foundation&nbsp;for &nbsp;device detection and customize razor view so that it support all view (web =&gt; view, mobile =&gt; view.mobile.cshtml, tablet =&gt; view.tablet.cshtml).</p>\r\n<p>Steps:</p>\r\n<p>1)&nbsp; Put the 51 degree mobi files in AppData</p>\r\n<p>2) Reference to 51 degree mobi foundation dll.</p>\r\n<p>3) Create a custom razor engine by inheriting razor engine. (used same code that is present in your source code).</p>\r\n<p>4) Now i compile and run my present it runs smoothly.</p>\r\n<p>5) Now in VS 2010 click analyze =&gt; performance wizard =&gt; Instrumentation option&nbsp; =&gt; (next) =&gt; select the project =&gt;(next) =&gt; Select the default option =&gt; (next)&nbsp; =&gt; click finish</p>\r\n<p>6) Now is see&nbsp; NewFindView is taking about 30% of time and&nbsp; when i drilled further could see File.Exists in NewFindView function is actually taking this much time.</p>\r\n<p>Can you please help in let me know what is the issue and how to overcome this.</p>\r\n<p>Thanks</p>\r\n<p>Naveen.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-11-09T02:34:13.327-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

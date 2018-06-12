@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "725969",
+    "ThreadId": "286334",
+    "Html": "<p>Hi&nbsp;</p>\n<p>I'm trying to convert NerdDinner into using SQL Server 2008 databases (instead of using sql server express editon, my webhost provider, Surftown.dk does not support sql server express).</p>\n<p>I'm working with the NerdDinner (Change Set 70027, the sln under the trunk folder which contains a MVC 3 Razor version).</p>\n<div><span>I have created the asp.net member database inside sql server 2008, into a new database which I have named NDUsers. I have also managed to create another database inside SQL Server 2008 called NDMain and copied all tables data from Dinners.mdf to  this database.&nbsp;</span></div>\n<div><span>Now when I run the applikation it runs fine until when I click \"view all upcomming dinners\", then I get an error stating:&nbsp;<br />&nbsp;</span></div>\n<div><span><em>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections.  (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</em><br />&nbsp;</span></div>\n<div>\n<pre><em>public IQueryable&lt;Dinner&gt; All</em><br /><em>{</em><br /><em>    get { return db.Dinners.Include(r =&gt; r.RSVPs); }</em><br /><em>}</em></pre>\n<pre><em><strong>Source File: </strong>&nbsp;</em></pre>\n<pre><em>C:\\Users\\...\\Documents\\Visual Studio 2010\\Projects\\<br /></em><em>NerdDinner 70027\\Trunk\\NerdDinner\\Models\\DinnerRepository.cs<strong> &nbsp;&nbsp;&nbsp;</strong></em></pre>\n<pre>I have remembered to update the connection strings, to reflect changes:</pre>\n<pre>Web.config<br />  &lt;connectionStrings configSource=\"connectionStrings.config\"&gt;  <br />  &lt;/connectionStrings&gt;</pre>\n<pre>and<br />connectionString.config <br />  <br />&lt;add name=\"ApplicationServices\"<br />connectionString=\"Data Source=localhost;<br />Initial Catalog=NDUsers;<br />Integrated Security=True\" <br />providerName=\"System.Data.SqlClient\"/&gt;</pre>\n<pre><br />&lt;add name=\"NerdDinnerEntities\"<br />connectionString=\"metadata=res://*/Models.NerdDinner.csdl|<br />res://*/Models.NerdDinner.ssdl|res://*/Models.NerdDinner.msl; <br />provider=System.Data.SqlClient;provider connection string=&amp;quot;<br />Data Source=localhost;<br />Initial Catalog=NDMain;<br />Integrated Security=True;<br />User Instance=False;<br />MultipleActiveResultSets=True&amp;quot;\"<br />providerName=\"System.Data.EntityClient\"/&gt;<br /><br />I'm guessing that I have to update the code inside the DinnerRepository.cs&nbsp;<br />file and probably also else where in the solution. But I dont know what to update or how.&nbsp;<br /><br />I have also looked at : Extending NerdDinner: Exploring Different Database Options, <br />but this article does not seem to apply to my situation.<br /><br />Thanks for reading</pre>\n<pre><br /></pre>\n<pre><br /></pre>\n</div>",
+    "PostedDate": "2012-01-16T12:32:06.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "748372",
+    "ThreadId": "286334",
+    "Html": "<p>i meet the same problem,after register aspnetdb,i can login on and register user successfully.</p>\r\n<p>but when i host a dinner to click the button \"save\",there will be error 26,so is the view mydinner.</p>\r\n<p>i am confused.</p>",
+    "PostedDate": "2012-02-09T05:07:21.8-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "819925",
+    "ThreadId": "286334",
+    "Html": "<p>got the script going :&nbsp;<a href=\"http://nerddinner.codeplex.com/discussions/350171\">http://nerddinner.codeplex.com/discussions/350171</a></p>",
+    "PostedDate": "2012-04-04T09:41:31.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

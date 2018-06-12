@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This is fixed. Thanks for your help!",
+    "ClosedDate": "2011-09-07T15:59:21.293-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Share an event to google buzz gives me this :\n\nWhere?\n@Model.Address\n\nWhen?\n@Model.EventDate.ToString(",
+    "LastUpdatedDate": "2011-09-07T15:59:21.293-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-08-29T08:14:47.44-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add to google buzz does print @attributes instead of the value",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9446
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "fixed",
+      "PostedDate": "2011-08-30T16:49:07.163-07:00",
+      "Id": 76123
+    }
+  ]
+}

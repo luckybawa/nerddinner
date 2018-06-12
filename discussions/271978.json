@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "669347",
+    "ThreadId": "271978",
+    "Html": "\r\n<p>I understand what is being done in the PostAuthenticateRequest event but I have a question about using a GenericPrincipal. After this code executes:</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(encTicket);\r\nNerdIdentity id = <span style=\"color:blue\">new</span> NerdIdentity(ticket);\r\nGenericPrincipal prin = <span style=\"color:blue\">new</span> GenericPrincipal(id, <span style=\"color:blue\">null</span>);\r\nHttpContext.Current.User = prin;\r\n</pre>\r\n</div>\r\n<p>User has changed from a RolePrincipal to a GenericPrincipal and no longer knows the roles the user is in. So on my controller, when I use [Authorize(Roles=&quot;Admin&quot;)], it now fails.</p>\r\n<p>Is there a way to accomplish the same thing without losing the roles?</p>\r\n",
+    "PostedDate": "2011-09-08T13:36:35.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "687611",
+    "ThreadId": "271978",
+    "Html": "<p>Sorry, just trying to bump the topic and hopefully get some input from someone.</p>",
+    "PostedDate": "2011-10-21T12:04:55.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

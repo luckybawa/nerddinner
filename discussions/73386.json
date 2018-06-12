@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "250769",
+    "ThreadId": "73386",
+    "Html": "<p>A couple of questions:</p>\r\n<p>1. Is the code running on <a href=\"http://www.nerddinner.com\">www.nerddinner.com</a> the same as the latest version one can pull from CodePlex?</p>\r\n<p>2. Has anyone tried running this in a virtual directory instead of at the root of the domain?</p>\r\n<p>I'm having some troubles getting the iui stuff picked up and used when things are in a virtual directory.</p>\r\n<p>Thanks for any help or ideas.</p>",
+    "PostedDate": "2009-10-28T10:02:04.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

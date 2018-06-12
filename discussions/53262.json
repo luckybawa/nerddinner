@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "179181",
+    "ThreadId": "53262",
+    "Html": "The sample works fine but if I follow the tutorial right up to the point were you add Java script, I tried following the tutorial and I get run time errors so I tried copy/paste and get run time errors the tutorial leaves alot of stuff out so following it dose not seem to be the way to go for instance nowhere in the tutorial<br>\r\ndose it say to referance   ///&lt;referance path=&quot;=jquery-1.2.6.js&quot;/&gt;I had to find it in the sample at the very top of the map.js <br>\r\nthis file dose not come with a MVC project nor do the rest of the jquery files that are in the sample I added them from the sample file I've roled my project back to before I added the map and copied the code from the sample about 4 times and I cant get the map to show<br>\r\nI get run time errors dose anyone know how to get the map working by following the tutorial<br>\r\nI cant get the animation from the RSVP link to work also I get a runtime error \r\n",
+    "PostedDate": "2009-04-14T12:36:40.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179284",
+    "ThreadId": "53262",
+    "Html": "I think I'll be hard pressed to buy this book I got the map working on some of the pages by deleting the jquery.js files that come with the template<br>\r\nand copying the ones from the scrip file I can't get the details page to show the map when I get the pop up error asking if I want to debug is a joke debuging<br>\r\nis impossible I would never launch a site with a debug popup because when I surf the net and get a runtime error popup I just leave the page  and there seems to be no way to find out why it keeps popping up I copied and pasted<br>\r\nall the markup from the sample for these pages so I have no Idea what could be wrong some how they got theirs to work but it dose not seem like they were will to tell us in the tutorial I guess I could just copy all the files over but if I did that why would I spend the time to read the tutorial not very well put together in my mind<br>\r\nI got rid of one run time error by removing onSuccess=&quot;AnimateRSVPMessage&quot; I hope MVC books or tutorials come out that can be used for more than hello world \r\n",
+    "PostedDate": "2009-04-14T16:33:12.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179296",
+    "ThreadId": "53262",
+    "Html": "There shouldn't be any JavaScript errors in any major browser.&nbsp; I'd suggest downloading the current CodePlex release of the Nerd Dinner code, and compare that with what you've got.<br>\r\n",
+    "PostedDate": "2009-04-14T17:06:36.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179318",
+    "ThreadId": "53262",
+    "Html": "Yes I have the current that was released on March 10 the jquery-1.2.6.js, jquery1.2.6.min.js, jquery-1.2.6.min-vsdoc.js, jquery-1.2.6-vsdoc.js are not the jquery files that com with ASP.NET MVC templatewhen you create a new project you get  jquery-1.3.2.js, jquery1.3.2.min.js, jquery-1.3.2min-vsdoc.js, jquery-1.3.2-vsdoc.js  and the tutorial would not  not work with them it would be nice if the tutorial when a little further explaining the step by step or atleast used 1.0 code I even went as far as replacing all the script files and the page and partiale page with the ones from the sample it looks like they used a prerelease version I'm am jus goin to end up draging and droping everything and stop wasting my time reading\r\n",
+    "PostedDate": "2009-04-14T18:36:26.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179325",
+    "ThreadId": "53262",
+    "Html": "Take a look at the latest source from <a href=\"http://nerddinner.codeplex.com/SourceControl/ListDownloadableCommits.aspx\">the &quot;Source Code&quot; page</a>. It uses jQuery 1.3.2. \r\n",
+    "PostedDate": "2009-04-14T19:11:56.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179335",
+    "ThreadId": "53262",
+    "Html": "ThankYou for getting back is there a tutorial that explains the steps that will work for this source. drag and drop will work but without rolling up your sleves and getting your hands dirty<br>\r\nI could just open the demo in VS run it and say woo it's a website and then go look for a tutorial that will explain it <br>\r\nThanks agian for your time\r\n",
+    "PostedDate": "2009-04-14T19:37:02.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "182623",
+    "ThreadId": "53262",
+    "Html": "I had the same problem and it was the missing script attribute in the head of the site.master file that was the problem:<br>\r\n<br>\r\n&lt;head&gt;<br>\r\n...<br>\r\n&nbsp;&nbsp;&nbsp; &lt;script src=&quot;/Scripts/jquery-1.2.6.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&nbsp; <br>\r\n&lt;/head&gt;<br>\r\n<br>\r\nSeems that this should be included in the tutorial.<br>\r\n",
+    "PostedDate": "2009-04-22T21:13:43.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "182660",
+    "ThreadId": "53262",
+    "Html": "Thanks curlyfries <br>\r\nThat could have very well been the problem I did so much copy and paste to get it working Ic ould have put that in I'm finding it hard to learn MVC because the tutorials and even the walkthrougs on MSDN leave alot out they start off fine and then they go off on a tangent  I guess if you allready knew MVC you could do the tutorials without any problem but if you where that good at it what would you need to do the tutorials for I spend more time fishing around with the bugs than I do learning MVC<br>\r\nThanks agian\r\n",
+    "PostedDate": "2009-04-23T00:39:37.617-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

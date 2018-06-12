@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "252603",
+    "ThreadId": "73868",
+    "Html": "<p>I'm a fairly new .net developer attempting to learn MVC&nbsp;by building the sample application - it's been slow going due to a number of mostly self-inflicted issues, but it's been a great learning experience, so a big thanks for a practical and worthwhile introduction to MVC.</p>\r\n<p>So, the problem is that&nbsp;I'm stuck trying to delete a dinner - I get a &quot;<span style=\"color:#ff0000\">Rule violations prevent saving</span>&quot; error in <span style=\"color:#000000\">DinnerRepository.Save(), which is just: db.SubmitChanges() as you can see in t</span>he stack trace, but nothing after that is meaningful to me:</p>\r\n<p>System.Data.Linq.ChangeProcessor.SendOnValidate(MetaType type, TrackedObject item, ChangeAction changeAction) +197<br>System.Data.Linq.ChangeProcessor.ValidateAll(IEnumerable`1 list) +182<br>System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode) +76<br>System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode) +331<br>System.Data.Linq.DataContext.SubmitChanges() +19<br>NerdDinner.Models.DinnerRepository.Save() in D:\\Visual Studio 2008\\Projects\\NerdDinner\\NerdDinner\\Models\\DinnerRepository.cs:70</p>\r\n<p>If I delete the RSVPs (but not the dinner) by commenting out the line in DinnerRepository.Delete() as shown below, the subsequent Save() works fine and deletes all the RSVPs for that dinner:</p>\r\n<p><span style=\"color:#0000ff\">public void</span> Delete(<span style=\"color:#008080\">Dinner</span> dinner)<br>{&nbsp;&nbsp;&nbsp; db.RSVPs.DeleteAllOnSubmit(dinner.RSVPs);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=\"color:#008000\">//db.Dinners.DeleteOnSubmit(dinner);<br></span>}</p>\r\n<p>I can&nbsp;Create and Edit&nbsp;dinners without any problem, but I don't know if that's relevant - seems like these are not RuleViolations, but some type of database misconfiguration.&nbsp;So, I&nbsp;double-checked the tables - RSVP.RsvpID and Dinners.DinnerID are the primary keys, and there's a relationship between Dinners.DinnerID (primary) and&nbsp; RSVP.DinnerID (foreign). I had missed the step of adding the primary key to the RSVP, so I did that and ran the &quot;Run Custom Tool&quot; utility to regenerate the&nbsp;<span style=\"color:#2b91af;font-size:x-small\"><span style=\"color:#2b91af;font-size:x-small\">NerdDinnerDataContext<span style=\"color:#000000\"> class,&nbsp;then rebuilt the project and still get the same error.</span></span></span></p>\r\n<p>So I'm not sure what else to check - any help would be greatly appreciated...</p>",
+    "PostedDate": "2009-11-02T16:14:56.827-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "252609",
+    "ThreadId": "73868",
+    "Html": "<p>Can't delete this discussion, so I'll just update it -&nbsp;I commented out all the RuleViolation tests in GetRuleViolations(), and was able to delete the dinner, so it was a Rule Violation after all.&nbsp; The exception that gets thrown was in GetRuleViolations(), so I guess I just wasn't very observant - I just need to figure out which rule was being violated...</p>",
+    "PostedDate": "2009-11-02T16:39:29.43-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "436543",
+    "ThreadId": "210863",
+    "Html": "Its a good idea use NerdDinner as reference?\r\n\r\nIts simple and works. I think S#arp developer its more complex that need",
+    "PostedDate": "2010-04-28T07:25:51.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443116",
+    "ThreadId": "210863",
+    "Html": "<p>You might also look at the&nbsp;<a href=\"http://mvcmusicstore.codeplex.com/\">http://mvcmusicstore.codeplex.com/</a>, it's a little simpler.</p>",
+    "PostedDate": "2010-05-14T16:17:56.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443119",
+    "ThreadId": "210863",
+    "Html": "<p>Ayende did not like the code</p>\r\n<p>http://ayende.com/Blog/archive/2010/05/13/comments-on-the-mvc-music-store.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+AyendeRahien+%28Ayende+%40+Rahien%29</p>",
+    "PostedDate": "2010-05-14T16:21:12.86-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443120",
+    "ThreadId": "210863",
+    "Html": "<p>Ayende likes very little code. He didn't like NerdDinner either. Perhaps find a project he does like?<span style=\"white-space:pre\"> </span></p>",
+    "PostedDate": "2010-05-14T16:23:13.297-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443124",
+    "ThreadId": "210863",
+    "Html": "<p>I am curious about use EF4 ObjectContext at Controller.</p>\r\n<p>I dont have much asp.net mvc projects &nbsp;to use as reference.</p>\r\n<p>Some approaches:</p>\r\n<p>Controler -&gt; ObjectContext</p>\r\n<p>Controler -&gt; Repository -&gt; ObjectContext</p>\r\n<p>Controler -&gt; Service -&gt; Repository -&gt; ObjectContext</p>\r\n<p>&nbsp;</p>\r\n<p>Sometime I think that repositories are waste of time, just replicating &nbsp;ObjectContext interface. Some people use &quot;GenericRepository&lt;T&gt; where T: Entity&quot; with GetById, Add, Delete and Update....then, why not just reference ObjectContext directly, its more fast, easy to do, easy to understand. UnitOfWork too...</p>\r\n<p>Services are util sometimes, ie.: Add HistoricalChanges when saving a object.</p>\r\n<p>&nbsp;</p>\r\n<p>What you preffer?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-14T16:47:32.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "460182",
+    "ThreadId": "210863",
+    "Html": "<p>thanks for the pointer Scott - was about to delve in to take a look at the nerdDinner tutorial for the first time (having watched your 90min presentation few times and getting totally confused) - did one run through of the Music Store - understood a bit, deleted it and started to nail it....... Will try it again without the PDF later and then perhaps move to a little test project.....&nbsp;</p>\r\n<p>Before I go back to NerdDinner, how different is that tutorial in MVC1 to what I am learning in MVC2 - am I better off waiting for the revised documentation. I just am concerned if when I learnt asp.net 1.1 and then 2.0, I wish I had just waited and skipped 1.1. thanks for any help in advance people !!</p>",
+    "PostedDate": "2010-06-26T02:56:35.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

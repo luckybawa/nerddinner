@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "merged patch submitted by jonsagara into both the trunk and vs2010-mvc3-razor branches",
+    "ClosedDate": "2011-05-06T11:54:37.75-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "AccountController.Register calls FormsAuth.SignIn, which doesn't provide a mechanism for setting the userData on the forms cookie.  Hence, after a new, non-OpenID user has successfully registered and is redirected to the home page, no \"friendly name\" is displayed at the top of the page, near the \"[Log Off]\" link.\n\nAccountController.LogOn demonstrates the forms cookie creation code necessary to fix this bug.\n\n\nSteps to reproduce:\n1) Open the NerdDinner home page.\n2) Click the Log On link at the top of the page.\n3) On the RHS of the page under \"using a NerdDinner account\", click the Register link.\n4) Supply a Username, Email, and Password.\n5) Click Register.\n6) If necessary, correct any errors and go to Step 5..\n7) Site redirects you back to the home page\n\n\nExpected behavior:\nThe newly-created user's Username will be displayed next to the \"[ Log Off ]\" link.\n\nActual behavior:\n\"Welcome ! [Log Off]\" is displayed (the Username is missing).  (see attached image)\n\n\nNote: when you log off and log back on, the Username displays as expect.  This only occurs immediately after registering a new, non-OpenID user.\n\nI have a fix and will submit a patch.",
+    "LastUpdatedDate": "2011-05-06T11:54:37.75-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-10-15T21:44:42.487-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "After registering a new, non-OpenID user, the username doesn't display next to \"Welcome\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7417
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479414,
+      "FileName": "NoUserName.png",
+      "DownloadUrl": ".\\479414"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Path submitted.",
+      "PostedDate": "2010-10-15T22:56:57.573-07:00",
+      "Id": 76117
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "580315",
+    "ThreadId": "249675",
+    "Html": "\r\n<p>I'm excited to learn about MVC 2 and I've just received the so waited book from Amazon.</p>\r\n<p>I'm not a lazy person and I like to manually write all the code presented in the book.</p>\r\n<p>However, I think that creating all the sample data is a tedious job and, even more important, I'd like to have the very same data used in the book.</p>\r\n<p>Is it possible to get a database with all the data that is supposed to be manually added in the DB or, at least, the starting data for Dinners and RSVP tables?</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2011-03-14T14:28:28.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "588499",
+    "ThreadId": "249675",
+    "Html": "<p>I don't think manually constructing a couple tables in a Sql database is all that tedious.&nbsp; I didn't mind at all building the tables the first time I went through the tutorial.&nbsp; I have been using the tutorial as a way of getting team ramped up on the platform, and I wish'd I had generated some Sql Script I could use to rebuild the database for myself when I have to make a new local copy so I can help my team through the tutorial.</p>\r\n<p>I don't think having the same data as Phil and the Scotts, Jon, Phil, and Rob actually would help me understand anything better.&nbsp; Maybe, in the context of helping others on my team, it would be good to have a common data set so that we could compare their results to the common one, but I should also be able to do that myself.</p>\r\n<p>The next time I have to make the tutorial, I am going to remember to generate some scripts and commit them to my local source control, so I don't have to do it again.</p>",
+    "PostedDate": "2011-03-29T15:17:58.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "588604",
+    "ThreadId": "249675",
+    "Html": "<p>I wasn't asking a script to build the tables, but only the contents.</p>\n<p>But you're probably right.</p>\n<p>I've eventually filled the data on my own: after all, the most and only table that I thought it needed a tedious data-entry job is the dinners table, but it didn't eventually took too much time to fill some sample data.</p>\n<p>It took more time solving book's errata (some of them are still unsolved).</p>",
+    "PostedDate": "2011-03-29T23:44:09.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "632954",
+    "ThreadId": "249675",
+    "Html": "<p>here is an sql script to insert the demo data into the dinners table:</p>\r\n<p>INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES ( N'.NET Futures', CAST(0x00009CD7011826C0 AS DateTime), N'Come talk about cool things coming with .NET', N'scottgu', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.64312, -122.130609)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'Geek Out', CAST(0x00009CD700000000 AS DateTime), N'All things geek allowed', N'scottha', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.64312, -122.130609)<br />INSERT [dbo].[Dinners] ([Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'Fine Wine', CAST(0x00009CD800000000 AS DateTime), N'Sample some fine Washington Wine', N'philha', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.632546, -122.21201)<br />INSERT [dbo].[Dinners] ([Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'Surfing Lessons', CAST(0x00009CD900000000 AS DateTime), N'Ride the waves with Rob', N'robcon', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.632546, -122.21201)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'Curing Polio', CAST(0x00009CDA00000000 AS DateTime), N'Discuss how we can eradicate polio around the world', N'billg', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.632546, -122.21201)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'Dinner with Sus', CAST(0x00009BBE011826C0 AS DateTime), N'Fun dinner with the wife', N'scottgu', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.632546, -122.21201)<br />INSERT [dbo].[Dinners] ([Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES ( N'XBOX Gaming', CAST(0x00009BBF011826C0 AS DateTime), N'Game Fest with the newest XBox Games!', N'scottgu', N'425-555-1212', N'One Microsoft Way, Redmond WA 98052', N'USA', 47.64312, -122.130609)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'Dinner with the Team', CAST(0x00009BC0011826C0 AS DateTime), N'Celebrate MIX', N'scottgu', N'425-555-1212', N'2416 96th Ave NE, Clyde Hill WA 98004', N'USA', 47.632546, -122.21201)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'tes', CAST(0x00009BC301027410 AS DateTime), N'test', N'scottgu', N'425-555-1212', N'5 main street', N'USA', 45.164642962182242, -98.7419343024208)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'test', CAST(0x00009BC30102BA60 AS DateTime), N'test', N'scottgu', N'425-555-1212', N'5 main street', N'USA', 45.164642962182242, -98.7419343024208)<br />INSERT [dbo].[Dinners] ( [Title], [EventDate], [Description], [HostedBy], [ContactPhone], [Address], [Country], [Latitude], [Longitude]) VALUES (N'ASP.NET Study Group', CAST(0x00009BC7011826C0 AS DateTime), N'Get together and talk about the cool new ASP.NET MVC framework', N'scottgu', N'425-555-1212', N'One Microsoft Way, Redmond WA', N'USA', 47.64312, -122.130609)</p>",
+    "PostedDate": "2011-06-25T06:56:48.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

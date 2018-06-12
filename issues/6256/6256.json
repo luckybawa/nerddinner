@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-06-12T06:28:03.447-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "I was trying to get NerdDinner updated to work on newer DotNetOpenAuth version. The version that was shipped in the NerdDinner 2.0 Complete ASP.NET MVC Sample App release isn't available on the DonNetOpenAuth website. The DonNetOpenAuth.dll in the lib folder is build number 3.4.1.10070. The official releases on the website go from 3.4.1.1044 to 3.4.2.10079. Seems in later versions they have replaced the ProcessAjaxOpenIdResponse method with ProcessResponseFromPopup.",
+    "LastUpdatedDate": "2010-06-12T06:28:03.447-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-06-06T07:07:21.917-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "DotNetOpenAuth deprecated method OpenIdAjaxRelyingParty.ProcessAjaxOpenIdResponse",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6256
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 49318.",
+      "PostedDate": "2010-06-12T06:28:03.447-07:00",
+      "Id": 76095
+    }
+  ]
+}

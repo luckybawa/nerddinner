@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This is fixed. Thanks for your help!",
+    "ClosedDate": "2011-09-07T15:59:52.193-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Prerequisite: HttpContext.Current.IsDebuggingEnabled = false, Cold AppPool to ensure empty server side cache.\n\nBasically what is happening is if you visit any route that returns a view from a desktop browser and then try and visit that same route from a mobile device it will alway return the desktop view instead of the mobile view. If you reverse the order and visit the route from a mobile device first and then from the desktop the issue does not present itself.\n\nWhat happens when using the default view engine to find views...\n\nWhen HttpContext.Current.IsDebuggingEnabled = false the view locations are stored in cache to speed up the locator process. On page request the ViewEngineCollection uses a cacheLocator and locator to locate the physical location of the view based on controller context, master name, and view name. It first tries to find the view in cache and if it can't be found it defaults to using the fall back locator to find the actual view. If the view is not found in cache but is found in the fall back locator, it gets set in cache for future use keyed on the generated cache key. Upon next request it repeats the process and finds the view in cache and bypasses all extra processing by returning it from cache.\n\nThis is great for the standard WebFormViewEngine but things get interesting when using the MobileCapableWebFormViewEngine.\n\nReduced code snippet of the MobileCapableWebFormViewEngine...\n\npublic override ViewEngineResult FindView(ControllerContext controllerContext, string viewName, string masterName, bool useCache)\n{\n\tViewEngineResult result = null;\n\tvar request = controllerContext.HttpContext.Request;\n\n\t//This could be replaced with a switch statement as other advanced / device specific views are created\n        if (this.IsUserAgent(controllerContext, \"iPhone\"))\n        {\n\t\tresult = base.FindView(controllerContext, \"Mobile/iPhone/\" + viewName, masterName, useCache);\n\t}\n\n\t//Fall back to desktop view if no other view has been selected\n\tif (result == null || result.View == null)\n\t{\n\t\tresult = base.FindView(controllerContext, viewName, masterName, useCache);\n\t}\n\n\treturn result;\n}\n\nExplanation as to why the MobileCapableWebFormViewEngine bombs....\n\nThe ViewEngineCollection.Find actually generates this issue because it uses two locators instead of one. If it iterated over the collection of items once using only one locator instead of twice using two locators, toggling the useCache bool value when switching locators the problem would exist. It does exist because the block of code above is run twice by each locator. The only difference is the useCache flag. If the useCache flag was pulled inside the FindView method and it itself checked cache first and then the default the problem would be solved.\n\nThe desktop browser fails the IsUserAgent check so it uses the base.FindView passing in the unmodified arguments...first checking cache, not finding anything, defaulting to the fall back, and then finally setting it in cache. Now when the mobile device hits the same route it passes the IsUserAgent check but on first go around result returns null because it hasn't been cached before. Well since the result is null it uses the base.FindView passing once again the unmodified arguments. This is where it bombs. Since useCache == true and the previous desktop request set the same route in cache it returns the desktop version since we passed in the unmodified view name.\n\nOne way to fix it would to have any mobile device run through 4 different checks. First using cache with the mobile view name, second not using cache with the mobile view name, third using cache with the unmodified view name, and fourth not using cache with the unmodified view name. This would short circuit moving on to the default fall back locator as all 4 conditions would be tested in the cacheLocator pass. The desktop version wouldn't have to change as it works as expected all the time. \n\nPossible solution...\n\npublic override ViewEngineResult FindView(ControllerContext controllerContext, string viewName, string masterName, bool useCache)\n{\n\tViewEngineResult result = null;\n\tvar request = controllerContext.HttpContext.Request;\n\n\t//This could be replaced with a switch statement as other advanced / device specific views are created\n        if (this.IsUserAgent(controllerContext, \"iPhone\"))\n        {\n\t\tresult = base.FindView(controllerContext, \"Mobile/iPhone/\" + viewName, masterName, true);\n\n\t\tif (result == null || result.View == null)\n\t\t{\n\t\t\tresult = base.FindView(controllerContext, \"Mobile/iPhone/\" + viewName, masterName, false);\n\t\t}\n\n\t\tif (result == null || result.View == null)\n\t\t{\n\t\t\tresult = base.FindView(controllerContext, viewName, masterName, true);\n\t\t}\n\n\t\tif (result == null || result.View == null)\n\t\t{\n\t\t\tresult = base.FindView(controllerContext, viewName, masterName, false);\n\t\t}\n\t}\n        else\n\t{\n\t\tresult = base.FindView(controllerContext, viewName, masterName, useCache);\n\t}\n\n\treturn result;\n}\n\nNot pretty by any means but it works.",
+    "LastUpdatedDate": "2011-09-07T15:59:52.193-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-06-11T00:07:24.007-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MobileCapableWebFormViewEngine.FindView returns regular instead of mobile view engine result.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 6273
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I had the same problem in my project.  My solution by now is never returning the standard view to a a mobile device, but it depends on each web application.\r\n\r\nif (this.IsUserAgent(controllerContext, \"iPhone\"))\r\n{\r\nresult = base.FindView(controllerContext, \"Mobile/iPhone/\" + viewName, masterName, useCache);\r\n}\r\nelse\r\n{\r\nresult = base.FindView(controllerContext, \"Mobile/iPhone/\" + viewName, masterName, useCache);\r\n}",
+      "PostedDate": "2010-07-08T01:37:43.71-07:00",
+      "Id": 76096
+    },
+    {
+      "Message": "I believe this is fixed in the current TRUNK. We've got a new Mobile View Engine that takes this into consideration. We're looking at making a NuGet package for it, but go ahead and grab the source if you like.",
+      "PostedDate": "2011-08-26T12:34:28.797-07:00",
+      "Id": 76097
+    }
+  ]
+}

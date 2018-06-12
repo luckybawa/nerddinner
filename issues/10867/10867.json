@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "1. Create an instance of a Nerd dinner.\r\n2. Edit that dinner.\r\n3. Attempt to move the push-pin on the embedded Bing map.\r\nRESULT: Map scrolls, and Push Pin remains stuck to the same position relative to the scrolling map.\r\nEXPECTED: Map stays stationary, and Push Pin is moved by the mouse to a new location on the Bing map.",
+    "LastUpdatedDate": "2014-04-30T16:08:12.55-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2014-04-30T16:08:12.55-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Edit: pushpin location on Bing map doesn't change",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 10867
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

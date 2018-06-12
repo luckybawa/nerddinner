@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "489620",
+    "ThreadId": "226176",
+    "Html": "<p>hi, I downloaded your sourcecode for studying, nice application.&nbsp;</p>\r\n<p>I have one question, I noticed Nerddinner using &quot;.\\SQLEXPRESS&quot; as data source in web.config.&nbsp; For my application, I'm also using &quot;.\\SQLEXPRESS&quot; as data source in web.config. When I upload to website(webhosting), I got this error.</p>\r\n<h2><em>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</em></h2>\r\n<p><em>how&nbsp;does&nbsp;NerdDinner work without error:26?&nbsp;&nbsp; I&nbsp;checked your web.config. there is no much differece with mine. Confused&nbsp;&nbsp;. </em></p>\r\n<p><em>I do really appreciate your help! thanks!</em></p>\r\n<p><em>mine:</em></p>\r\n<p><em>&nbsp; &lt;connectionStrings&gt;<br>&nbsp;&nbsp;&nbsp; &lt;add name=&quot;ApplicationServices&quot; connectionString=&quot;data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true&quot; providerName=&quot;System.Data.SqlClient&quot; /&gt;<br>&nbsp;&nbsp;&nbsp; &lt;add name=&quot;TestStoreEntities&quot; connectionString=&quot;metadata=res://*/Models.StoreDB.csdl|res://*/Models.StoreDB.ssdl|res://*/Models.StoreDB.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\MvcTestStore.mdf;Integrated Security=True;User Instance=True;MultipleActiveResultSets=True&amp;quot;&quot; providerName=&quot;System.Data.EntityClient&quot; /&gt;<br>&nbsp; &lt;/connectionStrings&gt;</em></p>\r\n<p><em>&nbsp;</em><em></em></p>",
+    "PostedDate": "2010-09-06T01:53:13.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

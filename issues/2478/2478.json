@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-06-01T12:49:39.43-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "I was able to crash your nerddinner.com site by giving it a really large id. I guess it threw a stack overflow or something (since I exceeded an int32):\n\nhttp://nerddinner.com/87238478723434343\n\nThe parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Details(Int32)' in 'NerdDinner.Controllers.DinnersController'. To make a parameter optional its type should be either a reference type or a Nullable type.\nParameter name: parameters",
+    "LastUpdatedDate": "2011-06-01T12:49:39.43-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-28T08:01:03.59-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bug: really large id causes an exception",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2478
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479407,
+      "FileName": "Int32Constraint.patch",
+      "DownloadUrl": ".\\479407"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "It doesn't look like the route that does this on the live site is available in the source code available here, to replicate the behavior with the source code here, try going to /Dinners/Details/1290843148719847298347\r\n\r\nOr add a route like this to the Global.asax.cs\r\nroutes.MapRoute(\r\n                \"QuickDinnerDetails\",\r\n                \"{id}\",\r\n                new { controller = \"Dinners\", action = \"Details\" }\r\n  );\r\n\r\nI think we can fix this with a custom route constraint, something like Int32Constraint.  I've put one together, I'll try to figure out how to upload a patch.\r\n\r\n\r\n",
+      "PostedDate": "2009-03-31T16:33:18.31-07:00",
+      "Id": 76050
+    },
+    {
+      "Message": "I've created the constraint and uploaded the file as a patch.  Unfortunately I wasn't able to upload the .patch file that the Tortoise client generates, so I'll go ahead and upload it here.",
+      "PostedDate": "2009-03-31T19:50:25.387-07:00",
+      "Id": 76051
+    },
+    {
+      "Message": "Looks like the issue has been resolved on the site.  Just out of curiosity, was it solved using the custom route constraint that jgable proposed?",
+      "PostedDate": "2009-05-05T16:29:50.317-07:00",
+      "Id": 76052
+    },
+    {
+      "Message": "Rather than use a constraint, I simply added a FileNotFound result and changed the parameter to a nullable int. The reason is that if a URL matches everything but the ID, it's almost certain that this is the correct route they indended to match, but they got the id wrong. So it seems that's a good place to show the 404 page wich we should make sure is really helpful.",
+      "PostedDate": "2009-05-06T21:57:32.72-07:00",
+      "Id": 76053
+    }
+  ]
+}

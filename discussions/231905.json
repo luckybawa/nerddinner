@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "510881",
+    "ThreadId": "231905",
+    "Html": "\r\n<p>will there be one?</p>\r\n<p>&nbsp;</p>\r\n<p>On a related topic are there any MVC 3 beta examples out there that are small but useful like this of the Music Store demo&nbsp; ?</p>\r\n",
+    "PostedDate": "2010-10-21T19:30:12.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "519054",
+    "ThreadId": "231905",
+    "Html": "\r\n<p>I think that the Razor version is MVC3 as it's filed under Branches / Playground / VS2010-<strong>MVC3</strong>-Razor.</p>\r\n",
+    "PostedDate": "2010-11-08T16:00:13.133-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

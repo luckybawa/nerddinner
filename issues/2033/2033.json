@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in change set #16985.",
+    "ClosedDate": "2009-03-11T18:23:42.17-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "What I did:\n* Clicked in the zip code box.\n* Typed in my zip code.\n* Pressed \"ENTER\"\n\nWhat happened:\n* Nothing\n\nWhat I expected:\n* Pressing enter would \"submit the form\" or otherwise trigger the search to happen.\n\nSystem: Windows XP SP3, Google Chrome 2.0.169",
+    "LastUpdatedDate": "2009-03-11T18:23:42.17-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-10T18:11:17.617-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Pressing \"enter\" in zip code box doesn't initiate a search.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2033
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This behavior is likely due to the form elements not actually being in a .",
+      "PostedDate": "2009-03-10T20:57:06.787-07:00",
+      "Id": 76024
+    },
+    {
+      "Message": "Doh! Good bug!",
+      "PostedDate": "2009-03-10T23:03:37.537-07:00",
+      "Id": 76025
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+Index: NerdDinner/Content/ie6.css
+===================================================================
+--- NerdDinner/Content/ie6.css	(revision 0)
++++ NerdDinner/Content/ie6.css	(revision 0)
+@@ -0,0 +1,5 @@
++/* ---- fixes bugs in IE6 ---- */
++#main
++{
++    height: 1px;
++}
+\ No newline at end of file
+Index: NerdDinner/Content/ie7.css
+===================================================================
+--- NerdDinner/Content/ie7.css	(revision 0)
++++ NerdDinner/Content/ie7.css	(revision 0)
+@@ -0,0 +1 @@
++/* ---- fixes bugs in IE7 ---- */
+Index: NerdDinner/Content/Site.css
+===================================================================
+--- NerdDinner/Content/Site.css	(revision 18689)
++++ NerdDinner/Content/Site.css	(working copy)
+@@ -114,7 +114,6 @@
+     padding: 30px 30px 15px 30px;
+     background-color: #fff;
+     margin-bottom: 30px;
+-    _height: 1px; /* only IE6 applies CSS properties starting with an underscrore */
+     height: 590px;
+ }
+ 
+Index: NerdDinner/NerdDinner.csproj
+===================================================================
+--- NerdDinner/NerdDinner.csproj	(revision 18689)
++++ NerdDinner/NerdDinner.csproj	(working copy)
+@@ -148,6 +148,8 @@
+   </ItemGroup>
+   <ItemGroup>
+     <Content Include="ConnectionStrings.config" />
++    <Content Include="Content\ie6.css" />
++    <Content Include="Content\ie7.css" />
+     <Content Include="Scripts\date.format.js" />
+     <Content Include="Scripts\jquery-1.3.2-vsdoc.js" />
+     <Content Include="Scripts\jquery-1.3.2.min.js" />
+Index: NerdDinner/Views/Shared/Site.Master
+===================================================================
+--- NerdDinner/Views/Shared/Site.Master	(revision 18689)
++++ NerdDinner/Views/Shared/Site.Master	(working copy)
+@@ -7,6 +7,8 @@
+ 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+     <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+     <link href="../../Content/Site.css" rel="stylesheet" type="text/css" media="screen"/>
++    <!--[if IE 7]><link href="../../Content/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
++    <!--[if IE 6]><link href="../../Content/ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+   	<meta content="Nerd, Dinner, Geek, Luncheon, Dweeb, Breakfast, Technology, Bar, Beer, Wonk" name="keywords" /> 
+ 	<meta name="description" content="Host and promote your own Nerd Dinner free!" /> 
+ 

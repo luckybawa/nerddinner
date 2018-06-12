@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "643045",
+    "ThreadId": "265332",
+    "Html": "\r\n<p>I am running into an issue with re-login after I log out. The app throws as ASP.Net stack trace error (Yellow Screen) and this is how you may reproduce it</p>\r\n<p>1. Launch NerdDinner</p>\r\n<p>2. Click on Host Dinner. You are presented Login screen</p>\r\n<p>3. Use Google to authenticate. Host Dinner page displays</p>\r\n<p>4. Click logoff</p>\r\n<p>5. Click Host Dinner again. Login screen displays. Click on Google again.&nbsp;</p>\r\n<p>6. Click &quot;Allow&quot; on Google auth page</p>\r\n<p>7. Yellow screen of death with error not finding /Auth/LogOn.cshtml displays</p>\r\n<p>Tracing thru the AuthController, you find that&nbsp;</p>\r\n<pre><span>public</span>&nbsp;<span>ActionResult</span>&nbsp;LogOnPostAssertion(<span>string</span>&nbsp;openid_openidAuthData)&nbsp;{\r\n</pre>\r\n<pre>method falls to the <pre><span>case</span>&nbsp;<span>AuthenticationStatus</span>.Failed:\r\n</pre>\r\n<pre>Look at the exception: It reads &quot;This message has already been posted. A replay attack may be in progress&quot; </pre>\r\n<pre><br></pre>\r\n<pre>The last line in that method is <pre><span>return&nbsp;View(&quot;LogOn&quot;)</span>\r\n</pre>\r\n<pre><span>However LogOn is not in the Views/Auth folder and thus the yellow screen</span></pre>\r\n<pre><span><br></span></pre>\r\n<pre><span>Any ideas?</span></pre>\r\n<pre><span>thanks</span></pre>\r\n<pre><span><br></span></pre>\r\n</pre>\r\n</pre>\r\n",
+    "PostedDate": "2011-07-15T10:21:30.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "Id": 2033,
+    "Title": "Pressing \"enter\" in zip code box doesn't initiate a search."
+  },
+  {
+    "Id": 2054,
+    "Title": "UK Phone Number Validation wrong"
+  },
+  {
+    "Id": 2059,
+    "Title": "PhoneValidator - North America Numbering Plan"
+  },
+  {
+    "Id": 2073,
+    "Title": "Home should use most popular upcoming dinners."
+  },
+  {
+    "Id": 2078,
+    "Title": "Site validation"
+  },
+  {
+    "Id": 2119,
+    "Title": "New Zealand Phone Validation"
+  },
+  {
+    "Id": 2120,
+    "Title": "Placing a dinner in NZ places it in the Tasman Sea"
+  },
+  {
+    "Id": 2209,
+    "Title": "Remove IE6 CSS hack"
+  },
+  {
+    "Id": 2235,
+    "Title": "Insufficient error message for user"
+  },
+  {
+    "Id": 2344,
+    "Title": "My Dinners"
+  },
+  {
+    "Id": 2423,
+    "Title": "Websense blocks nerddinner.com under category Advertisement"
+  },
+  {
+    "Id": 2478,
+    "Title": "Bug: really large id causes an exception"
+  },
+  {
+    "Id": 2616,
+    "Title": "Culture bug? Cannot create new dinner"
+  },
+  {
+    "Id": 2684,
+    "Title": "Support for hosting under a virtual directory"
+  },
+  {
+    "Id": 2972,
+    "Title": "Use jQuery from a CDN rather than hosting it"
+  },
+  {
+    "Id": 2977,
+    "Title": "Rename \"Confused\" to \"Lost\""
+  },
+  {
+    "Id": 3064,
+    "Title": "OpenID or RPX"
+  },
+  {
+    "Id": 3065,
+    "Title": "My Dinners support"
+  },
+  {
+    "Id": 3066,
+    "Title": "Make contact field easier"
+  },
+  {
+    "Id": 3067,
+    "Title": "xVal support and/or DataAnnotations support."
+  },
+  {
+    "Id": 3068,
+    "Title": "Revamp of Create Dinner"
+  },
+  {
+    "Id": 3069,
+    "Title": "Make dates and times easier"
+  },
+  {
+    "Id": 3070,
+    "Title": "Geolocation auto-population of the search box via Google's API (or another service?)"
+  },
+  {
+    "Id": 3071,
+    "Title": "Pull jQuery from CDN"
+  },
+  {
+    "Id": 3072,
+    "Title": "Blog Badges - design?"
+  },
+  {
+    "Id": 3073,
+    "Title": "Local iCal support"
+  },
+  {
+    "Id": 3074,
+    "Title": "RSS for every page (as appropriate)"
+  },
+  {
+    "Id": 3075,
+    "Title": "Friendly URLs"
+  },
+  {
+    "Id": 3076,
+    "Title": "Better iPhone JS"
+  },
+  {
+    "Id": 3077,
+    "Title": "\"Tweet this dinner\" support..."
+  },
+  {
+    "Id": 3078,
+    "Title": "\"Promote your dinner\""
+  },
+  {
+    "Id": 3228,
+    "Title": "ValidationSummary does not show clear messages"
+  },
+  {
+    "Id": 3238,
+    "Title": "Cant Add Dinner"
+  },
+  {
+    "Id": 3322,
+    "Title": "DinnerController's POST Create() method doesn't show validation errors if !ModelState.IsValid()"
+  },
+  {
+    "Id": 3428,
+    "Title": "cant add view"
+  },
+  {
+    "Id": 3467,
+    "Title": "Calendar link has issue"
+  },
+  {
+    "Id": 3800,
+    "Title": "NerdDinner CSPROJ won't open with Viz Studio 2008, 2005"
+  },
+  {
+    "Id": 3827,
+    "Title": "dbo.Dinners.Address field is not large enough"
+  },
+  {
+    "Id": 3851,
+    "Title": "Bug in Site.css causes problem with the map display"
+  },
+  {
+    "Id": 4380,
+    "Title": "iCal link does not appear on dinner page on iPhone/Safari"
+  },
+  {
+    "Id": 5090,
+    "Title": "NerdDinner CSPROJ won't open with Viz Studio 2008"
+  },
+  {
+    "Id": 5892,
+    "Title": "User Profiles"
+  },
+  {
+    "Id": 5937,
+    "Title": "Map displaying in incorrect location"
+  },
+  {
+    "Id": 5962,
+    "Title": "Unit tests are broken"
+  },
+  {
+    "Id": 6149,
+    "Title": "Log On using Yahoo is weird"
+  },
+  {
+    "Id": 6229,
+    "Title": "open redirect vuln"
+  },
+  {
+    "Id": 6256,
+    "Title": "DotNetOpenAuth deprecated method OpenIdAjaxRelyingParty.ProcessAjaxOpenIdResponse"
+  },
+  {
+    "Id": 6273,
+    "Title": "MobileCapableWebFormViewEngine.FindView returns regular instead of mobile view engine result."
+  },
+  {
+    "Id": 6285,
+    "Title": "RP Discovery is not implemented"
+  },
+  {
+    "Id": 6669,
+    "Title": "/Models/Dinner.cs StringLength typos"
+  },
+  {
+    "Id": 6741,
+    "Title": "Cannot Edit Dinner - Hitting save button does not work"
+  },
+  {
+    "Id": 6759,
+    "Title": "Index UnitTest Assert Missing"
+  },
+  {
+    "Id": 6826,
+    "Title": "DinnersController.Edit(int id) doesn't handle non-existing dinners (including fix!)"
+  },
+  {
+    "Id": 6869,
+    "Title": "OData JSON format not valid"
+  },
+  {
+    "Id": 7197,
+    "Title": "search location not working in IE 9"
+  },
+  {
+    "Id": 7225,
+    "Title": "Galloway link at bottom of home page goes to an error page"
+  },
+  {
+    "Id": 7357,
+    "Title": "HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly."
+  },
+  {
+    "Id": 7407,
+    "Title": "/Dinners/Create unhandled ConstraintException during VS 2010 Debug"
+  },
+  {
+    "Id": 7411,
+    "Title": "JSONPSupportBehavior Bug - Please update to v0.2"
+  },
+  {
+    "Id": 7416,
+    "Title": "[Dup - please close] After registering a new, non-OpenID user, the \"friendly name\" doesn't appear at the top of the screen"
+  },
+  {
+    "Id": 7417,
+    "Title": "After registering a new, non-OpenID user, the username doesn't display next to \"Welcome\""
+  },
+  {
+    "Id": 7418,
+    "Title": "[Dup - please close] After registering a new, non-OpenID user, the \"friendly name\" doesn't appear at the top of the screen"
+  },
+  {
+    "Id": 7419,
+    "Title": "[Dup - please close] After registering a new, non-OpenID user, the username doesn't display next to \"Welcome\""
+  },
+  {
+    "Id": 8274,
+    "Title": "Port to MVC 3.0"
+  },
+  {
+    "Id": 8577,
+    "Title": "the code for Home/Xdrs sets the ContentType to \"application/xrds+xm\" - its missing the L"
+  },
+  {
+    "Id": 8582,
+    "Title": "Update OpenID HtmlHelpers in MVC 3 Razor"
+  },
+  {
+    "Id": 9321,
+    "Title": "Internationalize all strings"
+  },
+  {
+    "Id": 9322,
+    "Title": "Administration"
+  },
+  {
+    "Id": 9430,
+    "Title": "find button error on Android browser"
+  },
+  {
+    "Id": 9431,
+    "Title": "find button error on Android browser"
+  },
+  {
+    "Id": 9446,
+    "Title": "Add to google buzz does print @attributes instead of the value"
+  },
+  {
+    "Id": 9450,
+    "Title": "A wee bug"
+  },
+  {
+    "Id": 9451,
+    "Title": "hCalendar Link Doesn't Do Anything"
+  },
+  {
+    "Id": 9452,
+    "Title": "Dinners Aren't Pinned On Home Page Map"
+  },
+  {
+    "Id": 9453,
+    "Title": "Hover Over \"Popular Dinner\" Links Don't Highlight Correct Pin"
+  },
+  {
+    "Id": 9460,
+    "Title": "Edit and Delete Dinner Links Don't Show Up With Lower Case User Name"
+  },
+  {
+    "Id": 9489,
+    "Title": "Add anti-forgery tokens to dinner controller."
+  },
+  {
+    "Id": 9540,
+    "Title": "Figure out how to get \"Add event to your calendar\" to work on mobile devices"
+  },
+  {
+    "Id": 10169,
+    "Title": "edit dinner does not save changes."
+  },
+  {
+    "Id": 10864,
+    "Title": "Including doesn't work"
+  },
+  {
+    "Id": 10865,
+    "Title": "small issue i have fix during learning is once Login username was not coming"
+  },
+  {
+    "Id": 10866,
+    "Title": "Unable to download nerddinner"
+  },
+  {
+    "Id": 10867,
+    "Title": "Edit: pushpin location on Bing map doesn't change"
+  },
+  {
+    "Id": 10868,
+    "Title": "my Nerd Dinners revision notes"
+  }
+]

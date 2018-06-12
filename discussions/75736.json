@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "259117",
+    "ThreadId": "75736",
+    "Html": "<p>It appear that the dinner repository creates an instance of a private NerdDinnerDataContext member.&nbsp; Since a DataContext implements IDisposable.&nbsp; Should we not then be disposing of it when we're finished?&nbsp; Since it's private member, when would we be finished with it?&nbsp; It woudl seem that the Dinner Repository should in turn also implement IDisposable.</p>\r\n<p>If that's the case, then the DinnerController should not be creating a private dinnerRepository in the ctor, but rather should be creating local dinnerRepository instances as part of a using block.</p>\r\n<p>Am I missing something obvious about the disposal of the Data Context?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-20T09:09:57.123-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "259124",
+    "ThreadId": "75736",
+    "Html": "It gets garbage collected (Dispose() gets called) quickly after.<br><br><div>On Fri, Nov 20, 2009 at 9:09 AM, rshillington <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: rshillington</p> <div><p>It appear that the dinner repository creates an instance of a private NerdDinnerDataContext member.  Since a DataContext implements IDisposable.  Should we not then be disposing of it when we're finished?  Since it's private member, when would we be finished with it?  It woudl seem that the Dinner Repository should in turn also implement IDisposable.</p>\r\n\r\n\r\n<p>If that's the case, then the DinnerController should not be creating a private dinnerRepository in the ctor, but rather should be creating local dinnerRepository instances as part of a using block.</p>\r\n<p>Am I missing something obvious about the disposal of the Data Context?</p>\r\n<p> </p></div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=75736&ANCHOR#Post259117\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:75736]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2009-11-20T09:24:49.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "259127",
+    "ThreadId": "75736",
+    "Html": "<p>Is this a new pattern, that we can count on Garbage Colleciton in a timely fashion?&nbsp; It seems to me that in a high volume site there would be many more new connections created before the old ones are GC'ed.</p>\r\n<p>Is there a specific call to GC.Collect that I'm missing somewhere?</p>",
+    "PostedDate": "2009-11-20T09:33:56.667-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "259129",
+    "ThreadId": "75736",
+    "Html": "Nope, it's just relying on GC to do it's job. You're technically correct, but until it becomes a problem I don't sweat it. In this case, it's an optimization that I don't think it's important until it doesn't work.<div>\r\n\r\n<br></div><div>That said, I'll ask Phil to make sure I'm not completely full of ****. ;) I'm usually a fan of Dispose() everywhere.<br><br><div>On Fri, Nov 20, 2009 at 9:33 AM, rshillington <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: rshillington</p> <div><p>Is this a new pattern, that we can count on Garbage Colleciton in a timely fashion?  It seems to me that in a high volume site there would be many more new connections created before the old ones are GC'ed.</p>\r\n\r\n\r\n<p>Is there a specific call to GC.Collect that I'm missing somewhere?</p></div><div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=75736&ANCHOR#Post259127\">full discussion online</a>.</p>\r\n\r\n <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:75736]\">nerddinner@discussions.codeplex.com</a>)</p> <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p>\r\n\r\n <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div></div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>\r\n</div>",
+    "PostedDate": "2009-11-20T09:36:29.05-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

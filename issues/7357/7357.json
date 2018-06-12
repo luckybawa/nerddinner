@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:42:33.78-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Hello:\nI downloaded the source code and open it with VS2010. When I first build it it was ok. \nThe issue is that as soon as I modify any file, for example /Views/Home/About.aspx  (I tried adding just blank spaces to some view files) I  get the following error:\n\nHTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly. \nRequested URL: /Views/Home/About.aspx \n\nCan anyone help me with this?\n\nThanks.",
+    "LastUpdatedDate": "2011-06-01T12:42:33.78-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-10-06T18:12:02.91-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7357
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "In MVC the paths to the views don't use the same paths as WebForms. In your case it looks like you should be going to /Home/About instead of Views/Home/About.aspx. Scott Guthrie has a great article explaining Routing and MVC on his blog at http://weblogs.asp.net/scottgu/archive/2007/12/03/asp-net-mvc-framework-part-2-url-routing.aspx .",
+      "PostedDate": "2011-05-10T08:20:41.163-07:00",
+      "Id": 76113
+    }
+  ]
+}

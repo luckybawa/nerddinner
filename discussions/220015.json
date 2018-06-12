@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "469443",
+    "ThreadId": "220015",
+    "Html": "<p>Hi all,</p>\r\n<p>&nbsp;</p>\r\n<p>I've downloaded and added the NerdDinner_2.0 project to Visual Studio 2010, but when I try to run it, I get the following error:</p>\r\n<h2><em>The database '.....\\APP_DATA\\NERDDINNER.MDF' cannot be opened because it is version 655. This server supports version 612 and earlier. A downgrade path is not supported.</em></h2>\r\n<p>Any ideas on how to resolve this? I am running SQL Server 2008.</p>\r\n<p>&nbsp;</p>\r\n<p>Kind regards,</p>\r\n<p>Erwin</p>",
+    "PostedDate": "2010-07-20T01:07:49.703-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469758",
+    "ThreadId": "220015",
+    "Html": "<p>Same problem here.&nbsp; Is there a sql script that I can use to recreate the DB?</p>\r\n<p>&nbsp;Using VS2010, SQL Server 2008 R2 express</p>\r\n<p>&nbsp;</p>\r\n<p>Dave</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-20T08:51:51.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471906",
+    "ThreadId": "220015",
+    "Html": "<p>I am trying to get the database connectivity to work. I have the same error message. Very frustrating experience.</p>",
+    "PostedDate": "2010-07-23T19:19:11.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471912",
+    "ThreadId": "220015",
+    "Html": "<div>This means you don't have the latest SQL Express 2008. Download the Web Platform Installer at <a href=\"http://Microsoft.com/web\">http://Microsoft.com/web</a> and update your SQL, or follow the ND tutorial and create your own DB.<br><br><div>--</div>Scott Hanselman - Tiny phone, tiny email<div><a href=\"http://hnsl.mn/fightdiabetes\">http://hnsl.mn/fightdiabetes</a></div></div><div><br>On Jul 23, 2010, at 7:19 PM, &quot;senf&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br><br></div><div></div><blockquote><div> <p>From: senf</p> <div id=ThreadNotificationPostBody><p>I am trying to get the database connectivity to work. I have the same error message. Very frustrating experience.</p></div>   </div></blockquote>",
+    "PostedDate": "2010-07-23T20:25:23.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "480433",
+    "ThreadId": "220015",
+    "Html": "<p>Download latest version of SQL Express and delete the files in the&nbsp;</p>\r\n<div><span><code>C:\\Documents and Settings\\<span><strong>YOUR_USERNAME</strong></span>\\Local Settings\\Application Data\\Microsoft\\Microsoft SQL Server Data\\SQLEXPRESS&lt;/tt&gt;</code></span></div>\r\n<div><span style=\"font-family:monospace\"><br></span></div>\r\n<p>&nbsp;directory worked for me</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-13T17:46:00.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "724814",
+    "ThreadId": "220015",
+    "Html": "<p>Hi&nbsp;</p>\n<div>\n<p>I was also having problems when I implemented NerdDinner on my localhost, using SQL Server 2008.</p>\n<p>The solution to get NerdDinner MDFs up and running smootly is actually quite simple</p>\n<p>I have download&nbsp;nerddinner-70027 and using trunk folder (that is MVC 3 razor)</p>\n<p>Now just do these 3 steps and you will have NerdDinner up and running with the included mdf databases inside app_data folder.</p>\n<p>&nbsp;</p>\n<p>1. download and install&nbsp;Microsoft&reg; SQL Server&reg; 2012 Express RC0&nbsp;<br />from&nbsp;<a href=\"http://www.microsoft.com/download/en/details.aspx?id=28151\">http://www.microsoft.com/download/en/details.aspx?id=28151</a>&nbsp;you may also download&nbsp;SQL Management Studio from same place.&nbsp;</p>\n<p>2. now just open NerdDinner, using its solution file (in Visual Studio (I'm using 2010)) and open web.config and connectionStrings.config<br />The connection-strings inside the two former mentioned files should point to your 2012 server instance name e.g.</p>\n<p>web.config &nbsp;</p>\n<div>\n<pre>    <span>&lt;</span><span>add</span> <span>name</span><span>=</span><span>\"</span><span>applicationservices</span><span>\"</span> <span>connectionString</span><span>=</span><span>\"</span><span>data source=your-pc-name\\your-sql-server-express-2012-name;integrated security=sspi;attachdbfilename=|datadirectory|aspnetdb.mdf;user instance=true</span><span>\"</span> <span>providerName</span><span>=</span><span>\"</span><span>system.data.sqlclient</span><span>\"</span> <span>/&gt;</span>\n    <span>&lt;</span><span>add</span> <span>name</span><span>=</span><span>\"</span><span>nerddinners</span><span>\"</span> <span>connectionString</span><span>=</span><span>\"</span><span>data source=your-pc-name\\your-sql-server-express-2012-name;integrated security=sspi;attachdbfilename=|datadirectory|nerddinner.mdf;user instance=true;multipleactiveresultsets=true</span><span>\"</span> <span>providerName</span><span>=</span><span>\"</span><span>system.data.sqlclient</span><span>\"</span> <span>/&gt;</span>\n   </pre>\n</div>\n<p>ConnectionString</p>\n<p>&nbsp;</p>\n<div>\n<pre>  &lt;add\n      name=\"ApplicationServices\"\n      connectionString=\"your-pc-name\\your-sql-server-express-2012-name<span>;<br /></span><span>      Integrated Security=SSPI;<br /></span><span>      AttachDBFilename=|DataDirectory|aspnetdb.mdf;<br /></span><span>      User Instance=True\"<br /></span><span>      providerName=\"System.Data.SqlClient\"</span></pre>\n</div>\n<div>\n<pre>    /&gt;\n\n  &lt;add name=\"NerdDinnerEntities\"\n            connectionString=\"metadata=res://*/Models.NerdDinner.csdl|res://*/Models.NerdDinner.ssdl|res://*/Models.NerdDinner.msl;\n            provider=System.Data.SqlClient;provider connection string=<span>&amp;quot;</span>\n            Data Source=Source=your-pc-name\\your-sql-server-express-2012-name;\n            AttachDbFilename=|DataDirectory|\\NerdDinner.mdf;\n            Integrated Security=True;\n            User Instance=True;\n            MultipleActiveResultSets=True<span>&amp;quot;</span>\"\n            providerName=\"System.Data.EntityClient\"\n     /&gt;\n</pre>\n</div>\n<p>3. Open Server Explorer (inside VS) and right click mdf databases one by one, go to Modify Connection &gt; klik Advanced button and change the DataSource to your 2012 sql server instance name</p>\n<p>Thats it. Everything should run just smootly.&nbsp;</p>\n<p>Sincerely</p>\n</div>\n<p>Mohammad</p>",
+    "PostedDate": "2012-01-13T08:19:05.047-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "I just updated the razor layout (_layout) to take from the MS CDN:\r\n\r\nhttp://www.asp.net/ajaxlibrary/cdn.ashx.\r\n\r\njQuery, jQuery UI and related CSS is now being pulled from the CDN. The project still needs to have those items pruned.",
+    "ClosedDate": "2011-04-26T07:13:28.177-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "We should take advantage of CDNs for hosting scripts wherever possible. For example, we don't need to include jQuery here, we could reference it from:\n\n   http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\n\nIt'll help our latency etc...",
+    "LastUpdatedDate": "2011-04-26T07:13:28.177-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-05-06T22:06:22.093-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Use jQuery from a CDN rather than hosting it",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 2972
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479409,
+      "FileName": "2972-Use-CDN-for-jQuery-and-MSAjax.patch",
+      "DownloadUrl": ".\\479409"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Attaching patch to use Microsoft CDN for jQuery and MS Ajax. Not sure if we want to consider offline dev/demo scenario here.",
+      "PostedDate": "2009-12-28T17:10:13.153-08:00",
+      "Id": 76063
+    },
+    {
+      "Message": "Adding in jQuery, will add in MS AJAX when MVC 2 scripts are supported. Planning to use this approach: http://weblogs.asp.net/jgalloway/archive/2010/01/21/using-cdn-hosted-jquery-with-a-local-fall-back-copy.aspx",
+      "PostedDate": "2010-02-22T23:25:25.163-08:00",
+      "Id": 76064
+    }
+  ]
+}

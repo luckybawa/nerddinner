@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "488917",
+    "ThreadId": "225966",
+    "Html": "<p>Hi there,</p>\r\n<p>Im wondering if anyone could tell me if we should close / dispose the ObjectContext after usage or not?<br>What is best practices here, i was under the impression that we should close an object context as soon as we have used it.<br>When i look in NerdDinner.Models.﻿﻿﻿﻿﻿DinnerRepository class they create the EF context as soon as an instance of the repository classs are instantitated.</p>\r\n<div style=\"color:black;background-color:white\">\r\n<pre> <div style=\"color:black;background-color:white\"><pre> <span style=\"color:blue\">public</span> <span style=\"color:blue\">class</span> DinnerRepository : NerdDinner.Models.IDinnerRepository\r\n{\r\n\r\n        NerdDinnerEntities db = <span style=\"color:blue\">new</span> NerdDinnerEntities();\r\n     ..\r\n     ...</pre>\r\n</div>\r\n</pre>\r\n</div>\r\n<p>But, i never see that this ObjectContext are closed explictly like if you had used:</p>\r\n<div style=\"color:black;background-color:white\">\r\n<pre> <span style=\"color:blue\">using</span> (NerdDinnerEntities db = <span style=\"color:blue\">new</span> NerdDinnerEntities())\r\n            {\r\n                <span style=\"color:blue\">return</span> db.Dinners.Where(d =&gt; d.Title.Contains(q)\r\n                           || d.Description.Contains(q)\r\n                           || d.HostedBy.Contains(q));\r\n            }\r\n</pre>\r\n</div>\r\n<div style=\"color:black;background-color:white\">\r\n<pre>So what is best practices here? Isnt it important to close this ObjectContext so<br>resources are released as fast as possible? <br></pre>\r\n<pre>Regards</pre>\r\n<pre>Niclas</pre>\r\n</div>",
+    "PostedDate": "2010-09-03T08:36:07.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "577191",
+    "ThreadId": "225966",
+    "Html": "<p>I find this question quite interesting. Of course what you suggested is not possible because the returned IQueriable cannot be executed when the context is disposed. However not disposing the context at all seems strange.</p>",
+    "PostedDate": "2011-03-08T06:57:42.567-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

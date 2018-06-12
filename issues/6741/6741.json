@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great!",
+    "ClosedDate": "2011-06-01T12:43:42.52-07:00",
+    "CommentCount": 5,
+    "Custom": "",
+    "Description": "I just downloaded the sample app and ran it within Visual Studio 2010. I can create a dinner, and bring up the Edit view, when I click the Save button after making some changes it takes me back to the Details view without actually saving the changes.",
+    "LastUpdatedDate": "2012-01-18T10:35:49.783-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-07-27T10:41:19.627-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Cannot Edit Dinner - Hitting save button does not work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6741
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have the same problem",
+      "PostedDate": "2010-08-07T21:08:20.943-07:00",
+      "Id": 76101
+    },
+    {
+      "Message": "Same problem for me, using VS 2010 express. It acts like everything is fine but the dinner is not changed. I'm trying to use to nerddinner as a model for my own project and have not fiqured out how to get this to work. It works if I'm not using the repository but not with it. Any ideas why you cannot edit a dinner?",
+      "PostedDate": "2010-12-06T12:32:54.267-08:00",
+      "Id": 76102
+    },
+    {
+      "Message": "It was working all good till I added View Model or Partial View. I would think it should not affect the Edit action but Edit is not working and I checked my code with downloaded code and it is exactly same. I am also using VS 2010 ultimate version.\r\n\r\nPlease help me find the solution so I can go ahead with other functionality.",
+      "PostedDate": "2011-01-31T20:20:31.13-08:00",
+      "Id": 76103
+    },
+    {
+      "Message": "This appears to be working in the latest version of the source.",
+      "PostedDate": "2011-05-10T07:53:20.25-07:00",
+      "Id": 76104
+    },
+    {
+      "Message": "I have the same problem. \r\n(I've downloaded NerdDinner 2.0, Released: May 25 2010 ,Updated: May 25 2010)",
+      "PostedDate": "2012-01-18T10:35:49.783-08:00",
+      "Id": 76105
+    }
+  ]
+}

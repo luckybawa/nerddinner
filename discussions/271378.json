@@ -1,0 +1,114 @@
+[
+  {
+    "Id": "667179",
+    "ThreadId": "271378",
+    "Html": "\r\n<p>I opened a couple of issues then decided I should try to figure out the problems myself so I downloaded the code from build 69520.&nbsp; I ran into a database problem.<br>\r\n<br>\r\nFirst, when I&nbsp;run the application it gives an error &quot;Unable to complete operation. The supplied SqlConnection does not specify an initial catalog.&quot;&nbsp;\r\n<br>\r\nThere isn't a nerddinnder.mdf in the App_Data directory;&nbsp;the name in the Solution Explorer&nbsp;has an exclamation point on it.&nbsp;&nbsp;\r\n<br>\r\n<br>\r\nSecond, the aspnetdb.mdf has a red X on it in Server Explorer and when I try to open it I get an error &quot;...ASPNETDB.MDF cannot be opened because it is version 661.&nbsp; This server support version 662 and earlier.&nbsp; A downgrade path is not supported. Could\r\n not open new database ....ASPNETDB.MDF. Create databse is aborted....&quot;</p>\r\n<p>It appears that&nbsp;I'm doing something dumb.&nbsp; <br>\r\nAny suggestions other than to sit on my hands?</p>\r\n<p>Visual Studio 2010 SP 1 (tried running as administrator)<br>\r\nWin 7 64-bit <br>\r\nSQL Server Express 2008 R2<br>\r\nSQL Server Compact 4.0<br>\r\n<br>\r\nThanks.</p>\r\n",
+    "PostedDate": "2011-09-03T08:02:38.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "668037",
+    "ThreadId": "271378",
+    "Html": "<p>I think the problem with the apsnetdb might have to do with my SQL Server installation.&nbsp; It looks like the 2008 and 2008 R2 installs somehow got messed up.&nbsp; I'm working on reinstalling&nbsp;2008 R2.&nbsp; I'm still not sure about the nerddinner.mdf.&nbsp; Am I supposed to manually build that?&nbsp; If so, where would I find the instructions?&nbsp; Thanks.</p>",
+    "PostedDate": "2011-09-06T04:37:20.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "668042",
+    "ThreadId": "271378",
+    "Html": "<p>After checking the repository, the NerdDinner.mdf is in the App_Data directory. Can you try syncing up to the source again?</p>",
+    "PostedDate": "2011-09-06T04:54:09.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "668821",
+    "ThreadId": "271378",
+    "Html": "<p>I got the same error... I think I need to upgrade SQL Server from R2 to SP2?</p>",
+    "PostedDate": "2011-09-07T15:04:27.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "668844",
+    "ThreadId": "271378",
+    "Html": "<p>Okay, I've done some research here and I think I know what&rsquo;s going on.</p>\n<p>First, both of the MDF files should get pulled down with the source. If they aren't in the App_Data directory, please try to download them again from the source repository. It's not necessary to explicitly attach these MDF files to the SQL Express instance.  The connection string specifies &lsquo;User Instance&rsquo; and &lsquo;AttachDBFilename&rsquo; properties which spin up a runtime-initiated instance of the MDF file.</p>\n<p>Next, If you're getting this error:</p>\n<p style=\"padding-left: 30px;\">\"The database 'NERDDINNER.MDF' cannot be opened because it is version 661. This server supports version 662 and earlier. A downgrade path is not supported.Could not open new database 'NERDDINNER.MDF'. CREATE DATABASE is aborted.  (Microsoft SQL Server, Error: 948)\"</p>\n<p>You have SQL Express 2008 SP2 installed and not SQL Express 2008 R2. Really the way this error should read is:</p>\n<p style=\"padding-left: 30px;\">\"The database cannot be opened because it is version 661. This server supports versions 662, 655 and earlier than 655. A downgrade path is not supported.\"</p>\n<p>My understanding is that&nbsp; SQL Server 2008 SP2 and SQL Server 2008 R2 databases are not interchangeable because a feature introduced in SP2. Part of the confusion, for me, is with the version numbers. R2 is the 'latest and greatest', but has a lower data  format version #. Here's a table of the various versions of SQL Server 2008 and their data format version #s.<br /> &bull;&nbsp;&nbsp;&nbsp; SQL Server 2008 R2 (v 10.50.1600) data format version # 661 <br /> &bull;&nbsp;&nbsp;&nbsp; SQL Server 2008 SP2 (v 10.00.400) data format version #662 <br /> &bull;&nbsp;&nbsp;&nbsp; SQL Server 2008 (v 10.00.1600) data format version #655</p>\n<p>The MDF files included in the Nerd Dinner source are from SQL Express 2008 R2. If you find that you don't have R2 installed there are two ways of remedying this scenario, first would to be to upgrade the SP2 instance to R2. Or you could manually build out  the DB on SP2, in which case you would need to build some mechanism of importing the schema.</p>\n<p>PS. <a href=\"http://mourfield.com/2011/09/07/resolving-database-issues-with-nerd-dinner/\">Here a link to my blog post on this subject along with the SQL Schema scripts for building your own DBs.</a><br /> <br /></p>",
+    "PostedDate": "2011-09-07T16:38:05.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "668926",
+    "ThreadId": "271378",
+    "Html": "<p>I get the \"... version 661 ... \" error, and I have SQL Server 2008 R2,&nbsp;which I confirmed in \"Help - About\" in SSMS. So your line above, \"You have SQL Express 2008 SP2 installed and not SQL Express 2008 R2.\", can't be correct. I thought I might need to&nbsp;install&nbsp;SP2 because SP2 was just published <span>8/22/2011 which is after I installed SQL Server 2008, but it won't install. The error says there is not an instance of SQL Server that can be updated.&nbsp;So I considered&nbsp;uninstalling SQL Server and getting SQL Server 2008 SP2 from msdn, but there are only R2 versions. Will try building the db&nbsp;using the scripts in the link above. Thanks!!</span></p>",
+    "PostedDate": "2011-09-07T21:47:54.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669061",
+    "ThreadId": "271378",
+    "Html": "<p><span style=\"font-family: 'Segoe UI','sans-serif'; color: black; font-size: 10pt;\">epkrause, </span></p>\r\n<p><span style=\"font-family: 'Segoe UI','sans-serif'; color: black; font-size: 10pt;\">My SQL Server version said that I had R2 installed as well. However, something was obviously not right with it.</span></p>\r\n<p><span style=\"font-family: 'Segoe UI','sans-serif'; color: black; font-size: 10pt;\">I ended up having to uninstall everything that was related to SQL Server under Add/Remove programs then download the R2 Express setup and reinstall it.&nbsp; I *think* I originally installed SQL server R2 using the web platform installer and wonder if that didn't work completely; however, I don't exactly remember how I installed the full SQL Server.</span></p>\r\n<p><span style=\"font-family: 'Segoe UI','sans-serif'; color: black; font-size: 10pt;\">Just as a note - when I reinstalled R2 I did have problems.&nbsp; I've installed SQL Server numerous times with the main setup before without issues... so I'm not sure what happened this time - except maybe the web platform installer thing.&nbsp; If you have errors showing&nbsp;drive/folders with \"e:\\....\" then make sure you are running as administrator. Not only logged in as admin but right-click and \"Run as Administrator\" on the setup.</span></p>\r\n<p><span style=\"font-family: 'Segoe UI','sans-serif'; color: black; font-size: 10pt;\">I'm still not able to run the solution, but at least I'm not getting the \"version 661\" error.&nbsp; I'll post back once I get it working.</span></p>",
+    "PostedDate": "2011-09-08T05:11:01.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669081",
+    "ThreadId": "271378",
+    "Html": "<p>I'm still looking into this. Did either of you upgrade SQL Express to R2 from a previous version or was this a clean install? Also, are there any other SQL instances running on these machines?</p>",
+    "PostedDate": "2011-09-08T06:20:12.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669140",
+    "ThreadId": "271378",
+    "Html": "<p>I got the app running by creating the nerddinner db from the script provided by pmourfield in my SQL Server R2 instance and then changed the connection string.&nbsp;Plus I had&nbsp;to replace the ASPNETDB.mdf file that came with the NerdDinner download with another one I had for another project&nbsp;before the app would&nbsp;run. Now I can create a dinner and save and edit it. There were some odd hard coded paths in both&nbsp;.mdf files' properties (the .mdf files downloaded with the project), such as in the&nbsp;name property, that are left over from someone else's installation, so I'm wondering if that might be part of the problem?</p>\n<p>I'm still having&nbsp;database issues&nbsp;in that when I search for nearby dinners I get an error: <span style=\"color: #008080;\">\"Cannot find either column \"dbo\" or the user-defined function or aggregate \"dbo.DistanceBetween, or the name is ambiguous.\" </span>The DistanceBetween&nbsp;function does exist in the NerdDinner db. Must be a permissions thing... Anyway, most of it runs! :)</p>\n<p>pmourfield, I did upgrade SQL Express R2 from a previous version, and I do not have any other instances of SQL running. thunderhelper, thanks for your thoughts about the SQL re-installation.</p>\n<p>&nbsp;</p>",
+    "PostedDate": "2011-09-08T07:52:07.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669239",
+    "ThreadId": "271378",
+    "Html": "<p>I did a clean install.&nbsp; No other instances running on my machine.</p>",
+    "PostedDate": "2011-09-08T10:57:00.533-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669469",
+    "ThreadId": "271378",
+    "Html": "<p>Whew.&nbsp; I was finally able to run the site on my PC.</p>\r\n<p>I may be doing something dumb so please let me know if I am.&nbsp; <br /><br />First, I'm using the code from the Trunk folder.&nbsp; Is that right?<br /><br />Next I had to:<br />\"Show all files\" in the NerdDinner project and manually add the two databases aspnetdb.MDF and NerdDinner.mdf files to the project.<br />Update the connection strings in both the connectionStrings.config and Web.config files to point to my database.&nbsp; Replace \".\\SQLEXPRESS\" with \"COMPUTERNAME\\SQLEXPRESS2008\".<br />Add the \"Initial Catalog=nerddinner;\" parameter to the connection string in both files.<br />Add the \"Initial Catalog=aspnetdb;\" parameter to the connection string in both files.<br />Had to delete the aspnetdb_log.LDF file from the directory.<br /><br />After those changes, it compiles and starts!</p>",
+    "PostedDate": "2011-09-08T18:55:36.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "688234",
+    "ThreadId": "271378",
+    "Html": "<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\"><strong>pmourfield wrote:</strong></blockquote>\r\n<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\">PS. <a href=\"http://mourfield.com/2011/09/07/resolving-database-issues-with-nerd-dinner/\"> Here a link to my blog post on this subject along with the SQL Schema scripts for building your own DBs.</a></blockquote>\r\n<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\">\r\n<p>The domain name in this link is expired. Is the script available somewhere else?</p>\r\n</blockquote>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-10-23T23:47:00.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "700790",
+    "ThreadId": "271378",
+    "Html": "<p>I have installaed Service Pack 3 on my SQL Server 2008. I verify that SP2 is better, as suggested before.</p>\n<p>The Nerd Dinner MVC 2 is working well and I can debug the code.</p>\n<p>The NerdDinner MVC 3 in not running because of problem of database previously suggested.&nbsp; The&nbsp;solution builds successfully, but the NerdDinner.mdf is missing in app_data.</p>\n<p>If I try to restore another nerddinner.mdf, but&nbsp;I have the #661 error as before written.</p>\n<blockquote style=\"padding-bottom: 0px; font-style: italic; margin: 0.25em 1em 0px; padding-left: 0.25em; padding-right: 0.25em; padding-top: 0px; border: #ccc 0.1em solid;\">PS. <a href=\"http://mourfield.com/2011/09/07/resolving-database-issues-with-nerd-dinner/\">Here a link to my blog post on this subject along with the SQL Schema scripts for building your own DBs.</a></blockquote>\n<blockquote style=\"padding-bottom: 0px; font-style: italic; margin: 0.25em 1em 0px; padding-left: 0.25em; padding-right: 0.25em; padding-top: 0px; border: #ccc 0.1em solid;\">\n<p>The domain name in this link is expired. Is the script available somewhere else?</p>\n</blockquote>\n<p>&nbsp;I confirm this problem, it is not possibile to find the script to create nerddinner.mdf. Can you verify the link and post the script to create the database rightly ?</p>",
+    "PostedDate": "2011-11-20T03:13:37.317-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "700791",
+    "ThreadId": "271378",
+    "Html": "<p>In the last download of MVC3 the Database nerdDinner.mdf is missing in project,</p>\n<p>the <strong>status</strong> is not stable, absolutely not !!</p>\n<p>I can improve MVC with NerdDinner 2, Regards !</p>",
+    "PostedDate": "2011-11-20T03:23:30.953-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "I'm pretty sure that I've fixed this in the ASP-MVC3-RAZOR branch",
+    "ClosedDate": "2011-04-24T21:13:10.74-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Good idea....\nScott\n-----\n\nI've noticed that nerddinner is using a bit different version of DotNetOpenAuth in the MVC3 Razor version. To be more precise all of the HtmlHelper extension methods in DotNetOpenAuth.Mvc don't need the Page parameter which actually makes it possible to\n use them with Razor view engine.\n\nWhere could one get a hold of that version?\n\n \n\nThanks,\n\nGoran",
+    "LastUpdatedDate": "2011-04-24T21:13:10.74-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-03-30T12:35:43.9-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Update OpenID HtmlHelpers in MVC 3 Razor",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 8582
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Goran, I submitted a change last night with a working implementation using the latest version of DotNetOpenAuth. See http://nerddinner.codeplex.com/SourceControl/changeset/changes/63323\r\n\r\nPete",
+      "PostedDate": "2011-04-01T07:31:00.99-07:00",
+      "Id": 76122
+    }
+  ]
+}

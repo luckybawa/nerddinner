@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "250388",
+    "ThreadId": "73279",
+    "Html": "<p>&nbsp;</p>\r\n<p>Or alternatively is there another more active forum somewhere else ?</p>",
+    "PostedDate": "2009-10-27T15:15:57.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "250393",
+    "ThreadId": "73279",
+    "Html": "<div>Not dead at all. Got some more code updates coming next month.</div><div><br><div>--</div>Scott Hanselman - Tiny phone, tiny email<div><br></div></div><div><br>On Oct 27, 2009, at 3:16 PM, steve_mew &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br><br></div><div></div><blockquote><div> <p>From: steve_mew</p> <div id=ThreadNotificationPostBody><p> </p>\r\n<p>Or alternatively is there another more active forum somewhere else ?</p></div>   </div></blockquote>",
+    "PostedDate": "2009-10-27T15:21:09.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "265447",
+    "ThreadId": "73279",
+    "Html": "<p>Judging by the amount comment out here <span>on the net</span> Nerd Dinner is studied by many; that being so can some kind sole upload a working version of N<span>erdDinner</span> (for IIS)?<br><br>I've seen a lot of post by people providing helpful hints for getting this project to work under IIS, but no definitive solution/project that works in IIS.<br><br>Please take pity on us guys who are <span><span>trying</span></span> to learn this MVC stuff but need the sample to work in the real world of IIS.<br><br>Thanks all.</p>",
+    "PostedDate": "2009-12-09T13:00:31.043-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "265885",
+    "ThreadId": "73279",
+    "Html": "<div>Not dead at all. Lots of stuff coming in January.</div><div><br></div><div>What problem are you having in IIS? It should just work. The <a href=\"http://nerddinner.com\">nerddinner.com</a> site runs on IIS of course.<br><br><div>--</div>Scott Hanselman - Tiny phone, tiny email</div><div><br>On Dec 10, 2009, at 12:06 PM, Hunt &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br><br></div><div></div><blockquote><div> <p>From: Hunt</p> <div id=ThreadNotificationPostBody><p>Judging by the amount comment out here <span>on the net</span> Nerd Dinner is studied by many; that being so can some kind sole upload a working version of N<span>erdDinner</span> (for IIS)?<br><br>I've seen a lot of post by people providing helpful hints for getting this project to work under IIS, but no definitive solution/project that works in IIS.<br><br>Please take pity on us guys who are <span><span>trying</span></span> to learn this MVC stuff but need the sample to work in the real world of IIS.<br><br>Thanks all.</p></div>   </div></blockquote>",
+    "PostedDate": "2009-12-10T12:42:05.02-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "265926",
+    "ThreadId": "73279",
+    "Html": "<p>Hi,<br><span id=misspell-0>NerdDinner</span> works out of the box if you run the code in the development environment with the <span id=misspell-1>MSVS</span> build in Development Server thingy to replace <span id=misspell-2>IIS</span> but that is no good for debugging code that the goes into a real <span id=misspell-3>IIS</span> environment.<br>Please just change the VS project/web tabs option to &quot;use Local <span id=misspell-4>IIS</span> web server&quot; prior to testing on a <span id=misspell-5>XP</span> box that has <span id=misspell-6>IIS</span>5.1 (not sure it is version dependant thing) and see what happens.<br><br>As many have said on the net the problem seems to be with paths (files not found) the default page loads <span id=misspell-7>ok</span> but none of the others do.:(<br><br>Thanks.<br><br>Development environment...<br>MS Virtual PC 2007.<br>OS <span id=misspell-8>XP</span><br><span id=misspell-9>IIS</span> 5.1<br>VS2008 SP1 3.5</p>",
+    "PostedDate": "2009-12-10T13:36:05.83-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

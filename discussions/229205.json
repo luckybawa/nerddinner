@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "500688",
+    "ThreadId": "229205",
+    "Html": "<p>Hi, when i try to add a new database, i get this message. is there something I missed?</p>\r\n<p>&ldquo;A network-related or instance-specific error occurred while  establishing a connection to SQL Server. The server was not found or was  not accessible. Verify that the instance name is correct and that SQL  Server is configured to allow remote connections. (provider: SQL Network  Interfaces, error: 26 &ndash; Error Locating Server/Instance Specified) &rdquo;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-09-30T13:07:56.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "588492",
+    "ThreadId": "229205",
+    "Html": "<p>That is what I often&nbsp;get when the Sql Server instance.&nbsp;I am trying to access isn't really there.&nbsp; If you were using the SqlExpress version to make a local database that might mean that you don't have SqlExpress installed.&nbsp; If you are trying to use a real server, that server isn't there,.&nbsp; At least, that's been my experience.</p>",
+    "PostedDate": "2011-03-29T15:02:57.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "819918",
+    "ThreadId": "229205",
+    "Html": "<p>hi guys try this</p>\r\n<p><a href=\"http://nerddinner.codeplex.com/discussions/350171\">http://nerddinner.codeplex.com/discussions/350171</a></p>",
+    "PostedDate": "2012-04-04T09:35:50.697-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

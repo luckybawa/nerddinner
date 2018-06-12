@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "861965",
+    "ThreadId": "363921",
+    "Html": "\r\n<p>I'm working through the tutorial,&nbsp;using VS2010 and have created an MVC2 project for Nerd Dinner.&nbsp; I updated the Index.aspx view template so that it uses the bulleted list&nbsp;BUT when I go to /Dinners/ the list just doesn't appear.&nbsp; The Header\r\n (within &lt;h2&gt;&lt;/h2&gt;) does and the ActionLink&nbsp;to Create a New Dinner does too.&nbsp; But there are no&nbsp;bullets or the &quot;on&quot; and&nbsp;&quot;@&quot; text or any of the Dinner information.&nbsp;&nbsp;</p>\r\n<p>(I&nbsp;downloaded the NerdDinner code and looked at /Dinners/ and still nothing in the list showed (even though the final Index.aspx is more complex than the one I'm currently working with, I could see the analagous sections...)).</p>\r\n<p>I'm using IE9 so I set it to show all pages in Compatibility View but that didn't make a difference.&nbsp;</p>\r\n<p>Any ideas?&nbsp; (I'm pretty new to programming&nbsp;and this is my first foray into MVC so I'm sure there's something I've overlooked.)&nbsp; Thanks in advance.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-07-12T12:09:28.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

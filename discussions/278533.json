@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "694540",
+    "ThreadId": "278533",
+    "Html": "\r\n<p>When I download the latest Nerd dinner changeset (<a id=\"ChangeSetLink0\" title=\"View change set 70027\" href=\"../SourceControl/changeset/changes/70027\" style=\"text-decoration:none; color:#3e62a6; font-family:'Segoe UI','Microsoft Sans Serif',Arial,Geneva,sans-serif; font-size:13px; font-style:normal; font-variant:normal; letter-spacing:normal; line-height:normal; orphans:2; text-align:left; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px; background-color:#ffffff; font-weight:bold\">70027</a><span>\r\n )&nbsp;</span> and run the VS2010-MVC3-Razor solution, the<span style=\"color:darkcyan\"> GetMostPopularDinners</span> ActionMethod of the &quot;Search&quot; controller throws a run time error.&nbsp; The message is&nbsp; {&quot;Invalid column name 'HostedById'.&quot;}&nbsp;&nbsp;\r\n Line 94 triggers the error.&nbsp; The statement is:</p>\r\n<pre style=\"font-family:Consolas; font-size:13; color:black; background:white\">&nbsp;&nbsp;<span style=\"color:blue\">return</span>&nbsp;<span style=\"color:darkcyan\">Json</span>(jsonDinners.<span style=\"color:darkcyan\">ToList</span>());\r\n</pre>\r\n<p>To reproduce this error, simply launch the application.</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2011-11-06T15:48:17.683-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716773",
+    "ThreadId": "278533",
+    "Html": "<p>I am also having a same issue...</p>",
+    "PostedDate": "2011-12-23T13:16:53.813-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716808",
+    "ThreadId": "278533",
+    "Html": "<p>I will continue trying to fix this. If I'm able to, I'll submit my solution here. Please you do the same too.&nbsp;</p>\r\n<p>P.S. I'm running IIS7, otherwise everything is the same as in the download zip.&nbsp;</p>",
+    "PostedDate": "2011-12-23T17:33:32.843-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716812",
+    "ThreadId": "278533",
+    "Html": "<p>The solution</p>\r\n<p>Ok! I found the solution. My webhotel was running&nbsp;IIS 7.0 in classic mode, so I changed it to integrated mode. Now it's working :)</p>\r\n<p>I got the solution from :&nbsp;<a href=\"http://forums.asp.net/p/1502332/4747821.aspx/1?p=True&amp;t=634602706661366171\">http://forums.asp.net/p/1502332/4747821.aspx/1?p=True&amp;t=634602706661366171</a></p>\r\n<p>Sincerely</p>\r\n<p>Mohammad</p>",
+    "PostedDate": "2011-12-23T17:59:02.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716878",
+    "ThreadId": "278533",
+    "Html": "<p>by click the link...i am getting this&nbsp;<span>You don't have permission to access this group, forum, or thread.</span></p>",
+    "PostedDate": "2011-12-24T03:15:27.923-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

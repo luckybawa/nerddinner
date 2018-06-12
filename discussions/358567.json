@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "845498",
+    "ThreadId": "358567",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>I have two questions.</p>\r\n<p>1) the repository &amp; repository interface design works well in the nerddinners sample app. But what about a real world app with a dozen of model classes with their respective repositories?</p>\r\n<p>Can the methods be defined in a generic way&nbsp;so that each repository implements a single generic interface, for example:</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">public</span> <span style=\"color:blue\">interface</span> IBaseRepository&lt;T&gt;\r\n{\r\nT <span style=\"color:blue\">get</span>(<span style=\"color:blue\">int</span> id);\r\n<span style=\"color:blue\">void</span> insert(T obj);\r\n<span style=\"color:blue\">void</span> delete(T obj);\r\n<span style=\"color:blue\">void</span> save();\r\n\r\n}</pre>\r\n</div>\r\n<p>2) I noticed the absence of the ModelState's&nbsp;AddModelErrors extention method in the MVC 2 implementation. Is this replaced by usage of validation annotations? Does the MVC 1 IsValid &amp; GetRuleValidations approach still work in an MVC 2 project?</p>\r\n<p>Thank you</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-06-06T05:22:01.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

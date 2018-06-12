@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "179737",
+    "ThreadId": "53400",
+    "Html": "Not sure that this is the right place, but...<br>\r\n<br>\r\nMy suggestion is about the text of the 1st chapter.&nbsp; I wish you added a &quot;de&quot; to the word &quot;pluralizes&quot; in<br>\r\n<br>\r\n&quot;By default the LINQ to SQL designer automatically &quot;pluralizes&quot; table and column names when it creates<br>\r\nclasses based on a database schema. For example: the &quot;Dinners&quot; table in our example above resulted in<br>\r\na &quot;Dinner&quot; class.&quot;<br>\r\n<br>\r\nbecause this is what happens: linq2sql kills plural (Dinners in SQL give birth to a Dinner class.)<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-15T11:11:34.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

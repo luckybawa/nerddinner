@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The heuristic type match of Websense calls nerddinner.com an Advertisement.  Is there anything in the architecture of the application that would cause this?  Can't imagine that it's the domain name.",
+    "LastUpdatedDate": "2011-08-16T09:28:46.817-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-26T11:22:53.057-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Websense blocks nerddinner.com under category Advertisement",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2423
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hmmm, there's no reason it should block. Do you know how to report this as a valid site to them?",
+      "PostedDate": "2009-05-06T22:09:02.63-07:00",
+      "Id": 76049
+    }
+  ]
+}

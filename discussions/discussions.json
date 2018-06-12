@@ -1,0 +1,642 @@
+[
+  {
+    "Id": "49950",
+    "Title": "Want to Contribute?",
+    "LatestDate": "2010-04-19T12:49:48.783-07:00"
+  },
+  {
+    "Id": "50276",
+    "Title": "WhiteSpace",
+    "LatestDate": "2009-04-13T11:04:43.207-07:00"
+  },
+  {
+    "Id": "50344",
+    "Title": "Paging",
+    "LatestDate": "2009-03-16T09:34:06.333-07:00"
+  },
+  {
+    "Id": "50392",
+    "Title": "Walkthrough chapter typo/code correction",
+    "LatestDate": "2010-07-07T17:49:40.807-07:00"
+  },
+  {
+    "Id": "50838",
+    "Title": "Windows SideShow support?",
+    "LatestDate": "2009-03-31T11:23:05.593-07:00"
+  },
+  {
+    "Id": "51006",
+    "Title": "NerdDinner Web Slice",
+    "LatestDate": "2009-03-26T16:43:19.683-07:00"
+  },
+  {
+    "Id": "51839",
+    "Title": "Mobile updates",
+    "LatestDate": "2009-06-05T08:17:04.347-07:00"
+  },
+  {
+    "Id": "51900",
+    "Title": "The name 'XXX' does not exist in the current context",
+    "LatestDate": "2009-05-15T13:16:52.12-07:00"
+  },
+  {
+    "Id": "52081",
+    "Title": "NerdDinner 1.0 with Microsoft SQL Server 2008",
+    "LatestDate": "2009-04-06T01:58:25.843-07:00"
+  },
+  {
+    "Id": "52104",
+    "Title": "Approaches to handle ../Dinners/Details",
+    "LatestDate": "2009-04-06T09:15:08.977-07:00"
+  },
+  {
+    "Id": "52218",
+    "Title": "Using StructureMap or Spring.Net",
+    "LatestDate": "2009-04-03T11:14:23.553-07:00"
+  },
+  {
+    "Id": "52502",
+    "Title": "non relative script includes",
+    "LatestDate": "2009-04-12T17:03:58.407-07:00"
+  },
+  {
+    "Id": "52579",
+    "Title": "Bug with Linq2SQL NerdDinner ",
+    "LatestDate": "2010-12-16T09:33:55.363-08:00"
+  },
+  {
+    "Id": "53160",
+    "Title": "Where does data driven validation belong?",
+    "LatestDate": "2009-04-13T23:39:45.933-07:00"
+  },
+  {
+    "Id": "53262",
+    "Title": "how do I get Java script to work in Nerd dinner",
+    "LatestDate": "2009-04-23T00:39:37.617-07:00"
+  },
+  {
+    "Id": "53400",
+    "Title": "book text suggestion: \"pluralizes\" => \"depluralizes\"",
+    "LatestDate": "2009-04-15T11:11:34.27-07:00"
+  },
+  {
+    "Id": "53581",
+    "Title": "Error: 'Sys' is undefined",
+    "LatestDate": "2009-11-04T10:19:33.97-08:00"
+  },
+  {
+    "Id": "54102",
+    "Title": "Float numbers from \".\" to \",\" for Latitude and Longitude",
+    "LatestDate": "2012-05-29T00:28:39.503-07:00"
+  },
+  {
+    "Id": "54283",
+    "Title": "Map.js causes runtime errors...",
+    "LatestDate": "2010-06-04T09:21:17.27-07:00"
+  },
+  {
+    "Id": "54528",
+    "Title": "SelectedList namespace error",
+    "LatestDate": "2009-04-26T13:22:35.857-07:00"
+  },
+  {
+    "Id": "54652",
+    "Title": "Parser Error",
+    "LatestDate": "2009-04-29T17:28:16.363-07:00"
+  },
+  {
+    "Id": "54797",
+    "Title": "Culture Problem",
+    "LatestDate": "2009-04-28T23:22:01.403-07:00"
+  },
+  {
+    "Id": "55940",
+    "Title": "nerddinner aplication based problem",
+    "LatestDate": "2009-05-11T08:41:54.827-07:00"
+  },
+  {
+    "Id": "55973",
+    "Title": "Dinner and RSVP classes",
+    "LatestDate": "2009-05-20T22:15:39.02-07:00"
+  },
+  {
+    "Id": "58797",
+    "Title": "Amazon version of tutorial doesn't mention CSS needed to make map work in step 11",
+    "LatestDate": "2009-06-21T23:34:47.483-07:00"
+  },
+  {
+    "Id": "59199",
+    "Title": "class-level Context, not ideal?",
+    "LatestDate": "2009-06-11T07:38:33.553-07:00"
+  },
+  {
+    "Id": "60133",
+    "Title": "NerdDinner on Azure",
+    "LatestDate": "2009-06-25T12:36:30.847-07:00"
+  },
+  {
+    "Id": "60306",
+    "Title": "VELatLong gets an error",
+    "LatestDate": "2009-06-22T13:44:30.957-07:00"
+  },
+  {
+    "Id": "61173",
+    "Title": "Parser Error",
+    "LatestDate": "2009-09-02T07:57:52.887-07:00"
+  },
+  {
+    "Id": "64639",
+    "Title": "PHP Conversion...",
+    "LatestDate": "2009-10-08T11:57:10.993-07:00"
+  },
+  {
+    "Id": "67270",
+    "Title": "CannotOpenSolution",
+    "LatestDate": "2010-03-31T20:27:46.783-07:00"
+  },
+  {
+    "Id": "71896",
+    "Title": "SQL scripts?",
+    "LatestDate": "2009-10-13T22:26:58.063-07:00"
+  },
+  {
+    "Id": "71932",
+    "Title": "calling the register action using ajax - getting a 404 error",
+    "LatestDate": "2011-02-13T01:12:48.833-08:00"
+  },
+  {
+    "Id": "72736",
+    "Title": "Login using Twitter account",
+    "LatestDate": "2009-10-23T02:46:19.39-07:00"
+  },
+  {
+    "Id": "72958",
+    "Title": "Map Doesn't Show",
+    "LatestDate": "2009-10-24T01:34:53.63-07:00"
+  },
+  {
+    "Id": "73279",
+    "Title": "Is this project dead ? No activity in Discussions ",
+    "LatestDate": "2009-12-10T13:36:05.83-08:00"
+  },
+  {
+    "Id": "73386",
+    "Title": "Virtual directory and iPhone",
+    "LatestDate": "2009-10-28T10:02:04.563-07:00"
+  },
+  {
+    "Id": "73669",
+    "Title": "MobileCapableWebFormViewEngine , where is it ?",
+    "LatestDate": "2009-10-31T02:05:09.427-07:00"
+  },
+  {
+    "Id": "73868",
+    "Title": "unable to delete dinner",
+    "LatestDate": "2009-11-02T16:39:29.43-08:00"
+  },
+  {
+    "Id": "75018",
+    "Title": "stuck in Creating Data Model Classes with LINQ to SQL ",
+    "LatestDate": "2009-11-13T04:58:33.083-08:00"
+  },
+  {
+    "Id": "75736",
+    "Title": "Why is the datacontext never disposed",
+    "LatestDate": "2009-11-20T09:36:29.05-08:00"
+  },
+  {
+    "Id": "76153",
+    "Title": "Visual Studio 2010 conversion of NerdDinner 1.0",
+    "LatestDate": "2010-05-14T16:18:28-07:00"
+  },
+  {
+    "Id": "79980",
+    "Title": "Where is the source for the existing NerdDinner site?",
+    "LatestDate": "2010-01-06T14:00:45.973-08:00"
+  },
+  {
+    "Id": "203460",
+    "Title": "Réponse en cas d'absence",
+    "LatestDate": "2010-03-01T12:45:20.637-08:00"
+  },
+  {
+    "Id": "203668",
+    "Title": "UpdateModel makes site remember data",
+    "LatestDate": "2010-03-03T06:24:15.91-08:00"
+  },
+  {
+    "Id": "205176",
+    "Title": "Problem load the project to VS2008 using MVP 2.0",
+    "LatestDate": "2010-03-21T11:23:10.997-07:00"
+  },
+  {
+    "Id": "205177",
+    "Title": "Réponse en cas d'absence",
+    "LatestDate": "2010-03-16T16:33:48.487-07:00"
+  },
+  {
+    "Id": "206944",
+    "Title": "Quick question about the license ",
+    "LatestDate": "2010-03-22T17:03:39.287-07:00"
+  },
+  {
+    "Id": "207604",
+    "Title": "NerdDinner in Vb.Net",
+    "LatestDate": "2010-04-05T12:49:56.087-07:00"
+  },
+  {
+    "Id": "207605",
+    "Title": "Réponse en cas d'absence",
+    "LatestDate": "2010-03-29T01:47:18.95-07:00"
+  },
+  {
+    "Id": "209251",
+    "Title": "server error in \"/\"",
+    "LatestDate": "2010-04-15T10:57:12.717-07:00"
+  },
+  {
+    "Id": "209837",
+    "Title": "Dinner/RSVP generated classes -- where?",
+    "LatestDate": "2010-05-14T16:19:02.317-07:00"
+  },
+  {
+    "Id": "210863",
+    "Title": "NerdDinner is a good architecture reference?",
+    "LatestDate": "2010-06-26T02:56:35.413-07:00"
+  },
+  {
+    "Id": "211162",
+    "Title": "Bug In Downloaded Solution ... Can't Change Dinner Address ",
+    "LatestDate": "2010-04-30T09:50:33.323-07:00"
+  },
+  {
+    "Id": "212821",
+    "Title": "First-chance exceptions in System.Web.MVC",
+    "LatestDate": "2010-05-16T17:54:18.367-07:00"
+  },
+  {
+    "Id": "215621",
+    "Title": "Visual Studio 2010 cannot open the solution",
+    "LatestDate": "2010-06-12T11:05:52.633-07:00"
+  },
+  {
+    "Id": "216589",
+    "Title": "NerdDinner.edmx file could not be modified",
+    "LatestDate": "2010-06-18T23:08:49.507-07:00"
+  },
+  {
+    "Id": "218161",
+    "Title": "NerdDinner - Features Beyond the Sample Chapter...",
+    "LatestDate": "2011-01-29T22:42:29.983-08:00"
+  },
+  {
+    "Id": "218450",
+    "Title": "Using ViewModel technique with jQuery UI and MVC 2",
+    "LatestDate": "2010-07-06T05:43:33.74-07:00"
+  },
+  {
+    "Id": "218543",
+    "Title": "How about adding maps in mobile pages?",
+    "LatestDate": "2010-07-06T22:52:49.063-07:00"
+  },
+  {
+    "Id": "219654",
+    "Title": "Solution not opening in VS2008 SP1",
+    "LatestDate": "2010-11-01T13:14:48.957-07:00"
+  },
+  {
+    "Id": "220015",
+    "Title": "NERDDINNER.MDF cannot be opened because it is version 655. This server supports version 612 and earlier.",
+    "LatestDate": "2012-01-13T08:19:05.047-08:00"
+  },
+  {
+    "Id": "222621",
+    "Title": "public void Save() in Repository class throws a rule violation ERROR",
+    "LatestDate": "2010-08-10T04:54:56.63-07:00"
+  },
+  {
+    "Id": "222785",
+    "Title": "Is this possible with NerdDinner?",
+    "LatestDate": "2010-08-06T22:54:00.437-07:00"
+  },
+  {
+    "Id": "223263",
+    "Title": "Google map instead of bing map",
+    "LatestDate": "2010-08-11T12:17:50.763-07:00"
+  },
+  {
+    "Id": "225013",
+    "Title": "Can't run the default project?",
+    "LatestDate": "2010-08-26T20:57:14.083-07:00"
+  },
+  {
+    "Id": "225376",
+    "Title": "DinnerFormViewModel",
+    "LatestDate": "2010-08-30T19:38:39.853-07:00"
+  },
+  {
+    "Id": "225966",
+    "Title": "Closing EF contexts in IDinnerRepository?",
+    "LatestDate": "2011-03-08T06:57:42.567-08:00"
+  },
+  {
+    "Id": "226176",
+    "Title": "can help ? (web.config)",
+    "LatestDate": "2010-09-06T01:53:13.18-07:00"
+  },
+  {
+    "Id": "226239",
+    "Title": "Deploy Nerd Dinner",
+    "LatestDate": "2011-01-20T08:11:56.84-08:00"
+  },
+  {
+    "Id": "228565",
+    "Title": "No Service layer? and everything is in one assembly?",
+    "LatestDate": "2010-09-25T07:14:57.727-07:00"
+  },
+  {
+    "Id": "229205",
+    "Title": "Creating a New SQL Server Database for .NET MVC 2",
+    "LatestDate": "2012-04-04T09:35:50.697-07:00"
+  },
+  {
+    "Id": "229494",
+    "Title": "forgot password",
+    "LatestDate": "2010-10-03T22:07:39.89-07:00"
+  },
+  {
+    "Id": "230343",
+    "Title": "Cannot modify the project.",
+    "LatestDate": "2010-11-25T05:48:06.18-08:00"
+  },
+  {
+    "Id": "231344",
+    "Title": "objectdinner.com, a basic implementation with object database db4o (for .NET, Java, Android)",
+    "LatestDate": "2010-10-18T09:16:22.01-07:00"
+  },
+  {
+    "Id": "231905",
+    "Title": "MVC 3 version ?",
+    "LatestDate": "2010-11-08T16:00:13.133-08:00"
+  },
+  {
+    "Id": "233152",
+    "Title": "VS2008 the RSVP sets are not showing up in the Dinners object",
+    "LatestDate": "2010-11-03T09:13:00.167-07:00"
+  },
+  {
+    "Id": "234634",
+    "Title": "NerdDinner as an Application vs. Sample Code",
+    "LatestDate": "2010-11-18T16:39:17.793-08:00"
+  },
+  {
+    "Id": "235100",
+    "Title": "What's wrong withe the statement below???:",
+    "LatestDate": "2011-01-02T13:56:53.143-08:00"
+  },
+  {
+    "Id": "235392",
+    "Title": "OpenID HtmlHelpers in MVC 3 Razor",
+    "LatestDate": "2011-03-30T12:35:44.623-07:00"
+  },
+  {
+    "Id": "236649",
+    "Title": "Error auto attaching database",
+    "LatestDate": "2010-11-30T23:01:35.797-08:00"
+  },
+  {
+    "Id": "240122",
+    "Title": "Help with EntityFramework and NerdDinner",
+    "LatestDate": "2011-01-03T06:00:44.883-08:00"
+  },
+  {
+    "Id": "249675",
+    "Title": "Sample database, with sample data",
+    "LatestDate": "2011-06-25T06:56:48.303-07:00"
+  },
+  {
+    "Id": "251862",
+    "Title": "Getting going again...",
+    "LatestDate": "2011-03-30T12:42:23.753-07:00"
+  },
+  {
+    "Id": "252457",
+    "Title": "DinnerController issue",
+    "LatestDate": "2011-04-05T09:21:34.407-07:00"
+  },
+  {
+    "Id": "258793",
+    "Title": "How do I get started with the MVC 3.0 Razor Version",
+    "LatestDate": "2011-09-08T06:28:29.83-07:00"
+  },
+  {
+    "Id": "258815",
+    "Title": "Downloads not working..",
+    "LatestDate": "2011-05-24T12:46:39.787-07:00"
+  },
+  {
+    "Id": "258941",
+    "Title": "Web Deploy MVC 3.0 Nerd Dinner There is a duplicate 'uri' section defined ",
+    "LatestDate": "2011-05-26T07:30:51.4-07:00"
+  },
+  {
+    "Id": "260178",
+    "Title": "Am I missing a step?",
+    "LatestDate": "2011-07-13T03:10:56.577-07:00"
+  },
+  {
+    "Id": "265332",
+    "Title": "DotNetOAuth error on re-login",
+    "LatestDate": "2011-07-15T10:21:30.817-07:00"
+  },
+  {
+    "Id": "266062",
+    "Title": "NerdDinner tag on StackOverflow",
+    "LatestDate": "2011-07-21T07:50:17.967-07:00"
+  },
+  {
+    "Id": "266392",
+    "Title": "Index.aspx View won't display dynamic data",
+    "LatestDate": "2011-07-28T13:20:45.04-07:00"
+  },
+  {
+    "Id": "267035",
+    "Title": "Nerd dinner Repository pattern versus the repository used in , The Contoso University sample web application.",
+    "LatestDate": "2011-07-29T02:19:55.71-07:00"
+  },
+  {
+    "Id": "271378",
+    "Title": "Databases?",
+    "LatestDate": "2011-11-20T03:23:30.953-08:00"
+  },
+  {
+    "Id": "271978",
+    "Title": "PostAuthenticateRequest and GenericPrincipal and Roles",
+    "LatestDate": "2011-10-21T12:04:55.91-07:00"
+  },
+  {
+    "Id": "272474",
+    "Title": "Exception attempting to access db.Dinners",
+    "LatestDate": "2012-01-13T12:38:12.327-08:00"
+  },
+  {
+    "Id": "274151",
+    "Title": "Pagination Issues",
+    "LatestDate": "2011-09-28T11:47:53.03-07:00"
+  },
+  {
+    "Id": "275531",
+    "Title": "Trunk Instructions",
+    "LatestDate": "2011-10-11T19:22:02.177-07:00"
+  },
+  {
+    "Id": "275922",
+    "Title": "\"The project type is not supported by this installation\"",
+    "LatestDate": "2011-10-14T09:33:03.043-07:00"
+  },
+  {
+    "Id": "276341",
+    "Title": "\"A provider factory for the specified store connection of type 'MvcMiniProfiler.Data.EFProfiledDbConnection' could not be discovered\" error",
+    "LatestDate": "2011-10-18T11:23:00.167-07:00"
+  },
+  {
+    "Id": "276928",
+    "Title": "problems with mobile version",
+    "LatestDate": "2011-10-23T21:09:28.827-07:00"
+  },
+  {
+    "Id": "278533",
+    "Title": "Razor runtime error - Invalid column name 'HostedById'",
+    "LatestDate": "2011-12-24T03:15:27.923-08:00"
+  },
+  {
+    "Id": "278826",
+    "Title": "Performance Issue in ViewEngine Customization",
+    "LatestDate": "2011-11-09T02:34:13.327-08:00"
+  },
+  {
+    "Id": "283332",
+    "Title": "Source code with Data Layer of Store procs and Data Readers",
+    "LatestDate": "2012-01-06T21:09:13.303-08:00"
+  },
+  {
+    "Id": "283877",
+    "Title": "installing nerddinner on webhotel",
+    "LatestDate": "2011-12-23T17:55:46.13-08:00"
+  },
+  {
+    "Id": "284745",
+    "Title": "NerdDinner SQL Server 2008",
+    "LatestDate": "2012-01-02T10:53:42.957-08:00"
+  },
+  {
+    "Id": "285384",
+    "Title": "which one to pick?",
+    "LatestDate": "2012-01-10T02:25:26.637-08:00"
+  },
+  {
+    "Id": "286065",
+    "Title": "NerdDinner change default location of Bing map",
+    "LatestDate": "2012-01-13T08:02:12.483-08:00"
+  },
+  {
+    "Id": "286067",
+    "Title": "NerdDinner debugging error, MVC Mini profiler",
+    "LatestDate": "2012-01-13T08:14:17.883-08:00"
+  },
+  {
+    "Id": "286334",
+    "Title": "converting included mdf databases to sql server 2008 databases",
+    "LatestDate": "2012-04-04T09:41:31.95-07:00"
+  },
+  {
+    "Id": "287445",
+    "Title": "MVC3 Tutorial",
+    "LatestDate": "2012-01-31T10:37:30.84-08:00"
+  },
+  {
+    "Id": "350171",
+    "Title": "attaching to nerddinner.mdf using which ms sql?",
+    "LatestDate": "2012-11-03T09:12:54.113-07:00"
+  },
+  {
+    "Id": "351920",
+    "Title": "language code as parameter in url ",
+    "LatestDate": "2012-04-11T08:21:22.64-07:00"
+  },
+  {
+    "Id": "358197",
+    "Title": "Invalid Object",
+    "LatestDate": "2012-06-04T12:30:04.463-07:00"
+  },
+  {
+    "Id": "358567",
+    "Title": "Generic repository and modelstate",
+    "LatestDate": "2012-06-06T05:22:01.283-07:00"
+  },
+  {
+    "Id": "359181",
+    "Title": "The dinner event not pinned on the map when edit it",
+    "LatestDate": "2012-06-11T08:17:22.427-07:00"
+  },
+  {
+    "Id": "361878",
+    "Title": "AntiForgery Token",
+    "LatestDate": "2012-07-05T12:26:05.707-07:00"
+  },
+  {
+    "Id": "363921",
+    "Title": "Tutorial Step 4:  Index View -- Bulleted List disappears ",
+    "LatestDate": "2012-07-12T12:09:28.253-07:00"
+  },
+  {
+    "Id": "395247",
+    "Title": "Downloads corrupted",
+    "LatestDate": "2012-09-12T05:58:58.287-07:00"
+  },
+  {
+    "Id": "397280",
+    "Title": "MissingMethodException - OAuth",
+    "LatestDate": "2012-09-28T04:32:37.32-07:00"
+  },
+  {
+    "Id": "401891",
+    "Title": "trying to open the code in vs2012 (resolved, mvc 4 opened fine)",
+    "LatestDate": "2013-02-07T22:36:13.127-08:00"
+  },
+  {
+    "Id": "406103",
+    "Title": "Thanks for all the code it really helped me launch my own site",
+    "LatestDate": "2012-12-08T18:06:30.263-08:00"
+  },
+  {
+    "Id": "431142",
+    "Title": "Index was outside the bounds of the array.",
+    "LatestDate": "2013-01-28T10:46:51.417-08:00"
+  },
+  {
+    "Id": "431370",
+    "Title": "Is Code first approach is used in true manner in this project ? ",
+    "LatestDate": "2013-01-30T01:13:11.547-08:00"
+  },
+  {
+    "Id": "446861",
+    "Title": "Index was outside the bounds of the array in DbGeographyModelBinder",
+    "LatestDate": "2013-11-05T19:33:49.057-08:00"
+  },
+  {
+    "Id": "576855",
+    "Title": "Take a look at this nerddinner",
+    "LatestDate": "2015-01-04T18:56:44.407-08:00"
+  },
+  {
+    "Id": "654740",
+    "Title": "project is dead?",
+    "LatestDate": "2016-05-16T22:34:05.483-07:00"
+  },
+  {
+    "Id": "654917",
+    "Title": "Design Patters",
+    "LatestDate": "2016-05-25T01:19:14.377-07:00"
+  }
+]

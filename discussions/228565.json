@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "498396",
+    "ThreadId": "228565",
+    "Html": "<p>Hi there,</p>\r\n<p>I was wondering why in Nerddinner there is no service layer? I thought a repository pattern always has a service layer which calls the repository layer - I was interested why ND doesn't have this??</p>\r\n<p>&nbsp;</p>\r\n<p>Also why the repository classes and interfaces are in the same assembly as the MVC app - is it not better practice to separate these?</p>\r\n<p>&nbsp;</p>\r\n<p>I would really love to hear some feedback</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2010-09-25T07:14:57.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

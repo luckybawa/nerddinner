@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "176446",
+    "ThreadId": "52502",
+    "Html": "It appears that Site.master page uses absolute URLs when including javascript files.&nbsp; I believe a more robust solution is to use&nbsp;&nbsp; &lt;script src=&quot;&lt;%= Url.Content(&quot;~/Content/Site.css&quot;)%&gt;&quot; .... &lt;/script&gt;&nbsp; This way if we deploy the solution to some other virtual site, it wont break.<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-06T21:38:29.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177353",
+    "ThreadId": "52502",
+    "Html": "Good point...I'll try to fix it.<br>\r\n",
+    "PostedDate": "2009-04-08T13:58:31.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177355",
+    "ThreadId": "52502",
+    "Html": "I have it fixed already. i can send you the patch.<br><br>On Wed, Apr 8, 2009 at 1:58 PM, [email removed] wrote:<br>&gt; From: shanselman<br>&gt;<br>&gt; Good point...I'll try to fix it.<br>&gt;<br>&gt; Read the full discussion online.<br>&gt;<br>&gt; To add a post to this discussion, reply to this email<br>&gt; ([email removed])<br>&gt;<br>&gt; To start a new discussion for this project, email<br>&gt; [email removed]<br>&gt;<br>&gt; You are receiving this email because you subscribed to this discussion on<br>&gt; CodePlex. You can unsubscribe on codePlex.com.<br>&gt;<br>&gt; Please note: Images and attachments will be removed from emails. Any posts<br>&gt; to this discussion will also be available online at codeplex.com<br><br><br><br>-- <br>Roman Rozinov<br><br>&quot;Imitation is the sincerest form of not being stupid&quot; -- Brett McLaughlin",
+    "PostedDate": "2009-04-08T14:00:38.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177357",
+    "ThreadId": "52502",
+    "Html": "Yes, please!<br><br><div>On Wed, Apr 8, 2009 at 2:00 PM, rroman81 <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br><blockquote style=\"margin:0pt 0pt 0pt 0.8ex;padding-left:1ex\">\r\n\r\n   <div> <p>From: rroman81</p> <div>I have it fixed already. i can send you the patch.<div><br><br>On Wed, Apr 8, 2009 at 1:58 PM, [email removed] wrote:<br>&gt; From: shanselman<br>&gt;<br>&gt; Good point...I'll try to fix it.<br>\r\n\r\n&gt;<br>&gt; Read the full discussion online.<br>&gt;<br>&gt; To add a post to this discussion, reply to this email<br></div>&gt; ([email removed])<div><br>&gt;<br>&gt; To start a new discussion for this project, email<br>\r\n\r\n</div>&gt; [email removed]<div><br>&gt;<br>&gt; You are receiving this email because you subscribed to this discussion on<br></div>&gt; CodePlex. You can unsubscribe on codePlex.com.<div><br>&gt;<br>\r\n\r\n&gt; Please note: Images and attachments will be removed from emails. Any posts<br>&gt; to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a><br><br><br><br></div>\r\n\r\n-- <br>Roman Rozinov<br><br>&quot;Imitation is the sincerest form of not being stupid&quot; -- Brett McLaughlin</div><div><div></div><div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=52502&ANCHOR#Post177355\">full discussion online</a>.</p>\r\n\r\n <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:52502]\">nerddinner@discussions.codeplex.com</a>)</p> <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p>\r\n\r\n <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/project/unsubscribe/nerddinner\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div></div></div>\r\n\r\n </blockquote></div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2009-04-08T14:02:48.367-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177458",
+    "ThreadId": "52502",
+    "Html": "Created issue tracker ID# 2684.&nbsp; It has the attachment.<br>\r\n",
+    "PostedDate": "2009-04-08T21:58:58.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "178420",
+    "ThreadId": "52502",
+    "Html": "Thanks!<span style=\"white-space:pre\">\t</span>",
+    "PostedDate": "2009-04-12T17:03:58.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

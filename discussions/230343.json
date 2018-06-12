@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "505132",
+    "ThreadId": "230343",
+    "Html": "<p>Hi, I am having trouble to modify the source. When I download it at first time, it runs perfectly. However,</p>\r\n<p>as soon as I add just a single character to Index.aspx in Views/Home (for example), and run the project, I get the following error:</p>\r\n<p>HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable. Please review the following URL and make sure that it is spelled correctly.</p>\r\n<p>A small modification results in that error.</p>\r\n<p>&nbsp;</p>\r\n<p>Can anyone help me with this?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2010-10-10T15:51:47.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "526941",
+    "ThreadId": "230343",
+    "Html": "\r\n<p>Try to open global.asax .cs file e run again the application....I don't know but work fine....</p>\r\n<p>If you put some breakpoint on your web page you have the http error 404</p>\r\n<p>&nbsp;</p>\r\n<p>Dario</p>\r\n",
+    "PostedDate": "2010-11-25T05:48:06.18-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

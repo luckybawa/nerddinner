@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "936502",
+    "ThreadId": "401891",
+    "Html": "\r\n<p>the main project won't open, any ideas as to what magic bit I&nbsp;have&nbsp;to download to make it open / convert the project to vs 2012 ?</p>\r\n",
+    "PostedDate": "2012-11-04T20:25:01.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "936603",
+    "ThreadId": "401891",
+    "Html": "The main project!!\r\n<div>Are we taking about visual studio or ms sql server. </div>\r\n<div>If VS then go to Branch &gt; Trunk &gt; (or Trunk &gt; Branch ) find sln file and open that.\r\n</div>\r\n<div><br>\r\n<br>\r\n<div>On Mon, Nov 5, 2012 at 5:25 AM, BasHamer <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\" target=\"_blank\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: BasHamer</p>\r\n<div>\r\n<p>the main project won't open, any ideas as to what magic bit I have to download to make it open / convert the project to vs 2012 ?</p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://nerddinner.codeplex.com/discussions/401891#post936502\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:401891]\" target=\"_blank\">nerddinner@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\" target=\"_blank\">\r\nnerddinner@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://nerddinner.codeplex.com/subscriptions/thread/project/edit\" target=\"_blank\">\r\nunsubscribe or change your settings</a> on codePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at\r\n<a href=\"http://codeplex.com\" target=\"_blank\">codeplex.com</a></p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n</div>\r\n",
+    "PostedDate": "2012-11-05T02:04:54.41-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "936734",
+    "ThreadId": "401891",
+    "Html": "\r\n<p>the problem was that when opening the 2.0 solution in visual studio 2012 it would not load the main project.</p>\r\n<p>some unsupported project type error.</p>\r\n<p>when opening the 4.0 solution everything is fine so for my browsing / learning purposes it is all working.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>\r\n",
+    "PostedDate": "2012-11-05T06:48:51.45-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "941919",
+    "ThreadId": "401891",
+    "Html": "\r\n<p>BasHamer,</p>\r\n<p>I am having similar issue.</p>\r\n<p>Can you tell me what you mean by &quot;opening 4.0&nbsp;solution&quot;?</p>\r\n<p>&nbsp;</p>\r\n<p>EDIT: Nevermind. I found the 4.0 solution in &quot;Source code&quot; section.</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2012-11-14T18:10:22.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "942249",
+    "ThreadId": "401891",
+    "Html": "\r\n<p>I got the latest version of the code (http://nerddinner.codeplex.com/SourceControl/changeset/view/8ea1ecf71b30) and opened the solution in the MVC 4 folder.</p>\r\n<p>&nbsp;</p>\r\n<p>the MVC 4 project is a little rough on the edges, there is code that is copy pasted from other versions and it has some files that you'll find missing (like the .format function in the javascript)</p>\r\n<p>&nbsp;</p>\r\n<p>But it does stuff when you debug it and you can see how some of the bits work together; but if you are planning on extending it, well then it might not be the best starting point as there are some&nbsp;dangling&nbsp;references you'll run into.</p>\r\n",
+    "PostedDate": "2012-11-15T11:52:01.007-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "943423",
+    "ThreadId": "401891",
+    "Html": "\r\n<p>Thanks Hamer. That was helpful.&nbsp;</p>\r\n",
+    "PostedDate": "2012-11-17T22:05:51.14-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "982817",
+    "ThreadId": "401891",
+    "Html": "\r\n<p>Recently downloaded the latest mvc 4 version also and ran into this same error....both my vs10 and vs12-express are claiming the NerdDinner.csproj is incompatible. Is there any resolution to this issue?</p>\r\n",
+    "PostedDate": "2013-01-03T13:38:30.643-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "998331",
+    "ThreadId": "401891",
+    "Html": "Similar problem - vs10 says the NerdDinner.csproj is incompatible. Is there any resolution to this issue?<br />\n",
+    "PostedDate": "2013-02-07T22:11:28.84-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "998340",
+    "ThreadId": "401891",
+    "Html": "Try to Download the source code from here <a href=\"http://nerddinner.codeplex.com/SourceControl/changeset/view/b1a032d1532b\" rel=\"nofollow\">http://nerddinner.codeplex.com/SourceControl/changeset/view/b1a032d1532b</a> and use the MVC4 version.<br />\n",
+    "PostedDate": "2013-02-07T22:36:13.127-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

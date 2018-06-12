@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1056073",
+    "ThreadId": "446861",
+    "Html": "Hi guys,\r<br />\n<br />\nI am getting an error in the MVC 4 version when I try to host an event.  The \r<br />\nDbGeographyModelBinder methos throws an 'Index outside of bounds of array' in the following controller method:<br />\n<pre><code>    public class DbGeographyModelBinder : DefaultModelBinder\n    {\n        public override object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)\n        {\n            var valueProviderResult = bindingContext.ValueProvider.GetValue(bindingContext.ModelName);\n            if (valueProviderResult != null)\n            {\n                string[] latLongStr = valueProviderResult.AttemptedValue.Split(',');\n           //line below throws the error\n                __string point = string.Format(&quot;POINT ({0} {1})&quot;, latLongStr[1], latLongStr[0]);__\n                //4326 format puts LONGITUDE first then LATITUDE\n                DbGeography result = DbGeography.FromText(point, 4326);\n                return result;\n            }\n            return null;\n        }\n    }</code></pre>\n\nAny ideas?\r<br />\n<br />\nThanks,  Steve<br />\n",
+    "PostedDate": "2013-06-12T13:56:13.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1064202",
+    "ThreadId": "446861",
+    "Html": "You're not the only one.  The AttemptedValue for &quot;Location&quot; is coming back null.  I am trying to pinpoint the problem, but it's going to take me a bit, while I navigate...  Any help would be appreciated.  Thanks.<br />\n",
+    "PostedDate": "2013-07-03T10:14:58.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1073726",
+    "ThreadId": "446861",
+    "Html": "I have the same issue.  Does the map load correctly on the page on GET Dinner/Create for you?  Because it does not for me - I get the NaaN error.<br />\n",
+    "PostedDate": "2013-07-26T17:00:07.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1074467",
+    "ThreadId": "446861",
+    "Html": "The problem is because the blur method is supposed to fire and bring back the Lat and Long.  IT DOES NOT.  Therefore a Null is passed and... the error.  I haven't fixed this issue as yet.  I have instead used a different service that was outlined in the walkthrough using the different Geolocation Services on MSDN in my dinner CREATION.  Hope this helps... and if anyone figures out why the Blur function is not working in the JavaScript... let us know.<br />\n",
+    "PostedDate": "2013-07-29T14:00:48.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1117448",
+    "ThreadId": "446861",
+    "Html": "The problem seems to originate in the Nerddinner.js file. I changed the following lines and my deployed site now works fine:<br />\n<pre><code>NerdDinner._callbackForLocation = function (result) {\n    ZoomMap(result);\n\n    if (result &amp;&amp;\n           result.resourceSets &amp;&amp;\n           result.resourceSets.length &gt; 0 &amp;&amp;\n           result.resourceSets[0].resources &amp;&amp;\n           result.resourceSets[0].resources.length &gt; 0) {\n        // Add a pushpin at the found location\n        var location = new Microsoft.Maps.Location(result.resourceSets[0].resources[0].point.coordinates[0], result.resourceSets[0].resources[0].point.coordinates[1]);\n        var pushpin = new Microsoft.Maps.Pushpin(location);\n        NerdDinner._map.entities.push(pushpin);\n\n        $(&quot;#Location&quot;).val(location.latitude.toString() + &quot;,&quot; + location.longitude.toString());\n        $(&quot;#Latitude&quot;).val(location.latitude.toString());\n        $(&quot;#Longitude&quot;).val(location.longitude.toString());\n    }\n};</code></pre>\n\nNotice that _ZoomMap is not called correctly. I changed the code to this:<br />\n<pre><code>NerdDinner._callbackForLocation = function (result) {\n    NerdDinner._ZoomMap(result);\n\n    if (result &amp;&amp;\n           result.resourceSets &amp;&amp;\n           result.resourceSets.length &gt; 0 &amp;&amp;\n           result.resourceSets[0].resources &amp;&amp;\n           result.resourceSets[0].resources.length &gt; 0) {\n        // Add a pushpin at the found location\n        var location = new Microsoft.Maps.Location(result.resourceSets[0].resources[0].point.coordinates[0], result.resourceSets[0].resources[0].point.coordinates[1]);\n        var pushpin = new Microsoft.Maps.Pushpin(location);\n        NerdDinner._map.entities.push(pushpin);\n\n        $(&quot;#Location&quot;).val(location.latitude.toString() + &quot;,&quot; + location.longitude.toString());\n        $(&quot;#Latitude&quot;).val(location.latitude.toString());\n        $(&quot;#Longitude&quot;).val(location.longitude.toString());\n    }\n};</code></pre>\n\n",
+    "PostedDate": "2013-11-04T15:58:33.02-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1118676",
+    "ThreadId": "446861",
+    "Html": "Good work, that did it for me, thanks.<br />\n",
+    "PostedDate": "2013-11-05T19:33:49.057-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great",
+    "ClosedDate": "2011-06-01T12:45:01.373-07:00",
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "On trunk 47178 the following unit tests are broken: \n\n- EditAction_Retrieves_Dinner_1_From_Repo_And_Countries_And_Sets_DinnerViewModel\n- EditAction_Saves_Changes_To_Dinner_1\n- LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven\n- EditAction_Uses_DinnerFormViewModel\n- IndexAction_With_Search_Term_Should_Filter\n- CreateAction_With_New_Dinner_Should_Return_View_And_Repo_Should_Contain_New_Dinner\n- RegisterAction_Should_Return_Content\n- LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven\n- EditAction_Should_Redisplay_With_Errors_When_Update_Fails\n\nBuilt using VS2010 on 32 bit Windows 7 Pro",
+    "LastUpdatedDate": "2011-06-01T12:45:01.373-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-04-20T08:57:32.697-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unit tests are broken",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5962
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks - I fixed all but 4 of these with the latest checkin, working on those last 4.",
+      "PostedDate": "2010-05-13T16:56:29.52-07:00",
+      "Id": 76088
+    },
+    {
+      "Message": "All unit tests are fixed in the latest checkins.",
+      "PostedDate": "2010-05-20T13:56:21.01-07:00",
+      "Id": 76089
+    },
+    {
+      "Message": "All unit tests are working",
+      "PostedDate": "2011-05-06T13:05:20.683-07:00",
+      "Id": 76090
+    }
+  ]
+}

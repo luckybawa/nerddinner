@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Applied patch from jonsagara",
+    "ClosedDate": "2011-04-24T20:42:16.907-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "The Galloway link at bottom of home page is broken: http://weblogs.asp.net/jongalloway\nI think the link should be: http://weblogs.asp.net/jgalloway",
+    "LastUpdatedDate": "2011-04-24T20:42:16.907-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-09-22T20:15:56.44-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Galloway link at bottom of home page goes to an error page",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7225
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I think the link should be: http://weblogs.asp.net/jgalloway/default.aspx",
+      "PostedDate": "2010-09-22T20:18:37.767-07:00",
+      "Id": 76111
+    },
+    {
+      "Message": "I have submitted a patch for this.",
+      "PostedDate": "2010-10-15T22:42:04.447-07:00",
+      "Id": 76112
+    }
+  ]
+}

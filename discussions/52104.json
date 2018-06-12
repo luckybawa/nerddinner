@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "174933",
+    "ThreadId": "52104",
+    "Html": "Using a URL like <a href=\"http://localhost:1368/Dinners/Details\">http://localhost:1368/Dinners/Details</a> results in a &quot;null entry for parameter 'id' of non-nullable type&quot; exception. What are the common approaches that provide a friendly user experience to handle this case? Ideas that come to mind:<br>\r\n<br>\r\n* Make the id parm of the action method optional and check it, though I'm not certain that's doable. Return the &quot;NotFound&quot; view. Or redirect to the Dinners list.<br>\r\n<br>\r\n* Implement an attribute on the id parm to provide a default as described at <a href=\"http://www.coderjournal.com/2008/08/parameter-attribute-default-value-mvc-action-method/\">http://www.coderjournal.com/2008/08/parameter-attribute-default-value-mvc-action-method/</a>; A default of 1 would return the dinner row of id of 1, if it exists, or would return the &quot;NotFound&quot; view.<br>\r\n<br>\r\nAny other approaches that would be considered a good user experience? <br>\r\n<br>\r\n[Update]: After posting, I did change Global.asax.cs to use id = &quot;1&quot; in the parameter defaults which worked fine (and appears counter to the behavior described in the coderjournal link in bullet 2). But I'd still be interested in hearing alternative behavior approaches.\r\n",
+    "PostedDate": "2009-04-02T11:22:25.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176184",
+    "ThreadId": "52104",
+    "Html": "The approach you did makes sense. Or make the id a nullable integer. That allows doing your first bullet point.\r\n",
+    "PostedDate": "2009-04-06T09:15:08.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

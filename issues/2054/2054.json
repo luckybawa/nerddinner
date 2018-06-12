@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Work item was reported as fixed per Haacked.",
+    "ClosedDate": "2011-04-17T17:40:43.94-07:00",
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "The regular expression for UK phone numbers is wrong.\n[Helpers/PhoneValidator.cs]\n\nFor example, try:\n08706010100 [= Microsoft UK]\n01613321789 [= AA]\n03700100222 [= BBC]",
+    "LastUpdatedDate": "2011-04-17T17:40:43.94-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-11T06:49:54.863-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "UK Phone Number Validation wrong",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2054
+  },
+  "FileAttachments": [
+    {
+      "FileId": 479403,
+      "FileName": "UK_PhoneValidatorTest.cs",
+      "DownloadUrl": ".\\479403"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "(Failing) tests for UK phone number validator.",
+      "PostedDate": "2009-03-11T19:32:46.993-07:00",
+      "Id": 76026
+    },
+    {
+      "Message": "Thanks. I'll take a look at the tests. UK numbers are odd because there are so many valid formats.",
+      "PostedDate": "2009-03-12T21:00:35.817-07:00",
+      "Id": 76027
+    },
+    {
+      "Message": "Phone validation was removed in r23403",
+      "PostedDate": "2009-05-06T22:13:27.157-07:00",
+      "Id": 76028
+    }
+  ]
+}

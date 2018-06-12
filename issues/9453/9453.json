@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This issue has been addressed in the vNext Branch",
+    "ClosedDate": "2011-09-14T04:25:51.91-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "On the home page when hovering over links in the \"Popular Dinner\" list a pin in the map is selected. A balloon expands from that pin. However, the pin that is selected does not match the link that I'm hovering over. For example, I hover over \"soggy dinner\" and the pin for \"Puliyogray With Mosaranna\" is selected. \n\nActually, it looks like it works until I get to the \"Don Bosco\" link in the list.  It doesn't work for the subsequent links in the list.  It highlights the balloon for the next link instead of the one I am on.",
+    "LastUpdatedDate": "2011-09-14T04:25:51.91-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2011-08-30T05:37:01.743-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Hover Over \"Popular Dinner\" Links Don't Highlight Correct Pin",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9453
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This issue has been addressed and fixed in the latest release\r\n\n\n** Closed by johnvpetersen 9/6/2011 7:12 AM",
+      "PostedDate": "2011-09-06T07:17:30.68-07:00",
+      "Id": 76130
+    },
+    {
+      "Message": "Just verified..this bug still exists... :-(",
+      "PostedDate": "2011-09-06T07:17:31.543-07:00",
+      "Id": 76131
+    },
+    {
+      "Message": "So the problem appears where there are two (or more) events at the same location. The Bing Maps isn't calling the _callbackForLocation for each event, just once for each location, which is causing the _points array to get out of sync.",
+      "PostedDate": "2011-09-06T07:53:33.927-07:00",
+      "Id": 76132
+    },
+    {
+      "Message": "I have resolved this issue in the vNext branch. The problem was that there was an assumption that ordinal position of a pin in the NerdDinner._shapes collection was the same as that dinner's ordinal position in the popular dinners list. ",
+      "PostedDate": "2011-09-11T16:47:17.407-07:00",
+      "Id": 76133
+    }
+  ]
+}

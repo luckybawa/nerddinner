@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "260470",
+    "ThreadId": "76153",
+    "Html": "<p>Hi All;</p>\r\n<p>Visual Studio 2010 seems confused when converting NerdDinner 1.0. The Conversion Report says everything converted fine. But the Solution Explorer says NerdDinner project is (unavailable).</p>\r\n<p>Does somebody already have NerdDinner 1.1 for vs2k10?</p>\r\n<p>Thanks,<br>Dale E. Moore&nbsp;</p>",
+    "PostedDate": "2009-11-24T22:13:06.61-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "265105",
+    "ThreadId": "76153",
+    "Html": "<p>I was able to get it working by removing the first guid from the ProjectTypeGuids line of the project file and then updating all the MVC assembly references to 2.0.0.0 from 1.0.0.0. &nbsp;Compiled and ran like a charm after that... &nbsp;FYI, this is my first exposure to .Net and the MS platform in general so I'm guessing there may be a 'better' way, but it worked for me.</p>",
+    "PostedDate": "2009-12-08T14:39:58.61-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "265825",
+    "ThreadId": "76153",
+    "Html": "Sorry, this is the tool for the conversion you did manually.<br>http://weblogs.asp.net/leftslipper/archive/2009/11/23/migrating-asp-net-mvc-1-0-applications-to-asp-net-mvc-2-beta-updated.aspx<br><br>I've been out of town, sorry I missed this.<br><br>On Tue, Dec 8, 2009 at 2:40 PM, [email removed] wrote:<br>&gt; From: dotbombjoe<br>&gt;<br>&gt; I was able to get it working by removing the first guid from the<br>&gt; ProjectTypeGuids line of the project file and then updating all the MVC<br>&gt; assembly references to 2.0.0.0 from 1.0.0.0.  Compiled and ran like a charm<br>&gt; after that...  FYI, this is my first exposure to .Net and the MS platform in<br>&gt; general so I'm guessing there may be a 'better' way, but it worked for me.<br>&gt;<br>&gt; Read the full discussion online.<br>&gt;<br>&gt; To add a post to this discussion, reply to this email<br>&gt; ([email removed])<br>&gt;<br>&gt; To start a new discussion for this project, email<br>&gt; [email removed]<br>&gt;<br>&gt; You are receiving this email because you subscribed to this discussion on<br>&gt; CodePlex. You can unsubscribe or change your settings on codePlex.com.<br>&gt;<br>&gt; Please note: Images and attachments will be removed from emails. Any posts<br>&gt; to this discussion will also be available online at codeplex.com<br><br><br><br>-- <br>Scott Hanselman<br>http://www.hanselman.com",
+    "PostedDate": "2009-12-10T11:11:55.437-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "266990",
+    "ThreadId": "76153",
+    "Html": "<p>Thanks <a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl02_UserNameLink\" style=\"text-decoration:underline;color:#ce8b10\" href=\"http://www.codeplex.com/site/users/view/dotbombjoe\">dotbombjoe</a>&nbsp;and&nbsp;<span style=\"font-size:14px;color:#30332d;white-space:nowrap\"><a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl04_UserNameLink\" style=\"text-decoration:underline;color:#ce8b10\" href=\"http://www.codeplex.com/site/users/view/shanselman\">shanselman</a></span>;</p>\r\n<p>MvcAppConverter ran fine then vs10 converted the results on the next open. Project NerdDinner.Tests gets</p>\r\n<p>&nbsp;</p>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">Error<span style=\"white-space:pre\"> </span>1<span style=\"white-space:pre\"> </span>The type name 'MembershipUser' could not be found. This type has been forwarded to assembly 'System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. Consider adding a reference to that assembly.<span style=\"white-space:pre\"> </span>C:\\Users\\DaleM\\Documents\\Visual Studio 2010\\Projects\\NerdDinnerConvertedByMVCc\\NerdDinner.Tests\\Controllers\\AccountControllerTest.cs<span style=\"white-space:pre\"> </span>388<span style=\"white-space:pre\"> </span>43<span style=\"white-space:pre\"> </span>NerdDinner.Tests</div>\r\n<p>\r\n<p>Error<span style=\"white-space:pre\"> </span>1<span style=\"white-space:pre\"> </span>The type name 'MembershipUser' could not be found. This type has been forwarded to assembly 'System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. Consider adding a reference to that assembly.<span style=\"white-space:pre\"> </span>C:\\Users\\DaleM\\Documents\\Visual Studio 2010\\Projects\\NerdDinnerConvertedByMVCc\\NerdDinner.Tests\\Controllers\\AccountControllerTest.cs<span style=\"white-space:pre\"> </span>388<span style=\"white-space:pre\"> </span>43<span style=\"white-space:pre\"> </span>NerdDinner.Tests</p>\r\n<div>And the test projects can't have their framework changed.&nbsp;But, project NerdDinner launches even with those 11 errors.</div>\r\n<div></div>\r\n<div>I very much appreciate your help!</div>\r\n<div>Dale E. Moore</div>\r\n<div></div>\r\n<div></div>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-12-14T05:45:51.8-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "433860",
+    "ThreadId": "76153",
+    "Html": "<p>I too have this error after converting my asp.net mvc 2 application from vs2008 to vs2010 within my unit test application</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;1&nbsp;&nbsp; &nbsp;The type name 'MembershipUser' could not be found. This type has been forwarded to assembly 'System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. Consider adding a reference to that assembly.&nbsp;&nbsp; &nbsp;C:\\Projects\\RealEstate\\RealEstate.Tests\\Controllers\\AccountControllerTest.cs&nbsp;&nbsp; &nbsp;428&nbsp;&nbsp; &nbsp;43&nbsp;&nbsp; &nbsp;RealEstate.Tests</p>\r\n<p>&nbsp;</p>\r\n<p>Update...</p>\r\n<p>Actually I resolved this issue by adding a reference to System.Web.ApplicationServices within my unit test application.</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2010-04-21T13:41:22.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "443117",
+    "ThreadId": "76153",
+    "Html": "<p>Take a look at the Source Control tab here in CodePlex, we've converted the sample to MVC 2 and VS2010.<span style=\"white-space:pre\"> </span>&nbsp;</p>",
+    "PostedDate": "2010-05-14T16:18:28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

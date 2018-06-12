@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "477042",
+    "ThreadId": "222621",
+    "Html": "// Persistence\r\n        public void Save()\r\n        {\r\n            db.SubmitChanges();\r\n        }\r\n\r\nThrows a rule violation ERROR.\r\n\r\n\r\nI have just started the tutorials and got to page 73 or something like that and when I tried to edit the dinner and clicked on SAVE\r\nThe debuuger breaks out in the above mentioned error.\r\n\r\nANy suggestions?",
+    "PostedDate": "2010-08-05T11:46:56.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "478535",
+    "ThreadId": "222621",
+    "Html": "<p>RESOLVED the issue,,,, everything I coded works fine after commenting the following validation method</p>\r\n<p>\r\n<p><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">\r\n<p>//partial void OnValidate(ChangeAction action)</p>\r\n</span></span><span style=\"font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">//{</span></span></span></span></span><span style=\"font-size:x-small\"><span style=\"font-size:x-small\"> </span></span></p>\r\n</p>\r\n<p><span style=\"font-size:x-small\"><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">// if (!IsValid)</span></span></span><span style=\"font-size:x-small\"><span style=\"font-size:x-small\"> </span></span></p>\r\n<p><span style=\"font-size:x-small\"><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">// throw new ApplicationException(&quot;Rule violations prevent saving&quot;);</span></span></span><span style=\"font-size:x-small\"><span style=\"font-size:x-small\"> </span></span></p>\r\n<p><span style=\"font-size:x-small\"><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#008000;font-size:x-small\">//}</span></span></span></p>",
+    "PostedDate": "2010-08-10T04:54:56.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

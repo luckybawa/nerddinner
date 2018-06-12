@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am unable to download nerddinner application from https://nerddinner.codeplex.com/releases/view/45647\r\nThe download button, when \"save as\" produces the default file of \"Release?ProjectName=nerddinner&DownloadId=123725&FileTime=129192971514370000&Build=20567\" as opposed to a zip file.\r\nAlso the file is frozen and will not save.\r\nPlease help",
+    "LastUpdatedDate": "2013-06-17T10:15:12.207-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2013-06-17T10:15:12.207-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unable to download nerddinner",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 10866
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

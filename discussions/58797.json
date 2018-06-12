@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "199125",
+    "ThreadId": "58797",
+    "Html": "<p>I was following the tutorial posted here:</p>\r\n<p><a href=\"http://nerddinnerbook.s3.amazonaws.com/Part11.htm\">http://nerddinnerbook.s3.amazonaws.com/Part11.htm</a></p>\r\n<p>All went well until I got to this chapter. The tutorial doesn't mention that one needs the following styles to avoid a map that shows up on the upper left of the page and covers the edit form:&nbsp;</p>\r\n<p>#theMap {</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;&nbsp; &nbsp;position: relative;&nbsp;</p>\r\n<p>&nbsp;&nbsp; &nbsp;width: 500px;&nbsp;</p>\r\n<p>&nbsp;&nbsp; &nbsp;height: 450px;</p>\r\n<p>}</p>\r\n<p>&nbsp;</p>\r\n<p>#dinnerDiv {</p>\r\n<p>&nbsp;&nbsp; &nbsp;float: left;</p>\r\n<p>&nbsp;&nbsp; &nbsp;width: 280px;</p>\r\n<p>}</p>\r\n<p>&nbsp;</p>\r\n<p>#mapDiv {</p>\r\n<p>&nbsp;&nbsp; &nbsp;float: left;</p>\r\n<p>}</p>\r\n<p>&nbsp;</p>\r\n<p>\r\n<p>#mapDivLeft {</p>\r\n<p>&nbsp;&nbsp; &nbsp;float: left;</p>\r\n<p>}</p>\r\n<p>&nbsp;</p>\r\n<p>#mapDivRight {</p>\r\n<p>&nbsp;&nbsp; &nbsp;padding: 30px 0px 0px 20px;</p>\r\n<p>&nbsp;&nbsp; &nbsp;float: left;</p>\r\n<p>}</p>\r\n<p>&nbsp;</p>\r\n<p>#dinnerList {</p>\r\n<p>&nbsp;&nbsp; &nbsp;padding:0px 0px 0px 0px;</p>\r\n<p>}</p>\r\n<p>&nbsp;</p>\r\n<p>#searchBox {</p>\r\n<p>&nbsp;&nbsp; &nbsp;padding:0px 0px 10px 0px;</p>\r\n<p>}</p>\r\n<div><br></div>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-08T09:59:14.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203936",
+    "ThreadId": "58797",
+    "Html": "<p>Same for me, <br>I spent some time &quot;aligning&quot; map on page, and once I did it, I remembered about the sources here :)..</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-21T23:34:47.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,65 @@
+Index: Global.asax.cs
+===================================================================
+--- Global.asax.cs	(revision 20786)
++++ Global.asax.cs	(working copy)
+@@ -4,6 +4,7 @@
+ using System.Web;
+ using System.Web.Mvc;
+ using System.Web.Routing;
++using NerdDinner.Helpers;
+ 
+ namespace NerdDinner {
+ 
+@@ -20,9 +21,16 @@
+             );
+ 
+             routes.MapRoute(
++                "QuickDinnerDetails",
++                "{id}",
++                new { controller = "Dinners", action = "Details" },
++                new { id = new Int32Constraint() }
++                );
++
++            routes.MapRoute(
+                 "Default",                                              // Route name
+                 "{controller}/{action}/{id}",                           // URL with parameters
+-                new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
++                new { controller = "Home", action = "Index", id = "" }  // Parameter defaults                
+             );
+         }
+ 
+Index: Helpers/Int32Constraint.cs
+===================================================================
+--- Helpers/Int32Constraint.cs	(revision 0)
++++ Helpers/Int32Constraint.cs	(revision 0)
+@@ -0,0 +1,30 @@
++﻿using System;
++using System.Collections.Generic;
++using System.Linq;
++using System.Web;
++using System.Web.Routing;
++
++namespace NerdDinner.Helpers
++{
++    public class Int32Constraint : IRouteConstraint
++    {
++        public Int32Constraint()
++        {
++            
++        }       
++
++        #region IRouteConstraint Members
++
++        public bool Match(HttpContextBase httpContext, Route route, string parameterName, RouteValueDictionary values, RouteDirection routeDirection)
++        {
++            string passedInVal = values[parameterName].ToString();
++            Int32 i;
++            if (!Int32.TryParse(passedInVal, out i))
++                return false;
++            
++            return true;
++        }
++
++        #endregion
++    }
++}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "523540",
+    "ThreadId": "235100",
+    "Html": "\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\">What is wrong with the following statement:</span></span></span></p>\r\n<p>(&lt;%<span style=\"font-family:Consolas; color:#0000ff; font-size:large\"><span style=\"font-family:Consolas; color:#0000ff; font-size:large\"><span style=\"font-family:Consolas; color:#0000ff; font-size:large\">:</span></span></span><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\">\r\n</span></span><span style=\"font-family:Consolas; color:#2b91af; font-size:large\"><span style=\"font-family:Consolas; color:#2b91af; font-size:large\"><span style=\"font-family:Consolas; color:#2b91af; font-size:large\">String</span></span></span><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\">.Format(</span></span><span style=\"font-family:Consolas; color:#a31515; font-size:large\"><span style=\"font-family:Consolas; color:#a31515; font-size:large\"><span style=\"font-family:Consolas; color:#a31515; font-size:large\">&quot;{0:(###)\r\n ###-####}&quot;, model.ContactPhone ) %&gt;)</span></span></span></p>\r\n<p><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\"><span style=\"font-family:Consolas; font-size:large\">&#65279;</span></span></span></span></p>\r\n<p>Every example I have seent shows this String.Format to be a valid format for phone numbers, yet when I use this in the &quot;Details.aspx&quot; view I get an unformatted result? What am I doing wrong.</p>\r\n<p><span style=\"font-family:Consolas; font-size:large\">&#65279;</span>If this is the wrong place for this type of question, please direct me to someone or URL that can provide an answer.</p>\r\n<p>Thanks in advance . . .</p>\r\n<p>TomJ&nbsp;</p>\r\n<p><span style=\"font-family:Consolas; font-size:large\">&#65279;</span></p>\r\n",
+    "PostedDate": "2010-11-17T16:41:57.303-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "542956",
+    "ThreadId": "235100",
+    "Html": "\r\n<p>This would work only if the model.ContactPhone is a long.&nbsp; It won't work if ContactPhone is a string. If contact phone is a string, break it into substrings and&nbsp; use the&nbsp;format string &nbsp;&quot;({0}) {1}-{2}&quot;</p>\r\n",
+    "PostedDate": "2011-01-02T13:56:53.143-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

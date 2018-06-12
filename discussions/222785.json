@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "477579",
+    "ThreadId": "222785",
+    "Html": "<p>Hello all,</p>\r\n<p>Does anyone have an example of how to extend the view page of the  Dinners to also display the RSVP's in the list of the POPULAR  DINNERS?</p>\r\n<p>So for example the Dinners list will display on the home page of nerddinners something like this below? <span style=\"text-decoration:underline\"><em><strong>(RSVP names from the RSVP table, underlined, bold, italic)</strong></em></span></p>\r\n<p><strong>Popular Dinners</strong><br><br>dorkfest lansing 2010<br>Dec 31 with 108 RSVPs <span style=\"text-decoration:underline\"><em><strong>(James Dean, Fraggle Rock, Homer Simpson, Cartman etc...)</strong></em></span></p>\r\n<p>2010 Opening Ceremony<br>Dec 2 with 38 RSVPs <span style=\"text-decoration:underline\"><em><strong>(Miss Piggy, Stan, Marge Simpson, Lisa Simpson, Johnny Cash etc...)</strong></em></span></p>\r\n<p>WarpSpeedDating @ Science Museum, London<br>Oct 20 with 15 RSVPs <strong><em><span style=\"text-decoration:underline\">(John Wayne, Bill &amp; Ted, Jet li, Jackie Chan)</span></em></strong></p>\r\n<p>&nbsp;</p>\r\n<p>I'm sure it's possible however I cannot seem to work this one out and need some guidance please!!!</p>\r\n<p>Many thanks for any help</p>\r\n<p>David</p>",
+    "PostedDate": "2010-08-06T22:54:00.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

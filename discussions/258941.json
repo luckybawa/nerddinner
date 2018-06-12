@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "617964",
+    "ThreadId": "258941",
+    "Html": "\r\n<p>I'm triyng to deploy nerd dinner and the publish is successful but I'm getting the following error:</p>\r\n<h2>HTTP Error 500.19 - Internal Server Error</h2>\r\n<h3>The requested page cannot be accessed because the related configuration data for the page is invalid.</h3>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody>\r\n<tr>\r\n<th>Module</th>\r\n<td>IIS Web Core</td>\r\n</tr>\r\n<tr>\r\n<th>Notification</th>\r\n<td>Unknown</td>\r\n</tr>\r\n<tr>\r\n<th>Handler</th>\r\n<td>Not yet determined</td>\r\n</tr>\r\n<tr>\r\n<th>Error Code</th>\r\n<td>0x800700b7</td>\r\n</tr>\r\n<tr>\r\n<th>Config Error</th>\r\n<td>There is a duplicate 'uri' section defined</td>\r\n</tr>\r\n<tr>\r\n<th>Config File</th>\r\n<td>\\\\?\\C:\\inetpub\\DinnerNow\\web.config</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>Config Source</p>\r\n<pre><code>   14: \t\t&lt;section name=&quot;dotNetOpenAuth&quot; type=&quot;DotNetOpenAuth.Configuration.DotNetOpenAuthSection&quot; requirePermission=&quot;false&quot; allowLocation=&quot;true&quot; /&gt;\r\n<span>   15: \t\t&lt;section name=&quot;uri&quot; type=&quot;System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;</span>\r\n   16: \t&lt;/configSections&gt;\r\n</code></pre>\r\n<pre>I haven't changed anything but I've been looking around and tried this unsuccessfully: <a href=\"http://stackoverflow.com/questions/4757291/dotnetopenauth-3-4-6-with-mvc3-invalidoperationexception\">http://stackoverflow.com/questions/4757291/dotnetopenauth-3-4-6-with-mvc3-invalidoperationexception</a></pre>\r\n<pre>Any ideas?</pre>\r\n",
+    "PostedDate": "2011-05-25T05:08:57.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "618725",
+    "ThreadId": "258941",
+    "Html": "<p>Have you tried removing the <code>'<span>&lt;section name=\"uri\" type=\"System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" /&gt;' section</span></code>?</p>\r\n<p>It seems that the DotNetOpenAuth inserts this section.</p>",
+    "PostedDate": "2011-05-26T07:30:51.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

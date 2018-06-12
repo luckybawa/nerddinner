@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Updated files in Trunk and ASP-MVC3-RAZOR with changeset 64448. ",
+    "ClosedDate": "2011-04-24T21:20:47.467-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Please update the version of JSONPSupportBehavior included in nerddinner to v0.2\nThe current version contains a bug that will truncate the results. Pablo has corrected this and posted a new version.\nhttp://code.msdn.microsoft.com/DataServicesJSONP",
+    "LastUpdatedDate": "2011-04-24T21:20:47.467-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2010-10-14T17:14:47.403-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "JSONPSupportBehavior Bug - Please update to v0.2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7411
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Associated with changeset 64448.",
+      "PostedDate": "2011-04-24T21:19:56.597-07:00",
+      "Id": 76116
+    }
+  ]
+}

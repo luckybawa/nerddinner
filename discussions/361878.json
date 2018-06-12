@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "857060",
+    "ThreadId": "361878",
+    "Html": "\r\n<p>Is OpenId secure enough in nerddinner? Isn't it vulnerable to CSRF? (I know security can be out of scope in this project, but that's not the point in my question)</p>\r\n<p>What do you think about using ValidateAntiForgeryToken attribute in action LogOnPostAssertion on AuthController?</p>\r\n",
+    "PostedDate": "2012-07-03T14:48:28.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "857884",
+    "ThreadId": "361878",
+    "Html": "<p>An interesting point you bring up about XSRF. &nbsp;The vulnerability here, if any, seems to be that if a user may be discretely logged into NerdDinner under someone else's account, so further actions that user takes on NerdDinner may be recognized as having been completed by a different user. &nbsp;</p>\r\n<p>Mitigating this would have to be done by a mechanism different than the [ValidateAntiForgeryToken] attribute because that assumes there is a hidden form field on the HTML page that will get posted with the request, but this request is instead formulated at the OpenID Provider. &nbsp;Protecting against XSRF would effectively break an OpenID 2.0 feature called \"unsolicited assertions\". However for most sites that feature may not be as interesting as mitigating this security risk. &nbsp;</p>\r\n<p>I've fixed this in r77814. &nbsp;Thanks for pointing it out.</p>",
+    "PostedDate": "2012-07-05T07:23:56.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "858022",
+    "ThreadId": "361878",
+    "Html": "<p>Your solution is simple and effective. Thanks for the help.</p>",
+    "PostedDate": "2012-07-05T12:26:05.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

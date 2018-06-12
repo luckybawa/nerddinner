@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "183817",
+    "ThreadId": "54528",
+    "Html": "I am walking through the example chapter and on pdf page 104 (page 102 of 186 in page header) it has us replace the &lt;%= Html.TextBox... %&gt; with &lt;%= Html.DropDownList(&quot;Country&quot;, ViewData[&quot;Countries&quot;] as SelectedList) %&gt;, but this generates a missing directive error.&nbsp; In the DinnersController the SelectedList is valid, but not in the view.&nbsp; In the downloaded code it has been refactored so I am unable to tell how to correct the issue.<br>\r\n",
+    "PostedDate": "2009-04-26T13:22:35.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

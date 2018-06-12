@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Great",
+    "ClosedDate": "2011-06-01T12:45:42.303-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Geolocation auto-population of the search box via Google's API",
+    "LastUpdatedDate": "2011-06-01T12:45:42.303-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-05-18T13:57:25.267-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Geolocation auto-population of the search box via Google's API (or another service?)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3070
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This requires Google Gears. I think a better approach might be to use a geolocation service like HostIP.com or IPInfoDB.com. http://ipinfodb.com might be better since they offer a JSON interface:\r\nhttp://ipinfodb.com/ip_query.php?ip=131.107.0.82&output=json\r\n\r\nIf not, I've used HostIP server-side before and it worked really well.",
+      "PostedDate": "2009-12-21T14:28:30.45-08:00",
+      "Id": 76068
+    },
+    {
+      "Message": "fixed in ChangeSet 65098 ",
+      "PostedDate": "2011-05-10T07:35:45.16-07:00",
+      "Id": 76069
+    }
+  ]
+}

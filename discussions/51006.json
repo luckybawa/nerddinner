@@ -1,0 +1,106 @@
+[
+  {
+    "Id": "170922",
+    "ThreadId": "51006",
+    "Html": "I'm interested in putting together a web slice for NerdDinner. I think it makes the most sense to tie it to the search functionality on the site right now. Here are my thoughts:<br>\r\n<br>\r\nDesign:<br>\r\n- Show the Web Slice icon next to the Popular Dinners title<br>\r\n- The content for the Web slice is a simple list of the matches for your current search.<br>\r\n<br>\r\nImplementation:<br>\r\n- The URL for the slice would be /webslice/{encoded_search_term}<br>\r\n- To reduce bandwidth, the resultant view could be an RSS feed: (<a href=\"http://msdn.microsoft.com/en-us/library/cc956165(VS.85).aspx\">http://msdn.microsoft.com/en-us/library/cc956165(VS.85).aspx</a>).<br>\r\n    - Downside to this: all styling is inline.<br>\r\n- We can build a simplified XHTML view with linked CSS just for the slice.<br>\r\n- For the time-to-live (TTL), do you think the default of 15 minutes is fine? Better to increase the time between refreshes to 60 minutes or more?<br>\r\n<br>\r\nA web slice may be useful for a single dinner, too. That way you could be alerted to any changes in the dinner location, start time or attendees.<br>\r\n<br>\r\nJordan\r\n",
+    "PostedDate": "2009-03-23T09:45:58.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "170959",
+    "ThreadId": "51006",
+    "Html": "Cool idea. I think an hour TTL is cool.",
+    "PostedDate": "2009-03-23T11:43:28.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171003",
+    "ThreadId": "51006",
+    "Html": "Shall I just pass in lat/long to the webslice URL, to use the existing DinnerRepository.FindByLocation()? Or are we adding a DinnerRepository.FindByLocation() which accepts a textual search string? I like the idea of /webslice/Redmond+WA, but geocoding is all in the JS right now.\r\n",
+    "PostedDate": "2009-03-23T13:36:26.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171016",
+    "ThreadId": "51006",
+    "Html": "<div>I'll be checking in a FindByPlaceName this week...<br><br>--<div>Scott Hanselman - Tiny Phone, tiny email</div></div><div><br>On Mar 23, 2009, at 1:36 PM, JMatthiesen &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br><br></div><div></div><blockquote><div> <p>From: JMatthiesen</p> <div id=ThreadNotificationPostBody>Shall I just pass in lat/long to the webslice URL, to use the existing DinnerRepository.FindByLocation()? Or are we adding a DinnerRepository.FindByLocation() which accepts a textual search string? I like the idea of /webslice/Redmond+WA, but geocoding is all in the JS right now.\r\n</div>   </div></blockquote>",
+    "PostedDate": "2009-03-23T13:50:55.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171020",
+    "ThreadId": "51006",
+    "Html": "Awesome. I'll focus on other details for now, then.\r\n",
+    "PostedDate": "2009-03-23T13:57:25.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172027",
+    "ThreadId": "51006",
+    "Html": "I decided to start with a simple web slice for a single dinner. Turned out to be a good idea, for a simple starting point. Looks to me that the most control for styling is to have the web slice content come from a separate URL, instead of trying to use the content already output on the /Dinners/Details/{id} page.<br>\r\n<br>\r\nFor the slice I'd like to re-use the Dinners controller Details action, but do you think that's overcomplicating things? Maybe better to add a DetailsWebSlice action that can be selected when accessing a URL like /Dinners/Details/{id}/webslice?<br>\r\n<br>\r\nJordan\r\n",
+    "PostedDate": "2009-03-25T14:00:10.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172545",
+    "ThreadId": "51006",
+    "Html": "That's a good question. It would be nice if it could be incorporated into the existing action. However, details is simple, so you're just talking about a new View?<br>\r\n",
+    "PostedDate": "2009-03-26T15:26:54.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172547",
+    "ThreadId": "51006",
+    "Html": "Yes, going for a new view. I need a way to differentiate a web slice request from a regular page request via URL. I was thinking I could use /Dinners/Details/{id}#webslice or /Dinners/Details/{id}/webslice. Here's what I have for testing purposes right now:<br>\r\n<br>\r\n            routes.MapRoute(<br>\r\n                &quot;DetailsWebSlice&quot;,<br>\r\n                &quot;Dinners/Details/{id}/webslice&quot;,<br>\r\n                new { controller = &quot;Dinners&quot;, action = &quot;DetailsWebSlice&quot;, id = &quot;&quot; }<br>\r\n            );<br>\r\n<br>\r\nThis uses a new DetailsWebSlice action on the Dinners controller which is identical to the Details action, with the exception of the view name. I couldn't get the anchor tag approach working with routing.<br>\r\n<br>\r\nIn the Details action, I could instead look at the current request URL and choose my view as appropriate.\r\n",
+    "PostedDate": "2009-03-26T15:43:29.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172552",
+    "ThreadId": "51006",
+    "Html": "Ya, I like the route better. I'll be added a check in soon that will allow /{id} so the URLs will be nicer.<br>\r\n",
+    "PostedDate": "2009-03-26T15:59:04.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172561",
+    "ThreadId": "51006",
+    "Html": "Cool.<div><br></div><div>While on the subject of URLs, what do you think would be best for a dinner list url? One thought:</div><div><br></div><div>/Dinners/List/Redmond-WA</div><div><br></div><div>This would give me a base URL for searches, which I can use for the web slice. Added bonus: deep-link URLs for SEO and for use by site visitors to link straight to search results. Could keep using the Index view, since that's used for Upcoming Dinners right now, but I don't like how this reads as much: /Dinners/Index/Redmond-WA.</div><div><br></div><div>Jordan</div>",
+    "PostedDate": "2009-03-26T16:15:13.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172562",
+    "ThreadId": "51006",
+    "Html": "Agreed, but I'm still working on this, as each placename like that requires a reverse lookup against a geolocation service. I need to start caching them or find a nice placename TO lat-long database that works for international places also.<br>\r\n",
+    "PostedDate": "2009-03-26T16:28:56.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172565",
+    "ThreadId": "51006",
+    "Html": "The backend search logic is most definitely the hard part of the puzzle. I've done this on at least two different projects, but always for US searches only and using data that came from MapPoint geocoding. Since it's unrelated to getting a simple web slice going, I'll start another thread regarding this geolocation work if I find anything that may help you.",
+    "PostedDate": "2009-03-26T16:38:42.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172566",
+    "ThreadId": "51006",
+    "Html": "Cool. Give me a day or two to commit what I've got, then work from there.<br>\r\n",
+    "PostedDate": "2009-03-26T16:43:19.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "228671",
+    "ThreadId": "67270",
+    "Html": "<p>Hi , i downloaded nerddinner project but i am geteing this error&nbsp; the project type is not suported by this installation</p>\r\n<p>&nbsp;</p>\r\n<p>i have vs2009 installed on my machine&nbsp; along with asp.net mvc 1.0 , windows XP service pack 2 ,&nbsp; i wewnt throu pages but could find support for this solution</p>\r\n<p>&nbsp;pls let me know what i am misisng</p>\r\n<p>with regards</p>",
+    "PostedDate": "2009-08-28T04:43:15.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "228817",
+    "ThreadId": "67270",
+    "Html": "Sounds like you don't really have <a href=\"http://ASP.NET\">ASP.NET</a> MVC installed. Can you go File|NewProject and start and run an MVC site?<br><br><div>On Fri, Aug 28, 2009 at 4:43 AM, muddasirqidwai <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: muddasirqidwai</p> <div><p>Hi , i downloaded nerddinner project but i am geteing this error  the project type is not suported by this installation</p>\r\n\r\n\r\n<p> </p>\r\n<p>i have vs2009 installed on my machine  along with <a href=\"http://asp.net\">asp.net</a> mvc 1.0 , windows XP service pack 2 ,  i wewnt throu pages but could find support for this solution</p>\r\n<p> pls let me know what i am misisng</p>\r\n<p>with regards</p></div> <div> <p>Read the <a href=\"http://nerddinner.codeplex.com/Thread/View.aspx?ThreadId=67270&ANCHOR#Post228671\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:nerddinner@discussions.codeplex.com?subject=[nerddinner:67270]\">nerddinner@discussions.codeplex.com</a>)</p>\r\n\r\n <p>To start a new discussion for this project, email <a href=\"mailto:nerddinner@discussions.codeplex.com\">nerddinner@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/project/unsubscribe/nerddinner\">unsubscribe or change your settings</a> on codePlex.com.</p>\r\n\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n\r\n</div><br><br clear=all><br>-- <br>Scott Hanselman<br><a href=\"http://www.hanselman.com\">http://www.hanselman.com</a><br>",
+    "PostedDate": "2009-08-28T12:26:33.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "426271",
+    "ThreadId": "67270",
+    "Html": "<p>In my case I had to change the value of the ProjectGuids in the project file as suggested in this post</p>\r\n<p><a href=\"http://www.stuffthatjustworks.com/How+To+Fix+Xcsproj+Cannot+Be+Opened+The+Project+Type+Is+Not+Supported+By+This+Installation.aspx\">http://www.stuffthatjustworks.com/How+To+Fix+Xcsproj+Cannot+Be+Opened+The+Project+Type+Is+Not+Supported+By+This+Installation.aspx</a></p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-31T20:27:46.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

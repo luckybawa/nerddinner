@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Try '1 Featherston St, Wellington, New Zealand'...",
+    "LastUpdatedDate": "2011-08-16T09:15:49.26-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2009-03-13T23:53:30.423-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Placing a dinner in NZ places it in the Tasman Sea",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 2120
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "http://www.nerddinner.com/Dinners/Details/88",
+      "PostedDate": "2009-03-13T23:53:47.08-07:00",
+      "Id": 76039
+    },
+    {
+      "Message": "I get the same problem in Australia.  Try 1 Rapphael Street in Abbotsford, VIC Australia get somewhere in Collingwood.  Is this an issue with the mapping engine?  ",
+      "PostedDate": "2009-06-14T20:44:22.69-07:00",
+      "Id": 76040
+    }
+  ]
+}

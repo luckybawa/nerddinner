@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "529249",
+    "ThreadId": "236649",
+    "Html": "\r\n<h2>When I try to access &quot;My Dinners&quot;, I get the following error:</h2>\r\n<h2><span style=\"color:#ff0000\"><em>Database 'C:\\DEV\\ASP.NET\\NERDDINNER\\NERDDINNER_2.0\\NERDDINNER\\APP_DATA\\NERDDINNER.MDF' cannot be upgraded because it is read-only or has read-only files. Make the database or files writeable, and rerun recovery.<br>\r\nAn attempt to attach an auto-named database for file C:\\Dev\\ASP.NET\\NerdDinner\\NerdDinner_2.0\\NerdDinner\\App_Data\\NerdDinner.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.</em></span></h2>\r\n<p>&nbsp;</p>\r\n<h2>Any ideas why this is occuring??</h2>\r\n<h2>I am using Visual Studio 2010, SQL Server 2008 R2 Express and Windows 7.</h2>\r\n<p>Thank you!</p>\r\n<p><span style=\"color:#ff0000\"><em><br>\r\n</em></span></p>\r\n",
+    "PostedDate": "2010-11-30T23:01:35.797-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

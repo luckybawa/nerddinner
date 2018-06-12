@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "Hi \nI have today 2012 january 18th. downloaded NerdDinner (NerdDinner 2.0 Complete ASP.NET MVC Sample App - http://nerddinner.codeplex.com/releases/view/45647) and am experiencing problems with the edit dinner functionality. It will not save updates to a dinner. I do not get any exception, everything runs, but changes are however never made.",
+    "LastUpdatedDate": "2013-04-16T13:06:09.36-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "nerddinner",
+    "ReportedDate": "2012-01-18T11:05:58.88-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "edit dinner does not save changes.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 10169
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Found the culprit. \r\nIn DinnersController > public ActionResult Edit(int id, FormCollection collection) \r\nchanges UpdateModel(dinner, \"Dinner\");\r\nto\r\nUpdateModel(dinner);\r\n\r\n\r\n   ",
+      "PostedDate": "2012-01-18T11:56:44.367-08:00",
+      "Id": 76135
+    },
+    {
+      "Message": "thanks so much for the reply...",
+      "PostedDate": "2012-06-11T08:20:12.47-07:00",
+      "Id": 76136
+    },
+    {
+      "Message": "I had same problem as yours.\n\n\nDinner dinner = dinnerRepository.GetDinner(id);\nDinnerFormViewModel dfvm = new DinnerFormViewModel(dinner);\n\nUpdateModel(dfvm);",
+      "PostedDate": "2013-04-16T13:06:09.36-07:00",
+      "Id": 97166
+    }
+  ]
+}

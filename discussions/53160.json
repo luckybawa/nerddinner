@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "178754",
+    "ThreadId": "53160",
+    "Html": "The public partial class Dinner contains some business rules that establish requirements which are checked when a Dinner object is created or edited.<br>\r\n<br>\r\nMost of these checks are simple data validation statements that check for null or empty values. One is a phone validation that's implemented in the NerdDinner.Helpers namespace. <br>\r\n<br>\r\nMy question is this: <br>\r\n<br>\r\nIf the nerd dinners application required a database look up to validate some data during an edit, where would it live? Would you extend the Dinner class and have that class call into the database? Would you create a separate class like the phone validation class? Would you make a separate NearDinner.Services namespace and put the class there? If its not in the Dinner class, is it still part of the NerdDinner.Models namespace?<br>\r\n<br>\r\nI'm looking for suggestions on &quot;good&quot; places to put validation code that involves a database lookup. My hunch is that the MVC enthusiasts would say this belongs in the NerdDinner.Models namespace. I'm not sure if it belongs in the Dinner class or in a separate class. I could make a case for either.<br>\r\n<br>\r\nRegards,<br>\r\n<br>\r\nAndrew\r\n",
+    "PostedDate": "2009-04-13T19:43:36.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "178834",
+    "ThreadId": "53160",
+    "Html": "I would use Models namespace as the general facade for all concerns with regard to application models be it validation models (if your validation logic is db driven) or just model representation (either ADO.Net queries or ActiveRecord ORM).&nbsp; If u want to adhere to SRP principle, you should probably separate validation from Dinner and call it DinnerValidation or something of that sort. If i'll have quiet a bit of validator classes then i probably create a sub-namespace&nbsp; NerdDinner.Models.Validat[ion|ators].&nbsp; That's my 2 cents here.<br>\r\n",
+    "PostedDate": "2009-04-13T23:39:45.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

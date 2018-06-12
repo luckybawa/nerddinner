@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "180363",
+    "ThreadId": "53581",
+    "Html": "On page 145 of the NerdDinner pdf and getting this error when trying to implement Ajax call.<div>From googling it looks like this is a common problem with not sure fire solution. </div><div>I am running this on the built in web server with Visual Studio on Vista Ultimate.</div><div><br></div><div>Any ideas on how to troubleshoot/fix?</div>",
+    "PostedDate": "2009-04-16T16:51:00.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "180384",
+    "ThreadId": "53581",
+    "Html": "Make sure you've included the script references to MicrosoftAjax.js and MicrosoftMvcAjax.js shown on page 141.<br>\r\n",
+    "PostedDate": "2009-04-16T17:48:50.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253396",
+    "ThreadId": "53581",
+    "Html": "<p>I am getting the same symptom.&nbsp; In my specific case, the AjaxLink works perfectly when using the development web server but fails when I access the same physical site with II7.&nbsp; What could be different between these web hosting tools.</p>",
+    "PostedDate": "2009-11-04T10:19:33.97-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

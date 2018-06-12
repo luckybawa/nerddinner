@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "418944",
+    "ThreadId": "205176",
+    "Html": "<p>I am new to this project.&nbsp; I cannot open project in the visual studio 2008 with MVP 2.0 but I can't download the MVP 1.0.&nbsp; Does anyone have the project to work with new VS 2008 version?</p>",
+    "PostedDate": "2010-03-16T16:32:25.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "420908",
+    "ThreadId": "205176",
+    "Html": "same problem",
+    "PostedDate": "2010-03-21T02:50:42.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "421682",
+    "ThreadId": "205176",
+    "Html": "<p>The solution is download the MVC 1 from <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=53289097-73ce-43bf-b6a6-35e00103cb4b\">http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=53289097-73ce-43bf-b6a6-35e00103cb4b</a>.&nbsp; I do not know there is another tool that could convert project from version 1 to version 2.</p>",
+    "PostedDate": "2010-03-21T11:23:10.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

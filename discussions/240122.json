@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "542601",
+    "ThreadId": "240122",
+    "Html": "\r\n<p>Hi guys,</p>\r\n<p>I'm new to both MVC and EntityFrame work. I am trying to follow the NerdDinner example, but use my own project. I created an EntityFramework project, and then my MVC project, referencing the EF project. All is good. I am viewing data, and inserting data\r\n well.</p>\r\n<p>But now I am looking at the NerdDinner business rule validation example.</p>\r\n<p>I think I may have an out dated book, but does the 'Professional ASP.Net MVC 1.0' book make use of Entity Framework?</p>\r\n<p>On Page 32, it starts with adding a partial 'Dinner' calls, which has the validation rules in it. It mentions that the partial class is partial to Dinner class generated/maintained by LINQ to SQL. Now, because I am using a separate Entity Framework project,\r\n I can't really follow this model, right? Would the MVC 2.0 book suite my requirements a bit better?</p>\r\n",
+    "PostedDate": "2010-12-31T18:12:51.117-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "542951",
+    "ThreadId": "240122",
+    "Html": "\r\n<p>You can use partial classes with Entity Framework the same as you can with LINQ to SQL.</p>\r\n",
+    "PostedDate": "2011-01-02T13:44:11.643-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "542962",
+    "ThreadId": "240122",
+    "Html": "\r\n<p>Thanks - but can this (partial classes) still be done even though the EntityFramework model is in a separate project to the MVC code?</p>\r\n",
+    "PostedDate": "2011-01-02T14:28:22.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "543153",
+    "ThreadId": "240122",
+    "Html": "\r\n<p>Yes. The code file (.cs) that adds the validation attributes to the partial class can be part of the project that contains the Entity Framework or it can be part of the MVC project.</p>\r\n<p>Generally, I would prefer to keep it with the data layer project, however a case can be made that it belongs in the user interface (MVC) layer.</p>\r\n",
+    "PostedDate": "2011-01-03T06:00:44.883-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
